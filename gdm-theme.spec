@@ -1,6 +1,6 @@
 Summary:       Themes for gdm (Gnome Display Manager)
 Summary(pl):   Tematy dla gdm (Manad¿era Ekranów Gnome)
-Name:          gdm-themes
+Name:          gdm-theme
 Version:       2.4.4.5
 Release:       1
 License:       GPL
@@ -112,6 +112,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/103.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Morning_Light < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Morning_Light
@@ -137,6 +139,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/105.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-RedHat < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description RedHat
@@ -162,6 +166,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/107.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Sea < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Sea
@@ -187,6 +193,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/108.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Segovia_Night < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Segovia_Night
@@ -212,6 +220,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/109.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-STGO < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description STGO
@@ -237,6 +247,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/110.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-SuSE < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description SuSE
@@ -262,6 +274,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/111.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Segovia < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Segovia
@@ -287,6 +301,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/161.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Bluecurve < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Bluecurve
@@ -312,6 +328,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/178.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-300-lantueno < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description 300-lantueno
@@ -337,6 +355,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/182.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-XPTO < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description XPTO
@@ -362,6 +382,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/184.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Dawn < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Dawn
@@ -387,6 +409,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/196.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-GDM-GlassFoot < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description GDM-GlassFoot
@@ -412,6 +436,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/222.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Space < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Space
@@ -437,6 +463,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/223.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Fire_Breathing_Robot < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Fire_Breathing_Robot
@@ -462,6 +490,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/232.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-UnxStar < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description UnxStar
@@ -487,6 +517,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/239.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-SlackGDM < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description SlackGDM
@@ -512,6 +544,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/240.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-hybridFUSION < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description hybridFUSION
@@ -537,6 +571,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/241.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Barcelona < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Barcelona
@@ -562,6 +598,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/242.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Valladolid < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Valladolid
@@ -587,6 +625,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/243.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Murcia < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Murcia
@@ -612,6 +652,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/244.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Leon < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Leon
@@ -637,6 +679,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/245.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Gentoo_Emergence < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Gentoo_Emergence
@@ -662,6 +706,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/255.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-FreeBSD_The_Power_of_Serve < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description FreeBSD_The_Power_of_Serve
@@ -687,6 +733,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/256.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Daybreak < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Daybreak
@@ -712,6 +760,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/257.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Bijou < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Bijou
@@ -737,6 +787,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/267.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Stop_TCPA < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Stop_TCPA
@@ -762,6 +814,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/270.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Open_Source_Initiative < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Open_Source_Initiative
@@ -787,6 +841,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/271.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-FreeBSDarth < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description FreeBSDarth
@@ -812,6 +868,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/272.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Penguin_Computing < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Penguin_Computing
@@ -837,6 +895,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/278.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Knoke < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Knoke
@@ -862,6 +922,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/293.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-The_Dark_Crystal < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description The_Dark_Crystal
@@ -887,6 +949,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/294.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Gnome_Chile < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Gnome_Chile
@@ -912,6 +976,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/298.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Glassy < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Glassy
@@ -937,6 +1003,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/300.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Machu_Picchu < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Machu_Picchu
@@ -962,6 +1030,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/301.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-RightVision < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description RightVision
@@ -987,6 +1057,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/303.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-La_Bisbal_dEmpord_nevada < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description La_Bisbal_dEmpord_nevada
@@ -1012,6 +1084,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/310.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Falling_Angel < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Falling_Angel
@@ -1037,6 +1111,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/311.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Hantzley < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Hantzley
@@ -1062,6 +1138,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/325.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Mozi < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Mozi
@@ -1087,6 +1165,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/332.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Todmorden < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Todmorden
@@ -1112,6 +1192,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/33.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Hunter < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Hunter
@@ -1137,6 +1219,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/361.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-GDM-Mosaic < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description GDM-Mosaic
@@ -1162,6 +1246,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/396.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-KDE_Crystal < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description KDE_Crystal
@@ -1187,6 +1273,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/403.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Crystal_Rose < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Crystal_Rose
@@ -1212,6 +1300,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/404.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Devils_Candy < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Devils_Candy
@@ -1237,6 +1327,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/419.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Synergy < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Synergy
@@ -1262,6 +1354,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/420.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Cubic_Linux_and_Gnome < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Cubic_Linux_and_Gnome
@@ -1287,6 +1381,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/443.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Butterfly < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Butterfly
@@ -1312,6 +1408,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/448.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Mirrored < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Mirrored
@@ -1337,6 +1435,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/449.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Delicious < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Delicious
@@ -1362,6 +1462,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/458.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Blue_Slack_GDM < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Blue_Slack_GDM
@@ -1387,6 +1489,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/459.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Dreaming_Alien < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Dreaming_Alien
@@ -1412,6 +1516,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/460.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-gcr-ddlm < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description gcr-ddlm
@@ -1437,6 +1543,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/461.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Gentoo_Cow < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Gentoo_Cow
@@ -1462,6 +1570,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/462.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Just_BSD < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Just_BSD
@@ -1487,6 +1597,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/463.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-pixelGDM < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description pixelGDM
@@ -1512,6 +1624,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/464.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Red_Leaves < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Red_Leaves
@@ -1537,6 +1651,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/494.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Mono_Metal < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Mono_Metal
@@ -1562,6 +1678,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/508.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Gdm_Dropline < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Gdm_Dropline
@@ -1587,6 +1705,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/509.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Bee_at_Work < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Bee_at_Work
@@ -1612,6 +1732,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/511.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-LinuxTux < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description LinuxTux
@@ -1637,6 +1759,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/525.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Taipei < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Taipei
@@ -1662,6 +1786,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/526.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Odysseus < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Odysseus
@@ -1687,6 +1813,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/527.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Kinkakuji < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Kinkakuji
@@ -1712,6 +1840,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/533.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Milk < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Milk
@@ -1737,6 +1867,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/543.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Crop_Circles < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Crop_Circles
@@ -1762,6 +1894,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/89.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Angel < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Angel
@@ -1787,6 +1921,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/90.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Blueish < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Blueish
@@ -1812,6 +1948,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/91.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Cracked_Windows < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Cracked_Windows
@@ -1837,6 +1975,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/92.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Crystal < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Crystal
@@ -1862,6 +2002,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/93.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Dart_Frog < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Dart_Frog
@@ -1887,6 +2029,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/96.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-DumbCloud < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description DumbCloud
@@ -1912,6 +2056,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/98.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Emo-Blue < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Emo-Blue
@@ -1937,6 +2083,8 @@ URL:           http://art.gnome.org/themes/gdm_greeter/99.php
 Packager:      yoshi
 Requires:      %{name}
 Obsoletes:     %{name}-Flowers < 2.4.4.5-1
+BuildArch:     noarch
+
 
 
 %description Flowers
