@@ -171,7 +171,7 @@ This package allows you to change the look of your GNOME Display
 Manager :-)
 
 %description -l pl
-Ten pakiet pozwala na zmiane wygl±du Zarz±dcy ekranów GNOME :-)
+Ten pakiet pozwala na zmianê wygl±du Zarz±dcy ekranów GNOME :-)
 
 %package Morning_Light
 Summary:	Theme Morning_Light for gdm (GNOME Display Manager)
