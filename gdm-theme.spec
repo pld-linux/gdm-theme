@@ -1,6 +1,5 @@
 # TODO:
 #   - fix bogus (non-informative, English-in-pl) descriptions
-#   - add missing %dirs
 #
 Summary:	Themes for gdm (GNOME Display Manager)
 Summary(pl):	Motywy dla gdm (Zarz±dcy ekranów GNOME)
@@ -11,7 +10,6 @@ License:	GPL
 Group:		Themes
 URL:		http://art.gnome.org/
 Requires:	gdm
-BuildRequires:	tar
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -1447,11 +1445,7 @@ Motyw 'Flowers' autorstwa 'Gianluca Masci'. Komentarz autora do
 motywu: A Theme with Flowers.
 
 %prep
-test -d %{_builddir}/%{name}-%{version} && find %{_builddir}/%{name}-%{version}/ -type d -exec chmod 755 {} \;
-test -d %{_builddir}/%{name}-%{version} && find %{_builddir}/%{name}-%{version}/ -type f -exec chmod 644 {} \;
-mkdir -p %{_builddir}/%{name}-%{version}
-
-%setup -q -c -n %{_builddir}/%{name}-%{version} -a0 -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27 -a28 -a29 -a30 -a31 -a32 -a33 -a34 -a35 -a36 -a37 -a38 -a39 -a40 -a41 -a42 -a43 -a44 -a45 -a46 -a47 -a48 -a49 -a50 -a51 -a52 -a53 -a54 -a55 -a56 -a57 -a58 -a59 -a60 -a61 -a62 -a63 -a64 -a65 -a66 -a67 -a68 -a69 -a70 -a71 -a72 -a73
+%setup -q -c -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27 -a28 -a29 -a30 -a31 -a32 -a33 -a34 -a35 -a36 -a37 -a38 -a39 -a40 -a41 -a42 -a43 -a44 -a45 -a46 -a47 -a48 -a49 -a50 -a51 -a52 -a53 -a54 -a55 -a56 -a57 -a58 -a59 -a60 -a61 -a62 -a63 -a64 -a65 -a66 -a67 -a68 -a69 -a70 -a71 -a72 -a73
 
 cat>README<<E_O_F
 This is small x-mas gift from yoshi to all PLD users, developers and
@@ -1463,1084 +1457,1087 @@ E_O_F
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes
 #
 # Theme 00/73
 #
 # Make 'Morning_Light' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Morning_Light/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Morning_Light
 # Install 'Morning_Light' theme files
-install "morning/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Morning_Light/
-install "morning/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Morning_Light/
-install "morning/morning.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Morning_Light/
-install "morning/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Morning_Light/
-install "morning/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Morning_Light/
-install "morning/theme.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Morning_Light/
+install morning/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Morning_Light
+install morning/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Morning_Light
+install morning/morning.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Morning_Light
+install morning/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Morning_Light
+install morning/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Morning_Light
+install morning/theme.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Morning_Light
 #
 # Theme 01/73
 #
 # Make 'RedHat' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RedHat/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RedHat
 # Install 'RedHat' theme files
-install "redhat-gdm/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RedHat/
-install "redhat-gdm/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RedHat/
-install "redhat-gdm/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RedHat/
-install "redhat-gdm/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RedHat/
-install "redhat-gdm/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RedHat/
-install "redhat-gdm/redhat-gdm.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RedHat/
-install "redhat-gdm/redhat.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RedHat/
-install "redhat-gdm/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RedHat/
-install "redhat-gdm/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RedHat/
+install redhat-gdm/GdmGreeterTheme.desktop $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RedHat
+install redhat-gdm/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RedHat
+install redhat-gdm/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RedHat
+install redhat-gdm/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RedHat
+install redhat-gdm/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RedHat
+install redhat-gdm/redhat-gdm.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RedHat
+install redhat-gdm/redhat.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RedHat
+install redhat-gdm/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RedHat
+install redhat-gdm/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RedHat
 #
 # Theme 02/73
 #
 # Make 'Sea' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Sea/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Sea
 # Install 'Sea' theme files
-install "sea/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Sea/
-install "sea/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Sea/
-install "sea/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Sea/
-install "sea/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Sea/
-install "sea/sea.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Sea/
-install "sea/sea.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Sea/
+install sea/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Sea
+install sea/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Sea
+install sea/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Sea
+install sea/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Sea
+install sea/sea.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Sea
+install sea/sea.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Sea
 #
 # Theme 03/73
 #
 # Make 'Segovia_Night' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia_Night/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia_Night
 # Install 'Segovia_Night' theme files
-install "segovia-night/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia_Night/
-install "segovia-night/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia_Night/
-install "segovia-night/segovia1.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia_Night/
-install "segovia-night/segovia2.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia_Night/
-install "segovia-night/segovia3.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia_Night/
-install "segovia-night/segovia4.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia_Night/
-install "segovia-night/segovia-night.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia_Night/
-install "segovia-night/segovia-night.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia_Night/
+install segovia-night/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia_Night
+install segovia-night/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia_Night
+install segovia-night/segovia1.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia_Night
+install segovia-night/segovia2.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia_Night
+install segovia-night/segovia3.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia_Night
+install segovia-night/segovia4.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia_Night
+install segovia-night/segovia-night.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia_Night
+install segovia-night/segovia-night.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia_Night
 #
 # Theme 04/73
 #
 # Make 'STGO' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/STGO/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/STGO
 # Install 'STGO' theme files
-install "stgo/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/STGO/
-install "stgo/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/STGO/
-install "stgo/stgo1.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/STGO/
-install "stgo/stgo2.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/STGO/
-install "stgo/stgo3.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/STGO/
-install "stgo/stgo4.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/STGO/
-install "stgo/stgo.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/STGO/
-install "stgo/stgo.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/STGO/
+install stgo/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/STGO
+install stgo/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/STGO
+install stgo/stgo1.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/STGO
+install stgo/stgo2.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/STGO
+install stgo/stgo3.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/STGO
+install stgo/stgo4.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/STGO
+install stgo/stgo.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/STGO
+install stgo/stgo.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/STGO
 #
 # Theme 05/73
 #
 # Make 'SuSE' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SuSE/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SuSE
 # Install 'SuSE' theme files
-install "opt/gnome2/share/gdm/themes/suse-gdm/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SuSE/
-install "opt/gnome2/share/gdm/themes/suse-gdm/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SuSE/
-install "opt/gnome2/share/gdm/themes/suse-gdm/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SuSE/
-install "opt/gnome2/share/gdm/themes/suse-gdm/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SuSE/
-install "opt/gnome2/share/gdm/themes/suse-gdm/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SuSE/
-install "opt/gnome2/share/gdm/themes/suse-gdm/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SuSE/
-install "opt/gnome2/share/gdm/themes/suse-gdm/suse-gdm.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SuSE/
-install "opt/gnome2/share/gdm/themes/suse-gdm/suse.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SuSE/
-install "opt/gnome2/share/gdm/themes/suse-gdm/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SuSE/
+install opt/gnome2/share/gdm/themes/suse-gdm/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SuSE
+install opt/gnome2/share/gdm/themes/suse-gdm/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SuSE
+install opt/gnome2/share/gdm/themes/suse-gdm/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SuSE
+install opt/gnome2/share/gdm/themes/suse-gdm/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SuSE
+install opt/gnome2/share/gdm/themes/suse-gdm/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SuSE
+install opt/gnome2/share/gdm/themes/suse-gdm/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SuSE
+install opt/gnome2/share/gdm/themes/suse-gdm/suse-gdm.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SuSE
+install opt/gnome2/share/gdm/themes/suse-gdm/suse.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SuSE
+install opt/gnome2/share/gdm/themes/suse-gdm/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SuSE
 #
 # Theme 06/73
 #
 # Make 'Segovia' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia
 # Install 'Segovia' theme files
-install "segovia/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia/
-install "segovia/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia/
-install "segovia/segovia1.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia/
-install "segovia/segovia2.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia/
-install "segovia/segovia3.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia/
-install "segovia/segovia4.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia/
-install "segovia/segovia.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia/
-install "segovia/segovia.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Segovia/
+install segovia/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia
+install segovia/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia
+install segovia/segovia1.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia
+install segovia/segovia2.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia
+install segovia/segovia3.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia
+install segovia/segovia4.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia
+install segovia/segovia.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia
+install segovia/segovia.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Segovia
 #
 # Theme 07/73
 #
 # Make 'Bluecurve' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
 # Install 'Bluecurve' theme files
-install "Bluecurve/Bluecurve.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/lightrays.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/rh_logo-header.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/shadow-bl.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/shadow-b.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/shadow-br.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/shadow-l.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/shadow-r.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/shadow-tl.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/shadow-t.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
-install "Bluecurve/shadow-tr.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bluecurve/
+install Bluecurve/Bluecurve.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/lightrays.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/rh_logo-header.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/shadow-bl.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/shadow-b.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/shadow-br.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/shadow-l.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/shadow-r.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/shadow-tl.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/shadow-t.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
+install Bluecurve/shadow-tr.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bluecurve
 #
 # Theme 08/73
 #
 # Make '300-lantueno' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/300-lantueno/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/300-lantueno
 # Install '300-lantueno' theme files
-install "lantueno-gdm/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/300-lantueno/
-install "lantueno-gdm/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/300-lantueno/
-install "lantueno-gdm/lantueno.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/300-lantueno/
-install "lantueno-gdm/lantueno.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/300-lantueno/
-install "lantueno-gdm/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/300-lantueno/
-install "lantueno-gdm/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/300-lantueno/
-install "lantueno-gdm/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/300-lantueno/
-install "lantueno-gdm/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/300-lantueno/
-install "lantueno-gdm/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/300-lantueno/
+install lantueno-gdm/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/300-lantueno
+install lantueno-gdm/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/300-lantueno
+install lantueno-gdm/lantueno.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/300-lantueno
+install lantueno-gdm/lantueno.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/300-lantueno
+install lantueno-gdm/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/300-lantueno
+install lantueno-gdm/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/300-lantueno
+install lantueno-gdm/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/300-lantueno
+install lantueno-gdm/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/300-lantueno
+install lantueno-gdm/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/300-lantueno
 #
 # Theme 09/73
 #
 # Make 'XPTO' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
 # Install 'XPTO' theme files
-install "xpto/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
-install "xpto/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
-install "xpto/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
-install "xpto/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
-install "xpto/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
-install "xpto/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
-install "xpto/xpto_bg.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
-install "xpto/xpto.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
-install "xpto/xpto_shot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
-install "xpto/xpto.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
-install "xpto/xpt.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/XPTO/
+install xpto/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
+install xpto/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
+install xpto/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
+install xpto/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
+install xpto/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
+install xpto/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
+install xpto/xpto_bg.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
+install xpto/xpto.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
+install xpto/xpto_shot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
+install xpto/xpto.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
+install xpto/xpt.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
 #
 # Theme 10/73
 #
 # Make 'Dawn' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dawn/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dawn
 # Install 'Dawn' theme files
-install "dawn/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dawn/
-install "dawn/dawn.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dawn/
-install "dawn/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dawn/
-install "dawn/option.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dawn/
-install "dawn/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dawn/
-install "dawn/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dawn/
-install "dawn/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dawn/
-install "dawn/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dawn/
+install dawn/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dawn
+install dawn/dawn.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dawn
+install dawn/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dawn
+install dawn/option.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dawn
+install dawn/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dawn
+install dawn/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dawn
+install dawn/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dawn
+install dawn/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dawn
 #
 # Theme 11/73
 #
 # Make 'GDM-GlassFoot' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-GlassFoot/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-GlassFoot
 # Install 'GDM-GlassFoot' theme files
-install "GNOME-GlassFoot/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-GlassFoot/
-install "GNOME-GlassFoot/glass.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-GlassFoot/
-install "GNOME-GlassFoot/GNOME-GlassFoot.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-GlassFoot/
-install "GNOME-GlassFoot/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-GlassFoot/
-install "GNOME-GlassFoot/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-GlassFoot/
-install "GNOME-GlassFoot/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-GlassFoot/
-install "GNOME-GlassFoot/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-GlassFoot/
-install "GNOME-GlassFoot/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-GlassFoot/
+install GNOME-GlassFoot/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-GlassFoot
+install GNOME-GlassFoot/glass.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-GlassFoot
+install GNOME-GlassFoot/GNOME-GlassFoot.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-GlassFoot
+install GNOME-GlassFoot/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-GlassFoot
+install GNOME-GlassFoot/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-GlassFoot
+install GNOME-GlassFoot/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-GlassFoot
+install GNOME-GlassFoot/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-GlassFoot
+install GNOME-GlassFoot/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-GlassFoot
 #
 # Theme 12/73
 #
 # Make 'Space' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Space/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Space
 # Install 'Space' theme files
-install "bisho/background.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Space/
-install "bisho/Bisho.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Space/
-install "bisho/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Space/
-install "bisho/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Space/
-install "bisho/option.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Space/
-install "bisho/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Space/
-install "bisho/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Space/
-install "bisho/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Space/
+install bisho/background.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Space
+install bisho/Bisho.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Space
+install bisho/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Space
+install bisho/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Space
+install bisho/option.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Space
+install bisho/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Space
+install bisho/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Space
+install bisho/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Space
 #
 # Theme 13/73
 #
 # Make 'Fire_Breathing_Robot' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
 # Install 'Fire_Breathing_Robot' theme files
-install "flame/flames.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/flame.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/gdmbar.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/shadow-bl.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/shadow-b.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/shadow-br.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/shadow-l.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/shadow-r.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/shadow-tl.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/shadow-t.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
-install "flame/shadow-tr.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Fire_Breathing_Robot/
+install flame/flames.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/flame.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/gdmbar.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/shadow-bl.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/shadow-b.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/shadow-br.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/shadow-l.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/shadow-r.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/shadow-tl.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/shadow-t.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
+install flame/shadow-tr.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Fire_Breathing_Robot
 #
 # Theme 14/73
 #
 # Make 'UnxStar' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/UnxStar/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/UnxStar
 # Install 'UnxStar' theme files
-install "unxstar/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/UnxStar/
-install "unxstar/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/UnxStar/
-install "unxstar/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/UnxStar/
-install "unxstar/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/UnxStar/
-install "unxstar/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/UnxStar/
-install "unxstar/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/UnxStar/
-install "unxstar/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/UnxStar/
-install "unxstar/unxstar.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/UnxStar/
-install "unxstar/unxstar.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/UnxStar/
+install unxstar/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/UnxStar
+install unxstar/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/UnxStar
+install unxstar/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/UnxStar
+install unxstar/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/UnxStar
+install unxstar/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/UnxStar
+install unxstar/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/UnxStar
+install unxstar/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/UnxStar
+install unxstar/unxstar.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/UnxStar
+install unxstar/unxstar.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/UnxStar
 #
 # Theme 15/73
 #
 # Make 'SlackGDM' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SlackGDM/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SlackGDM
 # Install 'SlackGDM' theme files
-install "slackgdm/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SlackGDM/
-install "slackgdm/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SlackGDM/
-install "slackgdm/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SlackGDM/
-install "slackgdm/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SlackGDM/
-install "slackgdm/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SlackGDM/
-install "slackgdm/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SlackGDM/
-install "slackgdm/slackgdm.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SlackGDM/
-install "slackgdm/slackgdm.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SlackGDM/
-install "slackgdm/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/SlackGDM/
+install slackgdm/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SlackGDM
+install slackgdm/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SlackGDM
+install slackgdm/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SlackGDM
+install slackgdm/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SlackGDM
+install slackgdm/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SlackGDM
+install slackgdm/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SlackGDM
+install slackgdm/slackgdm.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SlackGDM
+install slackgdm/slackgdm.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SlackGDM
+install slackgdm/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/SlackGDM
 #
 # Theme 16/73
 #
 # Make 'hybridFUSION' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
 # Install 'hybridFUSION' theme files
-install "hybridFUSION/ConVerSion_version_Two.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/hybridFUSION.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/shadow-bl.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/shadow-b.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/shadow-br.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/shadow-l.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/shadow-r.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/shadow-tl.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/shadow-t.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/shadow-tr.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
-install "hybridFUSION/skowals.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/hybridFUSION/
+install hybridFUSION/ConVerSion_version_Two.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/hybridFUSION.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/shadow-bl.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/shadow-b.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/shadow-br.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/shadow-l.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/shadow-r.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/shadow-tl.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/shadow-t.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/shadow-tr.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
+install hybridFUSION/skowals.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/hybridFUSION
 #
 # Theme 17/73
 #
 # Make 'Barcelona' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Barcelona/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Barcelona
 # Install 'Barcelona' theme files
-install "barna/barna-desconectar.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Barcelona/
-install "barna/barna.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Barcelona/
-install "barna/barna-opciones.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Barcelona/
-install "barna/barna-sesion.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Barcelona/
-install "barna/barna-sistema.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Barcelona/
-install "barna/barna.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Barcelona/
-install "barna/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Barcelona/
-install "barna/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Barcelona/
+install barna/barna-desconectar.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Barcelona
+install barna/barna.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Barcelona
+install barna/barna-opciones.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Barcelona
+install barna/barna-sesion.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Barcelona
+install barna/barna-sistema.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Barcelona
+install barna/barna.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Barcelona
+install barna/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Barcelona
+install barna/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Barcelona
 #
 # Theme 18/73
 #
 # Make 'Valladolid' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Valladolid/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Valladolid
 # Install 'Valladolid' theme files
-install "valladolid/ava-desconectar.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Valladolid/
-install "valladolid/ava-opcion.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Valladolid/
-install "valladolid/ava-sesion.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Valladolid/
-install "valladolid/ava-sistema.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Valladolid/
-install "valladolid/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Valladolid/
-install "valladolid/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Valladolid/
-install "valladolid/valladolid.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Valladolid/
-install "valladolid/valladolid.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Valladolid/
+install valladolid/ava-desconectar.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Valladolid
+install valladolid/ava-opcion.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Valladolid
+install valladolid/ava-sesion.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Valladolid
+install valladolid/ava-sistema.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Valladolid
+install valladolid/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Valladolid
+install valladolid/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Valladolid
+install valladolid/valladolid.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Valladolid
+install valladolid/valladolid.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Valladolid
 #
 # Theme 19/73
 #
 # Make 'Murcia' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Murcia/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Murcia
 # Install 'Murcia' theme files
-install "murcia/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Murcia/
-install "murcia/murcia-desconectar.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Murcia/
-install "murcia/murcia.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Murcia/
-install "murcia/murcia-opciones.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Murcia/
-install "murcia/murcia-sesion.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Murcia/
-install "murcia/murcia-sistema.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Murcia/
-install "murcia/murcia.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Murcia/
-install "murcia/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Murcia/
+install murcia/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Murcia
+install murcia/murcia-desconectar.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Murcia
+install murcia/murcia.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Murcia
+install murcia/murcia-opciones.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Murcia
+install murcia/murcia-sesion.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Murcia
+install murcia/murcia-sistema.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Murcia
+install murcia/murcia.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Murcia
+install murcia/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Murcia
 #
 # Theme 20/73
 #
 # Make 'Leon' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Leon/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Leon
 # Install 'Leon' theme files
-install "leon/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Leon/
-install "leon/leon-desconectar.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Leon/
-install "leon/leon.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Leon/
-install "leon/leon-opciones.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Leon/
-install "leon/leon-sesion.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Leon/
-install "leon/leon-sistema.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Leon/
-install "leon/leon.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Leon/
-install "leon/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Leon/
+install leon/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Leon
+install leon/leon-desconectar.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Leon
+install leon/leon.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Leon
+install leon/leon-opciones.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Leon
+install leon/leon-sesion.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Leon
+install leon/leon-sistema.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Leon
+install leon/leon.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Leon
+install leon/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Leon
 #
 # Theme 21/73
 #
 # Make 'Gentoo_Emergence' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Emergence/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Emergence
 # Install 'Gentoo_Emergence' theme files
-install "gentoo-emergence/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Emergence/
-install "gentoo-emergence/gentoo-emergence.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Emergence/
-install "gentoo-emergence/gentoo-emergence.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Emergence/
-install "gentoo-emergence/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Emergence/
-install "gentoo-emergence/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Emergence/
-install "gentoo-emergence/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Emergence/
-install "gentoo-emergence/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Emergence/
-install "gentoo-emergence/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Emergence/
-install "gentoo-emergence/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Emergence/
+install gentoo-emergence/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Emergence
+install gentoo-emergence/gentoo-emergence.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Emergence
+install gentoo-emergence/gentoo-emergence.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Emergence
+install gentoo-emergence/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Emergence
+install gentoo-emergence/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Emergence
+install gentoo-emergence/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Emergence
+install gentoo-emergence/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Emergence
+install gentoo-emergence/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Emergence
+install gentoo-emergence/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Emergence
 #
 # Theme 22/73
 #
 # Make 'FreeBSD_The_Power_of_Serve' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve
 # Install 'FreeBSD_The_Power_of_Serve' theme files
-install "FreeBSD/FreeBSD.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/
-install "FreeBSD/FreeBSD.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/
-install "FreeBSD/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/
-install "FreeBSD/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/
-install "FreeBSD/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/
-install "FreeBSD/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/
-install "FreeBSD/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/
-install "FreeBSD/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/
-install "FreeBSD/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/
+install FreeBSD/FreeBSD.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve
+install FreeBSD/FreeBSD.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve
+install FreeBSD/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve
+install FreeBSD/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve
+install FreeBSD/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve
+install FreeBSD/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve
+install FreeBSD/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve
+install FreeBSD/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve
+install FreeBSD/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve
 #
 # Theme 23/73
 #
 # Make 'Daybreak' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Daybreak/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Daybreak
 # Install 'Daybreak' theme files
-install "daybreak/daybreak.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Daybreak/
-install "daybreak/daybreak.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Daybreak/
-install "daybreak/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Daybreak/
-install "daybreak/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Daybreak/
-install "daybreak/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Daybreak/
-install "daybreak/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Daybreak/
-install "daybreak/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Daybreak/
-install "daybreak/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Daybreak/
-install "daybreak/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Daybreak/
+install daybreak/daybreak.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Daybreak
+install daybreak/daybreak.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Daybreak
+install daybreak/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Daybreak
+install daybreak/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Daybreak
+install daybreak/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Daybreak
+install daybreak/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Daybreak
+install daybreak/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Daybreak
+install daybreak/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Daybreak
+install daybreak/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Daybreak
 #
 # Theme 24/73
 #
 # Make 'Bijou' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bijou/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bijou
 # Install 'Bijou' theme files
-install "bijou/background.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bijou/
-install "bijou/bijou.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bijou/
-install "bijou/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bijou/
-install "bijou/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bijou/
-install "bijou/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bijou/
-install "bijou/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bijou/
-install "bijou/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bijou/
-install "bijou/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bijou/
+install bijou/background.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bijou
+install bijou/bijou.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bijou
+install bijou/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bijou
+install bijou/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bijou
+install bijou/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bijou
+install bijou/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bijou
+install bijou/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bijou
+install bijou/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bijou
 #
 # Theme 25/73
 #
 # Make 'Stop_TCPA' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Stop_TCPA/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Stop_TCPA
 # Install 'Stop_TCPA' theme files
-install "tcpa/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Stop_TCPA/
-install "tcpa/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Stop_TCPA/
-install "tcpa/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Stop_TCPA/
-install "tcpa/option.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Stop_TCPA/
-install "tcpa/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Stop_TCPA/
-install "tcpa/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Stop_TCPA/
-install "tcpa/tcpa.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Stop_TCPA/
+install tcpa/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Stop_TCPA
+install tcpa/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Stop_TCPA
+install tcpa/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Stop_TCPA
+install tcpa/option.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Stop_TCPA
+install tcpa/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Stop_TCPA
+install tcpa/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Stop_TCPA
+install tcpa/tcpa.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Stop_TCPA
 #
 # Theme 26/73
 #
 # Make 'Open_Source_Initiative' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Open_Source_Initiative/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Open_Source_Initiative
 # Install 'Open_Source_Initiative' theme files
-install "OpenSource/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Open_Source_Initiative/
-install "OpenSource/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Open_Source_Initiative/
-install "OpenSource/open_source.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Open_Source_Initiative/
-install "OpenSource/open_source.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Open_Source_Initiative/
-install "OpenSource/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Open_Source_Initiative/
-install "OpenSource/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Open_Source_Initiative/
-install "OpenSource/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Open_Source_Initiative/
-install "OpenSource/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Open_Source_Initiative/
-install "OpenSource/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Open_Source_Initiative/
+install OpenSource/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Open_Source_Initiative
+install OpenSource/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Open_Source_Initiative
+install OpenSource/open_source.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Open_Source_Initiative
+install OpenSource/open_source.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Open_Source_Initiative
+install OpenSource/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Open_Source_Initiative
+install OpenSource/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Open_Source_Initiative
+install OpenSource/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Open_Source_Initiative
+install OpenSource/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Open_Source_Initiative
+install OpenSource/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Open_Source_Initiative
 #
 # Theme 27/73
 #
 # Make 'FreeBSDarth' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSDarth/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSDarth
 # Install 'FreeBSDarth' theme files
-install "FreeBSDarth/FreeBSDarth.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSDarth/
-install "FreeBSDarth/FreeBSDarth.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSDarth/
-install "FreeBSDarth/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSDarth/
-install "FreeBSDarth/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSDarth/
-install "FreeBSDarth/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSDarth/
-install "FreeBSDarth/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSDarth/
-install "FreeBSDarth/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/FreeBSDarth/
+install FreeBSDarth/FreeBSDarth.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSDarth
+install FreeBSDarth/FreeBSDarth.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSDarth
+install FreeBSDarth/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSDarth
+install FreeBSDarth/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSDarth
+install FreeBSDarth/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSDarth
+install FreeBSDarth/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSDarth
+install FreeBSDarth/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/FreeBSDarth
 #
 # Theme 28/73
 #
 # Make 'Penguin_Computing' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Penguin_Computing/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Penguin_Computing
 # Install 'Penguin_Computing' theme files
-install "penguin/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Penguin_Computing/
-install "penguin/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Penguin_Computing/
-install "penguin/galikynes.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Penguin_Computing/
-install "penguin/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Penguin_Computing/
-install "penguin/option.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Penguin_Computing/
-install "penguin/penguin.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Penguin_Computing/
-install "penguin/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Penguin_Computing/
-install "penguin/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Penguin_Computing/
+install penguin/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Penguin_Computing
+install penguin/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Penguin_Computing
+install penguin/galikynes.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Penguin_Computing
+install penguin/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Penguin_Computing
+install penguin/option.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Penguin_Computing
+install penguin/penguin.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Penguin_Computing
+install penguin/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Penguin_Computing
+install penguin/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Penguin_Computing
 #
 # Theme 29/73
 #
 # Make 'Knoke' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Knoke/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Knoke
 # Install 'Knoke' theme files
-install "knoke/back.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Knoke/
-install "knoke/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Knoke/
-install "knoke/knoke.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Knoke/
-install "knoke/knoke.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Knoke/
-install "knoke/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Knoke/
-install "knoke/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Knoke/
-install "knoke/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Knoke/
-install "knoke/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Knoke/
-install "knoke/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Knoke/
+install knoke/back.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Knoke
+install knoke/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Knoke
+install knoke/knoke.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Knoke
+install knoke/knoke.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Knoke
+install knoke/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Knoke
+install knoke/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Knoke
+install knoke/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Knoke
+install knoke/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Knoke
+install knoke/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Knoke
 #
 # Theme 30/73
 #
 # Make 'The_Dark_Crystal' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/The_Dark_Crystal/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/The_Dark_Crystal
 # Install 'The_Dark_Crystal' theme files
-install "darkcrystal/background.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/The_Dark_Crystal/
-install "darkcrystal/darkcrystal.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/The_Dark_Crystal/
-install "darkcrystal/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/The_Dark_Crystal/
-install "darkcrystal/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/The_Dark_Crystal/
-install "darkcrystal/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/The_Dark_Crystal/
-install "darkcrystal/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/The_Dark_Crystal/
-install "darkcrystal/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/The_Dark_Crystal/
+install darkcrystal/background.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/The_Dark_Crystal
+install darkcrystal/darkcrystal.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/The_Dark_Crystal
+install darkcrystal/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/The_Dark_Crystal
+install darkcrystal/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/The_Dark_Crystal
+install darkcrystal/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/The_Dark_Crystal
+install darkcrystal/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/The_Dark_Crystal
+install darkcrystal/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/The_Dark_Crystal
 #
 # Theme 31/73
 #
 # Make 'Gnome_Chile' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gnome_Chile/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gnome_Chile
 # Install 'Gnome_Chile' theme files
-install "gnome-chile/fondo.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gnome_Chile/
-install "gnome-chile/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gnome_Chile/
-install "gnome-chile/gnome-chile.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gnome_Chile/
-install "gnome-chile/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gnome_Chile/
-install "gnome-chile/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gnome_Chile/
-install "gnome-chile/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gnome_Chile/
-install "gnome-chile/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gnome_Chile/
-install "gnome-chile/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gnome_Chile/
-install "gnome-chile/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gnome_Chile/
+install gnome-chile/fondo.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gnome_Chile
+install gnome-chile/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gnome_Chile
+install gnome-chile/gnome-chile.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gnome_Chile
+install gnome-chile/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gnome_Chile
+install gnome-chile/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gnome_Chile
+install gnome-chile/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gnome_Chile
+install gnome-chile/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gnome_Chile
+install gnome-chile/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gnome_Chile
+install gnome-chile/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gnome_Chile
 #
 # Theme 32/73
 #
 # Make 'Glassy' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Glassy/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Glassy
 # Install 'Glassy' theme files
-install "Glassy/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Glassy/
-install "Glassy/glassy.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Glassy/
-install "Glassy/glassy.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Glassy/
-install "Glassy/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Glassy/
-install "Glassy/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Glassy/
-install "Glassy/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Glassy/
-install "Glassy/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Glassy/
-install "Glassy/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Glassy/
-install "Glassy/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Glassy/
+install Glassy/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Glassy
+install Glassy/glassy.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Glassy
+install Glassy/glassy.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Glassy
+install Glassy/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Glassy
+install Glassy/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Glassy
+install Glassy/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Glassy
+install Glassy/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Glassy
+install Glassy/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Glassy
+install Glassy/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Glassy
 #
 # Theme 33/73
 #
 # Make 'Machu_Picchu' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Machu_Picchu/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Machu_Picchu
 # Install 'Machu_Picchu' theme files
-install "Machu Picchu/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Machu_Picchu/
-install "Machu Picchu/Machu Picchu.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Machu_Picchu/
-install "Machu Picchu/MP-ledge-bg.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Machu_Picchu/
-install "Machu Picchu/MP-tall-options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Machu_Picchu/
-install "Machu Picchu/MP-tall-quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Machu_Picchu/
-install "Machu Picchu/MP-tall-session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Machu_Picchu/
-install "Machu Picchu/MP-tall-system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Machu_Picchu/
-install "Machu Picchu/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Machu_Picchu/
+install "Machu Picchu/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Machu_Picchu
+install "Machu Picchu/Machu Picchu.xml" $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Machu_Picchu
+install "Machu Picchu/MP-ledge-bg.png" $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Machu_Picchu
+install "Machu Picchu/MP-tall-options.png" $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Machu_Picchu
+install "Machu Picchu/MP-tall-quit.png" $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Machu_Picchu
+install "Machu Picchu/MP-tall-session.png" $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Machu_Picchu
+install "Machu Picchu/MP-tall-system.png" $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Machu_Picchu
+install "Machu Picchu/screenshot.png" $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Machu_Picchu
 #
 # Theme 34/73
 #
 # Make 'RightVision' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RightVision/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RightVision
 # Install 'RightVision' theme files
-install "RV/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RightVision/
-install "RV/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RightVision/
-install "RV/logorv.gif" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RightVision/
-install "RV/oeil1.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RightVision/
-install "RV/oeil2.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RightVision/
-install "RV/oeil3.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RightVision/
-install "RV/oeil4.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RightVision/
-install "RV/rv.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RightVision/
-install "RV/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/RightVision/
+install RV/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RightVision
+install RV/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RightVision
+install RV/logorv.gif $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RightVision
+install RV/oeil1.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RightVision
+install RV/oeil2.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RightVision
+install RV/oeil3.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RightVision
+install RV/oeil4.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RightVision
+install RV/rv.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RightVision
+install RV/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/RightVision
 #
 # Theme 35/73
 #
 # Make 'La_Bisbal_dEmpord_nevada' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada
 # Install 'La_Bisbal_dEmpord_nevada' theme files
-install "labisbal/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/
-install "labisbal/labisbal-desconectar.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/
-install "labisbal/labisbal.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/
-install "labisbal/labisbal-opcions.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/
-install "labisbal/labisbal-sessio.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/
-install "labisbal/labisbal-sistema.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/
-install "labisbal/labisbal.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/
-install "labisbal/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/
+install labisbal/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada
+install labisbal/labisbal-desconectar.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada
+install labisbal/labisbal.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada
+install labisbal/labisbal-opcions.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada
+install labisbal/labisbal-sessio.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada
+install labisbal/labisbal-sistema.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada
+install labisbal/labisbal.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada
+install labisbal/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada
 #
 # Theme 36/73
 #
 # Make 'Falling_Angel' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Falling_Angel/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Falling_Angel
 # Install 'Falling_Angel' theme files
-install "falling-angel/falling-angel.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Falling_Angel/
-install "falling-angel/falling-angel-shot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Falling_Angel/
-install "falling-angel/falling-angel.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Falling_Angel/
-install "falling-angel/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Falling_Angel/
-install "falling-angel/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Falling_Angel/
-install "falling-angel/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Falling_Angel/
-install "falling-angel/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Falling_Angel/
-install "falling-angel/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Falling_Angel/
-install "falling-angel/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Falling_Angel/
+install falling-angel/falling-angel.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Falling_Angel
+install falling-angel/falling-angel-shot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Falling_Angel
+install falling-angel/falling-angel.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Falling_Angel
+install falling-angel/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Falling_Angel
+install falling-angel/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Falling_Angel
+install falling-angel/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Falling_Angel
+install falling-angel/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Falling_Angel
+install falling-angel/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Falling_Angel
+install falling-angel/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Falling_Angel
 #
 # Theme 37/73
 #
 # Make 'Hantzley' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hantzley/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hantzley
 # Install 'Hantzley' theme files
-install "Hantzley/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hantzley/
-install "Hantzley/hantzley.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hantzley/
-install "Hantzley/hantzley.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hantzley/
-install "Hantzley/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hantzley/
-install "Hantzley/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hantzley/
-install "Hantzley/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hantzley/
-install "Hantzley/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hantzley/
-install "Hantzley/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hantzley/
-install "Hantzley/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hantzley/
+install Hantzley/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hantzley
+install Hantzley/hantzley.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hantzley
+install Hantzley/hantzley.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hantzley
+install Hantzley/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hantzley
+install Hantzley/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hantzley
+install Hantzley/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hantzley
+install Hantzley/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hantzley
+install Hantzley/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hantzley
+install Hantzley/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hantzley
 #
 # Theme 38/73
 #
 # Make 'Mozi' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mozi/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mozi
 # Install 'Mozi' theme files
-install "Mozi/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mozi/
-install "Mozi/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mozi/
-install "Mozi/mozilla.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mozi/
-install "Mozi/option.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mozi/
-install "Mozi/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mozi/
-install "Mozi/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mozi/
-install "Mozi/soho.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mozi/
-install "Mozi/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mozi/
+install Mozi/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mozi
+install Mozi/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mozi
+install Mozi/mozilla.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mozi
+install Mozi/option.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mozi
+install Mozi/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mozi
+install Mozi/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mozi
+install Mozi/soho.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mozi
+install Mozi/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mozi
 #
 # Theme 39/73
 #
 # Make 'Todmorden' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Todmorden/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Todmorden
 # Install 'Todmorden' theme files
-install "Todmorden/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Todmorden/
-install "Todmorden/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Todmorden/
-install "Todmorden/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Todmorden/
-install "Todmorden/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Todmorden/
-install "Todmorden/todmorden.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Todmorden/
-install "Todmorden/todmorden.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Todmorden/
+install Todmorden/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Todmorden
+install Todmorden/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Todmorden
+install Todmorden/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Todmorden
+install Todmorden/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Todmorden
+install Todmorden/todmorden.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Todmorden
+install Todmorden/todmorden.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Todmorden
 #
 # Theme 40/73
 #
 # Make 'Hunter' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hunter/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hunter
 # Install 'Hunter' theme files
-install "hunter/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hunter/
-install "hunter/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hunter/
-install "hunter/hunter.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hunter/
-install "hunter/hunter.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hunter/
-install "hunter/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hunter/
-install "hunter/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Hunter/
+install hunter/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hunter
+install hunter/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hunter
+install hunter/hunter.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hunter
+install hunter/hunter.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hunter
+install hunter/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hunter
+install hunter/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Hunter
 #
 # Theme 41/73
 #
 # Make 'GDM-Mosaic' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-Mosaic/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-Mosaic
 # Install 'GDM-Mosaic' theme files
-install "Mosaic/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-Mosaic/
-install "Mosaic/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-Mosaic/
-install "Mosaic/Mosaic.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-Mosaic/
-install "Mosaic/Mosaic.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-Mosaic/
-install "Mosaic/option.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-Mosaic/
-install "Mosaic/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-Mosaic/
-install "Mosaic/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-Mosaic/
-install "Mosaic/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/GDM-Mosaic/
+install Mosaic/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-Mosaic
+install Mosaic/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-Mosaic
+install Mosaic/Mosaic.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-Mosaic
+install Mosaic/Mosaic.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-Mosaic
+install Mosaic/option.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-Mosaic
+install Mosaic/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-Mosaic
+install Mosaic/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-Mosaic
+install Mosaic/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/GDM-Mosaic
 #
 # Theme 42/73
 #
 # Make 'KDE_Crystal' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/KDE_Crystal/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/KDE_Crystal
 # Install 'KDE_Crystal' theme files
-install "crystal_gdm/background.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/KDE_Crystal/
-install "crystal_gdm/crystal.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/KDE_Crystal/
-install "crystal_gdm/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/KDE_Crystal/
-install "crystal_gdm/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/KDE_Crystal/
-install "crystal_gdm/halt.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/KDE_Crystal/
-install "crystal_gdm/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/KDE_Crystal/
-install "crystal_gdm/reboot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/KDE_Crystal/
-install "crystal_gdm/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/KDE_Crystal/
-install "crystal_gdm/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/KDE_Crystal/
+install crystal_gdm/background.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/KDE_Crystal
+install crystal_gdm/crystal.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/KDE_Crystal
+install crystal_gdm/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/KDE_Crystal
+install crystal_gdm/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/KDE_Crystal
+install crystal_gdm/halt.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/KDE_Crystal
+install crystal_gdm/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/KDE_Crystal
+install crystal_gdm/reboot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/KDE_Crystal
+install crystal_gdm/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/KDE_Crystal
+install crystal_gdm/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/KDE_Crystal
 #
 # Theme 43/73
 #
 # Make 'Crystal_Rose' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal_Rose/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal_Rose
 # Install 'Crystal_Rose' theme files
-install "crystal-rose/crystal-rose.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal_Rose/
-install "crystal-rose/crystal-rose.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal_Rose/
-install "crystal-rose/crystal-rose-screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal_Rose/
-install "crystal-rose/crystal-rose.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal_Rose/
-install "crystal-rose/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal_Rose/
-install "crystal-rose/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal_Rose/
-install "crystal-rose.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal_Rose/
+install crystal-rose/crystal-rose.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal_Rose
+install crystal-rose/crystal-rose.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal_Rose
+install crystal-rose/crystal-rose-screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal_Rose
+install crystal-rose/crystal-rose.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal_Rose
+install crystal-rose/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal_Rose
+install crystal-rose/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal_Rose
+install crystal-rose.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal_Rose
 #
 # Theme 44/73
 #
 # Make 'Devils_Candy' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Devils_Candy/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Devils_Candy
 # Install 'Devils_Candy' theme files
-install "DevilsCandy/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Devils_Candy/
-install "DevilsCandy/ball.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Devils_Candy/
-install "DevilsCandy/devil.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Devils_Candy/
-install "DevilsCandy/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Devils_Candy/
-install "DevilsCandy/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Devils_Candy/
-install "DevilsCandy/option.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Devils_Candy/
-install "DevilsCandy/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Devils_Candy/
-install "DevilsCandy/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Devils_Candy/
-install "DevilsCandy/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Devils_Candy/
+install DevilsCandy/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Devils_Candy
+install DevilsCandy/ball.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Devils_Candy
+install DevilsCandy/devil.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Devils_Candy
+install DevilsCandy/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Devils_Candy
+install DevilsCandy/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Devils_Candy
+install DevilsCandy/option.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Devils_Candy
+install DevilsCandy/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Devils_Candy
+install DevilsCandy/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Devils_Candy
+install DevilsCandy/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Devils_Candy
 #
 # Theme 45/73
 #
 # Make 'Synergy' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Synergy/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Synergy
 # Install 'Synergy' theme files
-install "Synergy/background.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Synergy/
-install "Synergy/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Synergy/
-install "Synergy/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Synergy/
-install "Synergy/halt.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Synergy/
-install "Synergy/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Synergy/
-install "Synergy/reboot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Synergy/
-install "Synergy/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Synergy/
-install "Synergy/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Synergy/
-install "Synergy/theme.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Synergy/
+install Synergy/background.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Synergy
+install Synergy/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Synergy
+install Synergy/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Synergy
+install Synergy/halt.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Synergy
+install Synergy/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Synergy
+install Synergy/reboot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Synergy
+install Synergy/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Synergy
+install Synergy/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Synergy
+install Synergy/theme.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Synergy
 #
 # Theme 46/73
 #
 # Make 'Cubic_Linux_and_Gnome' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome
 # Install 'Cubic_Linux_and_Gnome' theme files
-install "Cubic_Linux_Gnome/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/
-install "Cubic_Linux_Gnome/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/
-install "Cubic_Linux_Gnome/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/
-install "Cubic_Linux_Gnome/halt.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/
-install "Cubic_Linux_Gnome/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/
-install "Cubic_Linux_Gnome/reboot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/
-install "Cubic_Linux_Gnome/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/
-install "Cubic_Linux_Gnome/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/
-install "Cubic_Linux_Gnome/theme.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/
+install Cubic_Linux_Gnome/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome
+install Cubic_Linux_Gnome/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome
+install Cubic_Linux_Gnome/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome
+install Cubic_Linux_Gnome/halt.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome
+install Cubic_Linux_Gnome/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome
+install Cubic_Linux_Gnome/reboot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome
+install Cubic_Linux_Gnome/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome
+install Cubic_Linux_Gnome/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome
+install Cubic_Linux_Gnome/theme.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cubic_Linux_and_Gnome
 #
 # Theme 47/73
 #
 # Make 'Butterfly' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Butterfly/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Butterfly
 # Install 'Butterfly' theme files
-install "butterfly/bfly.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Butterfly/
-install "butterfly/butterfly.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Butterfly/
-install "butterfly/butterfly_tahoma.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Butterfly/
-install "butterfly/butterfly.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Butterfly/
-install "butterfly/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Butterfly/
-install "butterfly/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Butterfly/
-install "butterfly/option.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Butterfly/
-install "butterfly/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Butterfly/
-install "butterfly/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Butterfly/
+install butterfly/bfly.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Butterfly
+install butterfly/butterfly.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Butterfly
+install butterfly/butterfly_tahoma.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Butterfly
+install butterfly/butterfly.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Butterfly
+install butterfly/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Butterfly
+install butterfly/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Butterfly
+install butterfly/option.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Butterfly
+install butterfly/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Butterfly
+install butterfly/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Butterfly
 #
 # Theme 48/73
 #
 # Make 'Mirrored' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mirrored/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mirrored
 # Install 'Mirrored' theme files
-install "mirrored-theme/background.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mirrored/
-install "mirrored-theme/COPYING" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mirrored/
-install "mirrored-theme/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mirrored/
-install "mirrored-theme/head1.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mirrored/
-install "mirrored-theme/head3.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mirrored/
-install "mirrored-theme/head4.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mirrored/
-install "mirrored-theme/head5.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mirrored/
-install "mirrored-theme/mirrored.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mirrored/
-install "mirrored-theme/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mirrored/
-install "mirrored-theme/sys.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mirrored/
+install mirrored-theme/background.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mirrored
+install mirrored-theme/COPYING $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mirrored
+install mirrored-theme/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mirrored
+install mirrored-theme/head1.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mirrored
+install mirrored-theme/head3.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mirrored
+install mirrored-theme/head4.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mirrored
+install mirrored-theme/head5.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mirrored
+install mirrored-theme/mirrored.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mirrored
+install mirrored-theme/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mirrored
+install mirrored-theme/sys.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mirrored
 #
 # Theme 49/73
 #
 # Make 'Delicious' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Delicious/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Delicious
 # Install 'Delicious' theme files
-install "delicious-theme/delicious.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Delicious/
-install "delicious-theme/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Delicious/
-install "delicious-theme/head1.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Delicious/
-install "delicious-theme/mampf.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Delicious/
-install "delicious-theme/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Delicious/
-install "delicious-theme/screenshot-small.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Delicious/
-install "delicious-theme/sys.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Delicious/
+install delicious-theme/delicious.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Delicious
+install delicious-theme/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Delicious
+install delicious-theme/head1.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Delicious
+install delicious-theme/mampf.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Delicious
+install delicious-theme/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Delicious
+install delicious-theme/screenshot-small.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Delicious
+install delicious-theme/sys.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Delicious
 #
 # Theme 50/73
 #
 # Make 'Blue_Slack_GDM' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blue_Slack_GDM/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blue_Slack_GDM
 # Install 'Blue_Slack_GDM' theme files
-install "blueslackGDM/blueslack.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blue_Slack_GDM/
-install "blueslackGDM/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blue_Slack_GDM/
-install "blueslackGDM/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blue_Slack_GDM/
-install "blueslackGDM/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blue_Slack_GDM/
-install "blueslackGDM/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blue_Slack_GDM/
-install "blueslackGDM/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blue_Slack_GDM/
-install "blueslackGDM/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blue_Slack_GDM/
-install "blueslackGDM/slackblue.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blue_Slack_GDM/
-install "blueslackGDM/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blue_Slack_GDM/
+install blueslackGDM/blueslack.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blue_Slack_GDM
+install blueslackGDM/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blue_Slack_GDM
+install blueslackGDM/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blue_Slack_GDM
+install blueslackGDM/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blue_Slack_GDM
+install blueslackGDM/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blue_Slack_GDM
+install blueslackGDM/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blue_Slack_GDM
+install blueslackGDM/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blue_Slack_GDM
+install blueslackGDM/slackblue.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blue_Slack_GDM
+install blueslackGDM/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blue_Slack_GDM
 #
 # Theme 51/73
 #
 # Make 'Dreaming_Alien' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dreaming_Alien/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dreaming_Alien
 # Install 'Dreaming_Alien' theme files
-install "usr/share/gdm/themes/dreaming-alien/background.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dreaming_Alien/
-install "usr/share/gdm/themes/dreaming-alien/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dreaming_Alien/
-install "usr/share/gdm/themes/dreaming-alien/dreaming-alien.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dreaming_Alien/
-install "usr/share/gdm/themes/dreaming-alien/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dreaming_Alien/
-install "usr/share/gdm/themes/dreaming-alien/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dreaming_Alien/
-install "usr/share/gdm/themes/dreaming-alien/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dreaming_Alien/
-install "usr/share/gdm/themes/dreaming-alien/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dreaming_Alien/
-install "usr/share/gdm/themes/dreaming-alien/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dreaming_Alien/
+install usr/share/gdm/themes/dreaming-alien/background.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dreaming_Alien
+install usr/share/gdm/themes/dreaming-alien/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dreaming_Alien
+install usr/share/gdm/themes/dreaming-alien/dreaming-alien.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dreaming_Alien
+install usr/share/gdm/themes/dreaming-alien/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dreaming_Alien
+install usr/share/gdm/themes/dreaming-alien/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dreaming_Alien
+install usr/share/gdm/themes/dreaming-alien/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dreaming_Alien
+install usr/share/gdm/themes/dreaming-alien/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dreaming_Alien
+install usr/share/gdm/themes/dreaming-alien/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dreaming_Alien
 #
 # Theme 52/73
 #
 # Make 'gcr-ddlm' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/gcr-ddlm/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/gcr-ddlm
 # Install 'gcr-ddlm' theme files
-install "gcr-ddlm/gcr-ddlm.background.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/gcr-ddlm/
-install "gcr-ddlm/gcr-ddlm.background.screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/gcr-ddlm/
-install "gcr-ddlm/gcr-ddlm.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/gcr-ddlm/
-install "gcr-ddlm/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/gcr-ddlm/
-install "gcr-ddlm/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/gcr-ddlm/
-install "gcr-ddlm/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/gcr-ddlm/
-install "gcr-ddlm/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/gcr-ddlm/
-install "gcr-ddlm/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/gcr-ddlm/
+install gcr-ddlm/gcr-ddlm.background.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/gcr-ddlm
+install gcr-ddlm/gcr-ddlm.background.screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/gcr-ddlm
+install gcr-ddlm/gcr-ddlm.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/gcr-ddlm
+install gcr-ddlm/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/gcr-ddlm
+install gcr-ddlm/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/gcr-ddlm
+install gcr-ddlm/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/gcr-ddlm
+install gcr-ddlm/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/gcr-ddlm
+install gcr-ddlm/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/gcr-ddlm
 #
 # Theme 53/73
 #
 # Make 'Gentoo_Cow' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Cow/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Cow
 # Install 'Gentoo_Cow' theme files
-install "gentoo-cow/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Cow/
-install "gentoo-cow/gentoo-cow-alpha.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Cow/
-install "gentoo-cow/gentoo-cow.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Cow/
-install "gentoo-cow/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Cow/
-install "gentoo-cow/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gentoo_Cow/
+install gentoo-cow/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Cow
+install gentoo-cow/gentoo-cow-alpha.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Cow
+install gentoo-cow/gentoo-cow.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Cow
+install gentoo-cow/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Cow
+install gentoo-cow/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gentoo_Cow
 #
 # Theme 54/73
 #
 # Make 'Just_BSD' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Just_BSD/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Just_BSD
 # Install 'Just_BSD' theme files
-install "BSD/BSD.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Just_BSD/
-install "BSD/BSD.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Just_BSD/
-install "BSD/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Just_BSD/
-install "BSD/icon.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Just_BSD/
-install "BSD/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Just_BSD/
-install "BSD/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Just_BSD/
+install BSD/BSD.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Just_BSD
+install BSD/BSD.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Just_BSD
+install BSD/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Just_BSD
+install BSD/icon.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Just_BSD
+install BSD/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Just_BSD
+install BSD/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Just_BSD
 #
 # Theme 55/73
 #
 # Make 'pixelGDM' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
 # Install 'pixelGDM' theme files
-install "pixelGDM/background.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/disconnect_over.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/language_over.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/pixelGDM.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/screenshot-small.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/session_over.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/shutdown_over.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/shutdown.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/system_over.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
-install "pixelGDM/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/pixelGDM/
+install pixelGDM/background.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/disconnect_over.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/language_over.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/pixelGDM.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/screenshot-small.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/session_over.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/shutdown_over.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/shutdown.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/system_over.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
+install pixelGDM/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/pixelGDM
 #
 # Theme 56/73
 #
 # Make 'Red_Leaves' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Red_Leaves/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Red_Leaves
 # Install 'Red_Leaves' theme files
-install "leaves/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Red_Leaves/
-install "leaves/leaves.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Red_Leaves/
-install "leaves/leaves-screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Red_Leaves/
-install "leaves/leaves.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Red_Leaves/
-install "leaves/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Red_Leaves/
+install leaves/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Red_Leaves
+install leaves/leaves.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Red_Leaves
+install leaves/leaves-screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Red_Leaves
+install leaves/leaves.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Red_Leaves
+install leaves/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Red_Leaves
 #
 # Theme 57/73
 #
 # Make 'Mono_Metal' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mono_Metal/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mono_Metal
 # Install 'Mono_Metal' theme files
-install "mono-metal/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mono_Metal/
-install "mono-metal/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mono_Metal/
-install "mono-metal/metal.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mono_Metal/
-install "mono-metal/mono_metal.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mono_Metal/
-install "mono-metal/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mono_Metal/
-install "mono-metal/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mono_Metal/
-install "mono-metal/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mono_Metal/
-install "mono-metal/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Mono_Metal/
+install mono-metal/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mono_Metal
+install mono-metal/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mono_Metal
+install mono-metal/metal.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mono_Metal
+install mono-metal/mono_metal.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mono_Metal
+install mono-metal/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mono_Metal
+install mono-metal/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mono_Metal
+install mono-metal/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mono_Metal
+install mono-metal/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Mono_Metal
 #
 # Theme 58/73
 #
 # Make 'Gdm_Dropline' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gdm_Dropline/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gdm_Dropline
 # Install 'Gdm_Dropline' theme files
-install "gdm-dropline/dropline-blue.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gdm_Dropline/
-install "gdm-dropline/dropline-blue.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gdm_Dropline/
-install "gdm-dropline/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gdm_Dropline/
-install "gdm-dropline/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gdm_Dropline/
-install "gdm-dropline/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gdm_Dropline/
-install "gdm-dropline/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gdm_Dropline/
-install "gdm-dropline/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gdm_Dropline/
-install "gdm-dropline/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gdm_Dropline/
-install "gdm-dropline/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Gdm_Dropline/
+install gdm-dropline/dropline-blue.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gdm_Dropline
+install gdm-dropline/dropline-blue.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gdm_Dropline
+install gdm-dropline/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gdm_Dropline
+install gdm-dropline/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gdm_Dropline
+install gdm-dropline/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gdm_Dropline
+install gdm-dropline/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gdm_Dropline
+install gdm-dropline/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gdm_Dropline
+install gdm-dropline/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gdm_Dropline
+install gdm-dropline/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Gdm_Dropline
 #
 # Theme 59/73
 #
 # Make 'Bee_at_Work' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bee_at_Work/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bee_at_Work
 # Install 'Bee_at_Work' theme files
-install "BeeAtWork/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bee_at_Work/
-install "BeeAtWork/BeeAtWork.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bee_at_Work/
-install "BeeAtWork/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bee_at_Work/
-install "BeeAtWork/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bee_at_Work/
-install "BeeAtWork/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bee_at_Work/
-install "BeeAtWork/theme.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Bee_at_Work/
+install BeeAtWork/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bee_at_Work
+install BeeAtWork/BeeAtWork.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bee_at_Work
+install BeeAtWork/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bee_at_Work
+install BeeAtWork/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bee_at_Work
+install BeeAtWork/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bee_at_Work
+install BeeAtWork/theme.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Bee_at_Work
 #
 # Theme 60/73
 #
 # Make 'LinuxTux' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/LinuxTux/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/LinuxTux
 # Install 'LinuxTux' theme files
-install "linuxtux/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/LinuxTux/
-install "linuxtux/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/LinuxTux/
-install "linuxtux/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/LinuxTux/
-install "linuxtux/option.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/LinuxTux/
-install "linuxtux/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/LinuxTux/
-install "linuxtux/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/LinuxTux/
-install "linuxtux/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/LinuxTux/
-install "linuxtux/tux.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/LinuxTux/
-install "linuxtux/tux.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/LinuxTux/
+install linuxtux/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/LinuxTux
+install linuxtux/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/LinuxTux
+install linuxtux/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/LinuxTux
+install linuxtux/option.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/LinuxTux
+install linuxtux/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/LinuxTux
+install linuxtux/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/LinuxTux
+install linuxtux/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/LinuxTux
+install linuxtux/tux.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/LinuxTux
+install linuxtux/tux.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/LinuxTux
 #
 # Theme 61/73
 #
 # Make 'Taipei' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Taipei/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Taipei
 # Install 'Taipei' theme files
-install "Taipei/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Taipei/
-install "Taipei/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Taipei/
-install "Taipei/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Taipei/
-install "Taipei/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Taipei/
-install "Taipei/Taipei.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Taipei/
-install "Taipei/theme.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Taipei/
+install Taipei/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Taipei
+install Taipei/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Taipei
+install Taipei/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Taipei
+install Taipei/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Taipei
+install Taipei/Taipei.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Taipei
+install Taipei/theme.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Taipei
 #
 # Theme 62/73
 #
 # Make 'Odysseus' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Odysseus/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Odysseus
 # Install 'Odysseus' theme files
-install "odysseus/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Odysseus/
-install "odysseus/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Odysseus/
-install "odysseus/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Odysseus/
-install "odysseus/Odysseus.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Odysseus/
-install "odysseus/option.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Odysseus/
-install "odysseus/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Odysseus/
-install "odysseus/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Odysseus/
-install "odysseus/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Odysseus/
+install odysseus/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Odysseus
+install odysseus/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Odysseus
+install odysseus/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Odysseus
+install odysseus/Odysseus.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Odysseus
+install odysseus/option.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Odysseus
+install odysseus/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Odysseus
+install odysseus/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Odysseus
+install odysseus/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Odysseus
 #
 # Theme 63/73
 #
 # Make 'Kinkakuji' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Kinkakuji/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Kinkakuji
 # Install 'Kinkakuji' theme files
-install "kinkakuji/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Kinkakuji/
-install "kinkakuji/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Kinkakuji/
-install "kinkakuji/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Kinkakuji/
-install "kinkakuji/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Kinkakuji/
-install "kinkakuji/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Kinkakuji/
-install "kinkakuji/theme.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Kinkakuji/
+install kinkakuji/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Kinkakuji
+install kinkakuji/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Kinkakuji
+install kinkakuji/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Kinkakuji
+install kinkakuji/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Kinkakuji
+install kinkakuji/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Kinkakuji
+install kinkakuji/theme.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Kinkakuji
 #
 # Theme 64/73
 #
 # Make 'Milk' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Milk/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Milk
 # Install 'Milk' theme files
-install "milk/background.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Milk/
-install "milk/background.svg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Milk/
-install "milk/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Milk/
-install "milk/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Milk/
-install "milk/gnome-logo.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Milk/
-install "milk/milk.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Milk/
-install "milk/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Milk/
-install "milk/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Milk/
-install "milk/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Milk/
-install "milk/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Milk/
+install milk/background.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Milk
+install milk/background.svg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Milk
+install milk/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Milk
+install milk/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Milk
+install milk/gnome-logo.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Milk
+install milk/milk.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Milk
+install milk/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Milk
+install milk/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Milk
+install milk/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Milk
+install milk/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Milk
 #
 # Theme 65/73
 #
 # Make 'Crop_Circles' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
 # Install 'Crop_Circles' theme files
-install "./cropcircles/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/Bottombar.svg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/gnome-logo.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/halt.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/lang.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/List.svg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/Login.svg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/readme" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/reboot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/roundrect.svg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/signs.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
-install "./cropcircles/Topbar.svg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crop_Circles/
+install ./cropcircles/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/Bottombar.svg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/gnome-logo.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/halt.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/lang.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/List.svg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/Login.svg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/readme $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/reboot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/roundrect.svg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/signs.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
+install ./cropcircles/Topbar.svg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crop_Circles
 #
 # Theme 66/73
 #
 # Make 'Angel' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Angel/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Angel
 # Install 'Angel' theme files
-install "Angel/angel.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Angel/
-install "Angel/angel.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Angel/
-install "Angel/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Angel/
-install "Angel/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Angel/
-install "Angel/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Angel/
-install "Angel/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Angel/
-install "Angel/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Angel/
-install "Angel/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Angel/
-install "Angel/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Angel/
+install Angel/angel.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Angel
+install Angel/angel.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Angel
+install Angel/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Angel
+install Angel/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Angel
+install Angel/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Angel
+install Angel/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Angel
+install Angel/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Angel
+install Angel/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Angel
+install Angel/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Angel
 #
 # Theme 67/73
 #
 # Make 'Blueish' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blueish/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blueish
 # Install 'Blueish' theme files
-install "bluish-gdm/bluish-gdm.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blueish/
-install "bluish-gdm/bluish.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blueish/
-install "bluish-gdm/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blueish/
-install "bluish-gdm/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blueish/
-install "bluish-gdm/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blueish/
-install "bluish-gdm/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blueish/
-install "bluish-gdm/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blueish/
-install "bluish-gdm/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blueish/
-install "bluish-gdm/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Blueish/
+install bluish-gdm/bluish-gdm.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blueish
+install bluish-gdm/bluish.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blueish
+install bluish-gdm/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blueish
+install bluish-gdm/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blueish
+install bluish-gdm/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blueish
+install bluish-gdm/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blueish
+install bluish-gdm/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blueish
+install bluish-gdm/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blueish
+install bluish-gdm/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Blueish
 #
 # Theme 68/73
 #
 # Make 'Cracked_Windows' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cracked_Windows/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cracked_Windows
 # Install 'Cracked_Windows' theme files
-install "cracked-windows/cracked-windows.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cracked_Windows/
-install "cracked-windows/cracked-windows.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cracked_Windows/
-install "cracked-windows/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cracked_Windows/
-install "cracked-windows/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cracked_Windows/
-install "cracked-windows/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cracked_Windows/
-install "cracked-windows/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cracked_Windows/
-install "cracked-windows/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cracked_Windows/
-install "cracked-windows/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Cracked_Windows/
+install cracked-windows/cracked-windows.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cracked_Windows
+install cracked-windows/cracked-windows.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cracked_Windows
+install cracked-windows/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cracked_Windows
+install cracked-windows/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cracked_Windows
+install cracked-windows/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cracked_Windows
+install cracked-windows/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cracked_Windows
+install cracked-windows/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cracked_Windows
+install cracked-windows/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Cracked_Windows
 #
 # Theme 69/73
 #
 # Make 'Crystal' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal
 # Install 'Crystal' theme files
-install "crystal/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal/
-install "crystal/Crystal.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal/
-install "crystal/disconnect.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal/
-install "crystal/galikynes.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal/
-install "crystal/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal/
-install "crystal/option.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal/
-install "crystal/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal/
-install "crystal/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal/
-install "crystal/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Crystal/
+install crystal/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal
+install crystal/Crystal.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal
+install crystal/disconnect.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal
+install crystal/galikynes.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal
+install crystal/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal
+install crystal/option.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal
+install crystal/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal
+install crystal/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal
+install crystal/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Crystal
 #
 # Theme 70/73
 #
 # Make 'Dart_Frog' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dart_Frog/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dart_Frog
 # Install 'Dart_Frog' theme files
-install "dartfrog/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dart_Frog/
-install "dartfrog/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dart_Frog/
-install "dartfrog/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dart_Frog/
-install "dartfrog/pitcherplant.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dart_Frog/
-install "dartfrog/pitcherplant.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dart_Frog/
-install "dartfrog/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dart_Frog/
-install "dartfrog/screenshot.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dart_Frog/
-install "dartfrog/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dart_Frog/
-install "dartfrog/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Dart_Frog/
+install dartfrog/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dart_Frog
+install dartfrog/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dart_Frog
+install dartfrog/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dart_Frog
+install dartfrog/pitcherplant.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dart_Frog
+install dartfrog/pitcherplant.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dart_Frog
+install dartfrog/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dart_Frog
+install dartfrog/screenshot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dart_Frog
+install dartfrog/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dart_Frog
+install dartfrog/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Dart_Frog
 #
 # Theme 71/73
 #
 # Make 'DumbCloud' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/DumbCloud/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/DumbCloud
 # Install 'DumbCloud' theme files
-install "dumbcloud/cloud2.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/DumbCloud/
-install "dumbcloud/dumbcloud.svg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/DumbCloud/
-install "dumbcloud/dumbcloud.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/DumbCloud/
-install "dumbcloud/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/DumbCloud/
-install "dumbcloud/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/DumbCloud/
-install "dumbcloud/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/DumbCloud/
-install "dumbcloud/test2.svg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/DumbCloud/
+install dumbcloud/cloud2.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/DumbCloud
+install dumbcloud/dumbcloud.svg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/DumbCloud
+install dumbcloud/dumbcloud.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/DumbCloud
+install dumbcloud/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/DumbCloud
+install dumbcloud/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/DumbCloud
+install dumbcloud/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/DumbCloud
+install dumbcloud/test2.svg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/DumbCloud
 #
 # Theme 72/73
 #
 # Make 'Emo-Blue' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Emo-Blue/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Emo-Blue
 # Install 'Emo-Blue' theme files
-install "emo-blue/emo-blue.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Emo-Blue/
-install "emo-blue/emo-blue.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Emo-Blue/
-install "emo-blue/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Emo-Blue/
-install "emo-blue/language.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Emo-Blue/
-install "emo-blue/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Emo-Blue/
-install "emo-blue/quit.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Emo-Blue/
-install "emo-blue/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Emo-Blue/
-install "emo-blue/session.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Emo-Blue/
-install "emo-blue/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Emo-Blue/
+install emo-blue/emo-blue.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Emo-Blue
+install emo-blue/emo-blue.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Emo-Blue
+install emo-blue/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Emo-Blue
+install emo-blue/language.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Emo-Blue
+install emo-blue/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Emo-Blue
+install emo-blue/quit.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Emo-Blue
+install emo-blue/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Emo-Blue
+install emo-blue/session.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Emo-Blue
+install emo-blue/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Emo-Blue
 #
 # Theme 73/73
 #
 # Make 'Flowers' theme directory
-install -d $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
+install -d $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Flowers
 # Install 'Flowers' theme files
-install "flowers/background.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
-install "flowers/flowers.xml" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
-install "flowers/GdmGreeterTheme.desktop" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
-install "flowers/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
-install "flowers/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
-install "flowers/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
-install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
+install flowers/background.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Flowers
+install flowers/flowers.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Flowers
+install flowers/GdmGreeterTheme.desktop $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Flowers
+install flowers/help.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Flowers
+install flowers/options.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Flowers
+install flowers/screenshot.jpg $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Flowers
+install flowers/system.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/Flowers
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
@@ -2551,6 +2548,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Morning_Light
 %defattr(644,root,root,755)
+%{_datadir}/gdm/themes/Morning_Light
 %{_datadir}/gdm/themes/Morning_Light/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Morning_Light/help.png
 %{_datadir}/gdm/themes/Morning_Light/morning.jpg
@@ -2563,6 +2561,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files RedHat
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/RedHat
 %{_datadir}/gdm/themes/RedHat/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/RedHat/help.png
 %{_datadir}/gdm/themes/RedHat/language.png
@@ -2578,6 +2577,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Sea
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Sea
 %{_datadir}/gdm/themes/Sea/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Sea/help.png
 %{_datadir}/gdm/themes/Sea/options.png
@@ -2590,6 +2590,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Segovia_Night
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Segovia_Night
 %{_datadir}/gdm/themes/Segovia_Night/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Segovia_Night/screenshot.jpg
 %{_datadir}/gdm/themes/Segovia_Night/segovia1.jpg
@@ -2604,6 +2605,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files STGO
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/STGO
 %{_datadir}/gdm/themes/STGO/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/STGO/screenshot.jpg
 %{_datadir}/gdm/themes/STGO/stgo1.jpg
@@ -2618,6 +2620,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files SuSE
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/SuSE
 %{_datadir}/gdm/themes/SuSE/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/SuSE/help.png
 %{_datadir}/gdm/themes/SuSE/language.png
@@ -2633,6 +2636,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Segovia
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Segovia
 %{_datadir}/gdm/themes/Segovia/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Segovia/screenshot.jpg
 %{_datadir}/gdm/themes/Segovia/segovia1.jpg
@@ -2647,6 +2651,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Bluecurve
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Bluecurve
 %{_datadir}/gdm/themes/Bluecurve/Bluecurve.xml
 %{_datadir}/gdm/themes/Bluecurve/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Bluecurve/lightrays.png
@@ -2667,6 +2672,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files 300-lantueno
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/300-lantueno
 %{_datadir}/gdm/themes/300-lantueno/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/300-lantueno/language.png
 %{_datadir}/gdm/themes/300-lantueno/lantueno.png
@@ -2682,6 +2688,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files XPTO
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/XPTO
 %{_datadir}/gdm/themes/XPTO/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/XPTO/language.png
 %{_datadir}/gdm/themes/XPTO/options.png
@@ -2699,6 +2706,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Dawn
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Dawn
 %{_datadir}/gdm/themes/Dawn/background.jpg
 %{_datadir}/gdm/themes/Dawn/dawn.xml
 %{_datadir}/gdm/themes/Dawn/GdmGreeterTheme.desktop
@@ -2713,6 +2721,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files GDM-GlassFoot
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/GDM-GlassFoot
 %{_datadir}/gdm/themes/GDM-GlassFoot/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/GDM-GlassFoot/glass.png
 %{_datadir}/gdm/themes/GDM-GlassFoot/GNOME-GlassFoot.xml
@@ -2727,6 +2736,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Space
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Space
 %{_datadir}/gdm/themes/Space/background.png
 %{_datadir}/gdm/themes/Space/Bisho.xml
 %{_datadir}/gdm/themes/Space/disconnect.png
@@ -2741,6 +2751,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Fire_Breathing_Robot
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Fire_Breathing_Robot
 %{_datadir}/gdm/themes/Fire_Breathing_Robot/flames.png
 %{_datadir}/gdm/themes/Fire_Breathing_Robot/flame.xml
 %{_datadir}/gdm/themes/Fire_Breathing_Robot/gdmbar.png
@@ -2761,6 +2772,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files UnxStar
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/UnxStar
 %{_datadir}/gdm/themes/UnxStar/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/UnxStar/language.png
 %{_datadir}/gdm/themes/UnxStar/options.png
@@ -2776,6 +2788,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files SlackGDM
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/SlackGDM
 %{_datadir}/gdm/themes/SlackGDM/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/SlackGDM/language.png
 %{_datadir}/gdm/themes/SlackGDM/options.png
@@ -2791,6 +2804,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files hybridFUSION
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/hybridFUSION
 %{_datadir}/gdm/themes/hybridFUSION/ConVerSion_version_Two.png
 %{_datadir}/gdm/themes/hybridFUSION/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/hybridFUSION/hybridFUSION.xml
@@ -2811,6 +2825,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Barcelona
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Barcelona
 %{_datadir}/gdm/themes/Barcelona/barna-desconectar.jpg
 %{_datadir}/gdm/themes/Barcelona/barna.jpg
 %{_datadir}/gdm/themes/Barcelona/barna-opciones.jpg
@@ -2825,6 +2840,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Valladolid
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Valladolid
 %{_datadir}/gdm/themes/Valladolid/ava-desconectar.jpg
 %{_datadir}/gdm/themes/Valladolid/ava-opcion.jpg
 %{_datadir}/gdm/themes/Valladolid/ava-sesion.jpg
@@ -2839,6 +2855,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Murcia
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Murcia
 %{_datadir}/gdm/themes/Murcia/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Murcia/murcia-desconectar.jpg
 %{_datadir}/gdm/themes/Murcia/murcia.jpg
@@ -2853,6 +2870,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Leon
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Leon
 %{_datadir}/gdm/themes/Leon/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Leon/leon-desconectar.jpg
 %{_datadir}/gdm/themes/Leon/leon.jpg
@@ -2867,6 +2885,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Gentoo_Emergence
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Gentoo_Emergence
 %{_datadir}/gdm/themes/Gentoo_Emergence/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Gentoo_Emergence/gentoo-emergence.png
 %{_datadir}/gdm/themes/Gentoo_Emergence/gentoo-emergence.xml
@@ -2882,6 +2901,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files FreeBSD_The_Power_of_Serve
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve
 %{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/FreeBSD.png
 %{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/FreeBSD.xml
 %{_datadir}/gdm/themes/FreeBSD_The_Power_of_Serve/GdmGreeterTheme.desktop
@@ -2897,6 +2917,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Daybreak
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Daybreak
 %{_datadir}/gdm/themes/Daybreak/daybreak.png
 %{_datadir}/gdm/themes/Daybreak/daybreak.xml
 %{_datadir}/gdm/themes/Daybreak/GdmGreeterTheme.desktop
@@ -2912,6 +2933,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Bijou
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Bijou
 %{_datadir}/gdm/themes/Bijou/background.png
 %{_datadir}/gdm/themes/Bijou/bijou.xml
 %{_datadir}/gdm/themes/Bijou/disconnect.png
@@ -2926,6 +2948,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Stop_TCPA
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Stop_TCPA
 %{_datadir}/gdm/themes/Stop_TCPA/background.jpg
 %{_datadir}/gdm/themes/Stop_TCPA/disconnect.png
 %{_datadir}/gdm/themes/Stop_TCPA/GdmGreeterTheme.desktop
@@ -2939,6 +2962,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Open_Source_Initiative
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Open_Source_Initiative
 %{_datadir}/gdm/themes/Open_Source_Initiative/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Open_Source_Initiative/language.png
 %{_datadir}/gdm/themes/Open_Source_Initiative/open_source.png
@@ -2954,6 +2978,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files FreeBSDarth
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/FreeBSDarth
 %{_datadir}/gdm/themes/FreeBSDarth/FreeBSDarth.png
 %{_datadir}/gdm/themes/FreeBSDarth/FreeBSDarth.xml
 %{_datadir}/gdm/themes/FreeBSDarth/GdmGreeterTheme.desktop
@@ -2967,6 +2992,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Penguin_Computing
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Penguin_Computing
 %{_datadir}/gdm/themes/Penguin_Computing/background.jpg
 %{_datadir}/gdm/themes/Penguin_Computing/disconnect.png
 %{_datadir}/gdm/themes/Penguin_Computing/galikynes.jpg
@@ -2981,6 +3007,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Knoke
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Knoke
 %{_datadir}/gdm/themes/Knoke/back.jpg
 %{_datadir}/gdm/themes/Knoke/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Knoke/knoke.jpg
@@ -2996,6 +3023,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files The_Dark_Crystal
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/The_Dark_Crystal
 %{_datadir}/gdm/themes/The_Dark_Crystal/background.png
 %{_datadir}/gdm/themes/The_Dark_Crystal/darkcrystal.xml
 %{_datadir}/gdm/themes/The_Dark_Crystal/disconnect.png
@@ -3009,6 +3037,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Gnome_Chile
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Gnome_Chile
 %{_datadir}/gdm/themes/Gnome_Chile/fondo.png
 %{_datadir}/gdm/themes/Gnome_Chile/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Gnome_Chile/gnome-chile.xml
@@ -3024,6 +3053,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Glassy
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Glassy
 %{_datadir}/gdm/themes/Glassy/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Glassy/glassy.png
 %{_datadir}/gdm/themes/Glassy/glassy.xml
@@ -3039,6 +3069,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Machu_Picchu
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Machu_Picchu
 %{_datadir}/gdm/themes/Machu_Picchu/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Machu_Picchu/Machu?Picchu.xml
 %{_datadir}/gdm/themes/Machu_Picchu/MP-ledge-bg.png
@@ -3053,6 +3084,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files RightVision
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/RightVision
 %{_datadir}/gdm/themes/RightVision/background.jpg
 %{_datadir}/gdm/themes/RightVision/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/RightVision/logorv.gif
@@ -3068,6 +3100,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files La_Bisbal_dEmpord_nevada
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada
 %{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/labisbal-desconectar.jpg
 %{_datadir}/gdm/themes/La_Bisbal_dEmpord_nevada/labisbal.jpg
@@ -3082,6 +3115,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Falling_Angel
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Falling_Angel
 %{_datadir}/gdm/themes/Falling_Angel/falling-angel.jpg
 %{_datadir}/gdm/themes/Falling_Angel/falling-angel-shot.png
 %{_datadir}/gdm/themes/Falling_Angel/falling-angel.xml
@@ -3097,6 +3131,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Hantzley
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Hantzley
 %{_datadir}/gdm/themes/Hantzley/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Hantzley/hantzley.png
 %{_datadir}/gdm/themes/Hantzley/hantzley.xml
@@ -3112,6 +3147,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Mozi
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Mozi
 %{_datadir}/gdm/themes/Mozi/disconnect.png
 %{_datadir}/gdm/themes/Mozi/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Mozi/mozilla.jpg
@@ -3126,6 +3162,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Todmorden
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Todmorden
 %{_datadir}/gdm/themes/Todmorden/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Todmorden/help.png
 %{_datadir}/gdm/themes/Todmorden/options.png
@@ -3138,6 +3175,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Hunter
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Hunter
 %{_datadir}/gdm/themes/Hunter/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Hunter/help.png
 %{_datadir}/gdm/themes/Hunter/hunter.png
@@ -3150,6 +3188,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files GDM-Mosaic
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/GDM-Mosaic
 %{_datadir}/gdm/themes/GDM-Mosaic/disconnect.png
 %{_datadir}/gdm/themes/GDM-Mosaic/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/GDM-Mosaic/Mosaic.png
@@ -3164,6 +3203,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files KDE_Crystal
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/KDE_Crystal
 %{_datadir}/gdm/themes/KDE_Crystal/background.png
 %{_datadir}/gdm/themes/KDE_Crystal/crystal.xml
 %{_datadir}/gdm/themes/KDE_Crystal/disconnect.png
@@ -3179,6 +3219,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Crystal_Rose
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Crystal_Rose
 %{_datadir}/gdm/themes/Crystal_Rose/crystal-rose.jpg
 %{_datadir}/gdm/themes/Crystal_Rose/crystal-rose.png
 %{_datadir}/gdm/themes/Crystal_Rose/crystal-rose-screenshot.png
@@ -3192,6 +3233,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Devils_Candy
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Devils_Candy
 %{_datadir}/gdm/themes/Devils_Candy/background.jpg
 %{_datadir}/gdm/themes/Devils_Candy/ball.png
 %{_datadir}/gdm/themes/Devils_Candy/devil.xml
@@ -3207,6 +3249,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Synergy
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Synergy
 %{_datadir}/gdm/themes/Synergy/background.png
 %{_datadir}/gdm/themes/Synergy/disconnect.png
 %{_datadir}/gdm/themes/Synergy/GdmGreeterTheme.desktop
@@ -3222,6 +3265,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Cubic_Linux_and_Gnome
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Cubic_Linux_and_Gnome
 %{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/background.jpg
 %{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/disconnect.png
 %{_datadir}/gdm/themes/Cubic_Linux_and_Gnome/GdmGreeterTheme.desktop
@@ -3237,6 +3281,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Butterfly
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Butterfly
 %{_datadir}/gdm/themes/Butterfly/bfly.jpg
 %{_datadir}/gdm/themes/Butterfly/butterfly.jpg
 %{_datadir}/gdm/themes/Butterfly/butterfly_tahoma.xml
@@ -3252,6 +3297,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Mirrored
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Mirrored
 %{_datadir}/gdm/themes/Mirrored/background.png
 %{_datadir}/gdm/themes/Mirrored/COPYING
 %{_datadir}/gdm/themes/Mirrored/GdmGreeterTheme.desktop
@@ -3268,6 +3314,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Delicious
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Delicious
 %{_datadir}/gdm/themes/Delicious/delicious.xml
 %{_datadir}/gdm/themes/Delicious/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Delicious/head1.png
@@ -3281,6 +3328,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Blue_Slack_GDM
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Blue_Slack_GDM
 %{_datadir}/gdm/themes/Blue_Slack_GDM/blueslack.png
 %{_datadir}/gdm/themes/Blue_Slack_GDM/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Blue_Slack_GDM/language.png
@@ -3296,6 +3344,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Dreaming_Alien
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Dreaming_Alien
 %{_datadir}/gdm/themes/Dreaming_Alien/background.png
 %{_datadir}/gdm/themes/Dreaming_Alien/disconnect.png
 %{_datadir}/gdm/themes/Dreaming_Alien/dreaming-alien.xml
@@ -3310,6 +3359,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files gcr-ddlm
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/gcr-ddlm
 %{_datadir}/gdm/themes/gcr-ddlm/gcr-ddlm.background.png
 %{_datadir}/gdm/themes/gcr-ddlm/gcr-ddlm.background.screenshot.png
 %{_datadir}/gdm/themes/gcr-ddlm/gcr-ddlm.xml
@@ -3324,6 +3374,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Gentoo_Cow
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Gentoo_Cow
 %{_datadir}/gdm/themes/Gentoo_Cow/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Gentoo_Cow/gentoo-cow-alpha.png
 %{_datadir}/gdm/themes/Gentoo_Cow/gentoo-cow.xml
@@ -3335,6 +3386,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Just_BSD
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Just_BSD
 %{_datadir}/gdm/themes/Just_BSD/BSD.png
 %{_datadir}/gdm/themes/Just_BSD/BSD.xml
 %{_datadir}/gdm/themes/Just_BSD/GdmGreeterTheme.desktop
@@ -3347,6 +3399,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files pixelGDM
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/pixelGDM
 %{_datadir}/gdm/themes/pixelGDM/background.png
 %{_datadir}/gdm/themes/pixelGDM/disconnect_over.png
 %{_datadir}/gdm/themes/pixelGDM/disconnect.png
@@ -3368,6 +3421,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Red_Leaves
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Red_Leaves
 %{_datadir}/gdm/themes/Red_Leaves/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Red_Leaves/leaves.png
 %{_datadir}/gdm/themes/Red_Leaves/leaves-screenshot.png
@@ -3379,6 +3433,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Mono_Metal
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Mono_Metal
 %{_datadir}/gdm/themes/Mono_Metal/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Mono_Metal/language.png
 %{_datadir}/gdm/themes/Mono_Metal/metal.png
@@ -3393,6 +3448,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Gdm_Dropline
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Gdm_Dropline
 %{_datadir}/gdm/themes/Gdm_Dropline/dropline-blue.png
 %{_datadir}/gdm/themes/Gdm_Dropline/dropline-blue.xml
 %{_datadir}/gdm/themes/Gdm_Dropline/GdmGreeterTheme.desktop
@@ -3408,6 +3464,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Bee_at_Work
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Bee_at_Work
 %{_datadir}/gdm/themes/Bee_at_Work/background.jpg
 %{_datadir}/gdm/themes/Bee_at_Work/BeeAtWork.jpg
 %{_datadir}/gdm/themes/Bee_at_Work/GdmGreeterTheme.desktop
@@ -3420,6 +3477,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files LinuxTux
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/LinuxTux
 %{_datadir}/gdm/themes/LinuxTux/background.jpg
 %{_datadir}/gdm/themes/LinuxTux/disconnect.png
 %{_datadir}/gdm/themes/LinuxTux/GdmGreeterTheme.desktop
@@ -3435,6 +3493,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Taipei
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Taipei
 %{_datadir}/gdm/themes/Taipei/background.jpg
 %{_datadir}/gdm/themes/Taipei/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Taipei/help.png
@@ -3447,6 +3506,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Odysseus
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Odysseus
 %{_datadir}/gdm/themes/Odysseus/background.jpg
 %{_datadir}/gdm/themes/Odysseus/disconnect.png
 %{_datadir}/gdm/themes/Odysseus/GdmGreeterTheme.desktop
@@ -3461,6 +3521,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Kinkakuji
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Kinkakuji
 %{_datadir}/gdm/themes/Kinkakuji/background.jpg
 %{_datadir}/gdm/themes/Kinkakuji/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Kinkakuji/help.png
@@ -3473,6 +3534,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Milk
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Milk
 %{_datadir}/gdm/themes/Milk/background.png
 %{_datadir}/gdm/themes/Milk/background.svg
 %{_datadir}/gdm/themes/Milk/disconnect.png
@@ -3489,6 +3551,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Crop_Circles
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Crop_Circles
 %{_datadir}/gdm/themes/Crop_Circles/background.jpg
 %{_datadir}/gdm/themes/Crop_Circles/Bottombar.svg
 %{_datadir}/gdm/themes/Crop_Circles/disconnect.png
@@ -3513,6 +3576,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Angel
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Angel
 %{_datadir}/gdm/themes/Angel/angel.png
 %{_datadir}/gdm/themes/Angel/angel.xml
 %{_datadir}/gdm/themes/Angel/GdmGreeterTheme.desktop
@@ -3528,6 +3592,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Blueish
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Blueish
 %{_datadir}/gdm/themes/Blueish/bluish-gdm.xml
 %{_datadir}/gdm/themes/Blueish/bluish.png
 %{_datadir}/gdm/themes/Blueish/GdmGreeterTheme.desktop
@@ -3543,6 +3608,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Cracked_Windows
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Cracked_Windows
 %{_datadir}/gdm/themes/Cracked_Windows/cracked-windows.jpg
 %{_datadir}/gdm/themes/Cracked_Windows/cracked-windows.xml
 %{_datadir}/gdm/themes/Cracked_Windows/GdmGreeterTheme.desktop
@@ -3557,6 +3623,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Crystal
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Crystal
 %{_datadir}/gdm/themes/Crystal/background.jpg
 %{_datadir}/gdm/themes/Crystal/Crystal.xml
 %{_datadir}/gdm/themes/Crystal/disconnect.png
@@ -3572,6 +3639,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Dart_Frog
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Dart_Frog
 %{_datadir}/gdm/themes/Dart_Frog/GdmGreeterTheme.desktop
 %{_datadir}/gdm/themes/Dart_Frog/language.png
 %{_datadir}/gdm/themes/Dart_Frog/options.png
@@ -3587,6 +3655,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files DumbCloud
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/DumbCloud
 %{_datadir}/gdm/themes/DumbCloud/cloud2.png
 %{_datadir}/gdm/themes/DumbCloud/dumbcloud.svg
 %{_datadir}/gdm/themes/DumbCloud/dumbcloud.xml
@@ -3600,6 +3669,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Emo-Blue
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Emo-Blue
 %{_datadir}/gdm/themes/Emo-Blue/emo-blue.jpg
 %{_datadir}/gdm/themes/Emo-Blue/emo-blue.xml
 %{_datadir}/gdm/themes/Emo-Blue/GdmGreeterTheme.desktop
@@ -3615,6 +3685,7 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 #
 %files Flowers
 %defattr(644,root,root,755)
+%dir %{_datadir}/gdm/themes/Flowers
 %{_datadir}/gdm/themes/Flowers/background.jpg
 %{_datadir}/gdm/themes/Flowers/flowers.xml
 %{_datadir}/gdm/themes/Flowers/GdmGreeterTheme.desktop
@@ -3622,6 +3693,3 @@ install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 %{_datadir}/gdm/themes/Flowers/options.png
 %{_datadir}/gdm/themes/Flowers/screenshot.jpg
 %{_datadir}/gdm/themes/Flowers/system.png
-
-%clean
-rm -rf $RPM_BUILD_ROOT
