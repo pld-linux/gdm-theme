@@ -1,3 +1,7 @@
+# TODO:
+#   - fix bogus (non-informative, English-in-pl) descriptions
+#   - add missing %dirs
+#
 Summary:	Themes for gdm (GNOME Display Manager)
 Summary(pl):	Motywy dla gdm (Zarz±dcy ekranów GNOME)
 Name:		gdm-theme
@@ -16,79 +20,153 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 # You should find it in your `rpm --eval %_specdir`
 #
 Source0:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Morning.tar.bz2
+# Source0-md5:	b6ffafe1d608d4f345c3c6fac0cba29f
 Source1:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-RedHat.tar.bz2
+# Source1-md5:	e3dae3315631938b469b954c2eccaa31
 Source2:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Sea.tar.gz
+# Source2-md5:	0a200b93f8081df5d3c779281c6b2bfc
 Source3:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Segovia-Night.tar.gz
+# Source3-md5:	a85f01841618f29e9f01a307e77041dd
 Source4:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-STGO.tar.gz
+# Source4-md5:	7961582f7bfc80accc7c3a9a6c1c42a8
 Source5:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-SUSE.tar.gz
+# Source5-md5:	f647e392aa0251c67ae25baab30d5625
 Source6:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Segovia.tar.gz
+# Source6-md5:	ce5a826adad38d70bd42bb2a21a87074
 Source7:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Bluecurve.tar.gz
+# Source7-md5:	d5ecea20b85e033adcfa2d8d37f6abc8
 Source8:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-300-lantueno.tar.gz
+# Source8-md5:	9fc35fec651a220abc0eb664e84cedd4
 Source9:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-xpto.tar.gz
+# Source9-md5:	adcdc03f36d9a9c72d64a77ba98f5045
 Source10:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Dawn.tar.gz
+# Source10-md5:	5d81c298745480ca3d512a72429eb445
 Source11:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-GlassFoot.tar.gz
+# Source11-md5:	5220133ad1b367500b559d57cc1eb02f
 Source12:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Space.tar.gz
+# Source12-md5:	76e87a0979f225879422399ddb5673d8
 Source13:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Flame.tar.gz
+# Source13-md5:	82219dd6ec558efbf0fb81ce4b27eb4c
 Source14:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Unxstar.tar.gz
+# Source14-md5:	caca5b4b29631dd183d1bbbe03c64421
 Source15:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Slackgdm.tar.gz
+# Source15-md5:	8e75735be8f391931d9e9e6570708e2d
 Source16:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Hybridfusion.tar.gz
+# Source16-md5:	9397e525790f0232ec9f45d48649f07e
 Source17:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Barna.tar.gz
+# Source17-md5:	3260910713ceedcee3206ad4f4ca550c
 Source18:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Valladolid.tar.gz
+# Source18-md5:	1530c57898443bc3336cc4612a572055
 Source19:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Murcia.tgz
+# Source19-md5:	057d34a3435af7dbdc9637d2c2ec3dc7
 Source20:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Leon.tar.gz
+# Source20-md5:	ea73242c8f54aaf9650453cefbc9b897
 Source21:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Gentoo-Emergence.tar.gz
+# Source21-md5:	fec808ce063e212b7d48246f555819de
 Source22:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-FreeBSD.tar.gz
+# Source22-md5:	8bd68b2a87c09943b150ef671a4327a9
 Source23:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Daybreak.tar.gz
+# Source23-md5:	238e80b7b1e4105cce13f381689ce761
 Source24:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Bijou.tgz
+# Source24-md5:	20fafc60a0a7f163d03c602e912f3660
 Source25:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Tcpa.tar.gz
+# Source25-md5:	144240a042baff4af3e0fd1a2a509f1a
 Source26:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-OpenSource.tgz
+# Source26-md5:	1845e772f6b5ca0bcfdfacb5b68f9d1f
 Source27:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-FreeBSDarth.tar.gz
+# Source27-md5:	b59d9123f544a77f8b26b9198c5babef
 Source28:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-penguin.tar.gz
+# Source28-md5:	19de4049ad36693e9c9aafe373c2c7ca
 Source29:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Knoke.tar.gz
+# Source29-md5:	32378f58ab198dbe4bd2ad9709ac8bf6
 Source30:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Darkcrystal.tar.bz2
+# Source30-md5:	d6d8c3cab9c1790db3bcd05596f4cf75
 Source31:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Chilie.tar.gz
+# Source31-md5:	a115430ff4925efd65047de7e81e31c8
 Source32:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Glassy.tar.gz
+# Source32-md5:	b4db73c515b95cec7c72514b53d96413
 Source33:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-MachuPicchu.tar.gz
+# Source33-md5:	fd876d92468e4881ec8213e69e79ec9f
 Source34:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-RV.tar.gz
+# Source34-md5:	929027123d47db1a4e5f8cd41493739a
 Source35:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-labisbal.tar.gz
+# Source35-md5:	dd6b2d7d8fd40a82adab35707b828eab
 Source36:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Falling-Angel.tar.gz
+# Source36-md5:	95c2d2f79cb72a47d26b373e603ed250
 Source37:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Hantzley.tar.gz
+# Source37-md5:	3e1678c28a82e6ac814d0f250d71a727
 Source38:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Mozi.tar.gz
+# Source38-md5:	0ea48d8805189567a92fe987b959bacd
 Source39:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Todmorden.tar.gz
+# Source39-md5:	c6222e888f43c83243a61083d5afb324
 Source40:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Hunter.tar.gz
+# Source40-md5:	50abd5fbb23e22914a6654d4903a6833
 Source41:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Mosaic.tar.gz
+# Source41-md5:	a4673c14f17fb129f07348b4bd2a9382
 Source42:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-KDE-Crystal.tar.gz
+# Source42-md5:	3bd019cf594a6ef78a5dab0bc9b8023f
 Source43:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Crystal-Rose.tar.gz
+# Source43-md5:	4ab12cbdb57c77320b0cf9790ce4daae
 Source44:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-DevilsCandy.tar.gz
+# Source44-md5:	60c44dd459386f60bffa1698bedca9e2
 Source45:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Synergy.tar.gz
+# Source45-md5:	a0cb7549b2507eb9fac2995996f0bc53
 Source46:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Cubic_Linux_Gnome.tar.gz
+# Source46-md5:	95ed3fc14f07489a6bfad75db0b908f1
 Source47:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Butterfly.tar.gz
+# Source47-md5:	821f9da7a5a6f00a682fd46481a0ad59
 Source48:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Mirrored-0.8.tar.gz
+# Source48-md5:	97f308b23e5643fc14e9817168796879
 Source49:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Delicious.tar.gz
+# Source49-md5:	1af671d07921b39278dd27cff8ea4247
 Source50:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-BlueSlack.tar.gz
+# Source50-md5:	de1ab89b3b618e268ea2f221c2d10be9
 Source51:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Dreaming-Alien.tar.gz
+# Source51-md5:	a9d8e1dc49408e32571fc4985cfbb4f3
 Source52:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-gcr-ddlm.tar.gz
+# Source52-md5:	91ebc74754d87bf8f6def76bbe8e5844
 Source53:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-gentoo-cow.tar.bz2
+# Source53-md5:	e0dcf60fc342ed1862f0fff26da984b2
 Source54:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-JustBSD.tar.gz
+# Source54-md5:	7dbdb8b1561c23b1c58056716cb7843d
 Source55:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-pixelgdm.tar.gz
+# Source55-md5:	218d02a637ee040450fd6f08039011de
 Source56:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Red-Leaves.tar.gz
+# Source56-md5:	f2c0b9aa3638dbfef408a1d4a270eaaa
 Source57:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-MonoMetal.tar.gz
+# Source57-md5:	178fb25cfc57997e63cecc5279e7a0dd
 Source58:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Dropline.tar.gz
+# Source58-md5:	4ce8fd37e8bb56183ff78c40dcaad7f6
 Source59:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-BeeAtWork.tar.gz
+# Source59-md5:	809566fd4f2cdc3e8d282b8328a8b2be
 Source60:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-LinuxTux.tar.gz
+# Source60-md5:	2334031099d73c3afe2d4a05633a6634
 Source61:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Taipei.tar.gz
+# Source61-md5:	20c3d22c3622bf5f2fc1f3e771913145
 Source62:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Odysseus.tar.gz
+# Source62-md5:	c1ab56b4017f45614fccec3e9fbbde81
 Source63:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Kinkakuji.tar.gz
+# Source63-md5:	d35e28892c37a5c445bccb3c8f30de60
 Source64:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Milk.tar.gz
+# Source64-md5:	faf11a2f6e7ff36a822bd553b6cdbe21
 Source65:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Cropcircles.tar.bz2
+# Source65-md5:	7ea42e8a66188195d4b37d612c6b62d7
 Source66:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Angel.tar.gz
+# Source66-md5:	56c714da16420342d22659108055b647
 Source67:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Blueish.tar.gz
+# Source67-md5:	b56faca3944bdc59e941b44197e89677
 Source68:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Cracked-Windows.tar.gz
+# Source68-md5:	4103efc6f74f54a83b172616167cb108
 Source69:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Crystal.tar.gz
+# Source69-md5:	f89c4b0c29aec5d285ff2ce0199870a5
 Source70:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-DartFrog.tar.bz2
+# Source70-md5:	5ebb26d03f7eab3ac725ebb33c2becf6
 Source71:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-DumbCloud.tar.gz
+# Source71-md5:	8da61b45e88602adcad82c8b92869604
 Source72:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Emo-Blue.tar.gz
+# Source72-md5:	5dcbf93484203a9e594264878a8e7699
 Source73:	http://ftp.gnome.org/pub/GNOME/teams/art.gnome.org/themes/gdm_greeter/GDM-Flowers.tar.gz
+# Source73-md5:	7763649e7acca699bb25df0fc6e1c079
 
 %description
 This package allows you to change the look of your GNOME Display
@@ -1373,20 +1451,15 @@ test -d %{_builddir}/%{name}-%{version} && find %{_builddir}/%{name}-%{version}/
 test -d %{_builddir}/%{name}-%{version} && find %{_builddir}/%{name}-%{version}/ -type f -exec chmod 644 {} \;
 mkdir -p %{_builddir}/%{name}-%{version}
 
-%setup -q -c -n %{_builddir}/%{name}-%{version}  -a0 -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27 -a28 -a29 -a30 -a31 -a32 -a33 -a34 -a35 -a36 -a37 -a38 -a39 -a40 -a41 -a42 -a43 -a44 -a45 -a46 -a47 -a48 -a49 -a50 -a51 -a52 -a53 -a54 -a55 -a56 -a57 -a58 -a59 -a60 -a61 -a62 -a63 -a64 -a65 -a66 -a67 -a68 -a69 -a70 -a71 -a72 -a73
+%setup -q -c -n %{_builddir}/%{name}-%{version} -a0 -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27 -a28 -a29 -a30 -a31 -a32 -a33 -a34 -a35 -a36 -a37 -a38 -a39 -a40 -a41 -a42 -a43 -a44 -a45 -a46 -a47 -a48 -a49 -a50 -a51 -a52 -a53 -a54 -a55 -a56 -a57 -a58 -a59 -a60 -a61 -a62 -a63 -a64 -a65 -a66 -a67 -a68 -a69 -a70 -a71 -a72 -a73
 
 cat>README<<E_O_F
-This is small x-mas gift from yoshi to all PLD users, developers and enthusiasts ;-)
+This is small x-mas gift from yoshi to all PLD users, developers and
+enthusiasts ;-)
 Have fun and support art.gnome.org with your own creations (if you can).
 
 Merry Christmas :)
 E_O_F
-
-%build
-
-%files
-%defattr(644,root,root,755)
-%doc README
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -2468,6 +2541,10 @@ install "flowers/help.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 install "flowers/options.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 install "flowers/screenshot.jpg" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
 install "flowers/system.png" $RPM_BUILD_ROOT/%{_datadir}/gdm/themes/Flowers/
+
+%files
+%defattr(644,root,root,755)
+%doc README
 
 #
 # Theme 00/73
