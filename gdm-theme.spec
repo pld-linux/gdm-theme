@@ -10,6 +10,7 @@ URL:           http://art.gnome.org/
 #Packager:      yoshi
 Requires:      gdm
 BuildRequires: tar
+BuildArch:     noarch
 BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 #
