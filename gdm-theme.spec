@@ -1,7 +1,13 @@
 # TODO:
 #   - fix bogus (non-informative, English-in-pl) descriptions
+#   - kill UTF where it shouldn't be (C descs are in us-ascii, pl in iso-8859-2,
+#     Vendor in ???)
 #
-
+#
+# This spec is generated from ./gdm-themes-spec-generator.sh script.
+# You should find it in your `rpm --eval %_specdir`
+# ??? -- I can't find any
+#
 Summary:	Themes for gdm (GNOME Display Manager)
 Summary(pl):	Motywy dla gdm (Zarz�dcy ekran�w GNOME)
 Name:		gdm-theme
@@ -9,15 +15,6 @@ Version:	2.6.0.6
 Release:	1
 License:	GPL
 Group:		Themes
-URL:		http://art.gnome.org/
-Requires:	gdm
-BuildArch:	noarch
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-#
-# This spec is generated from ./gdm-themes-spec-generator.sh script.
-# You should find it in your `rpm --eval %_specdir`
-#
 Source0:	http://art.gnome.org/download/themes/gdm_greeter/178/GDM-300-lantueno.tar.gz
 # Source0-md5:	9fc35fec651a220abc0eb664e84cedd4
 Source1:	http://art.gnome.org/download/themes/gdm_greeter/741/GDM-9nome-Darmis.tar.gz
@@ -176,7 +173,10 @@ Source79:	http://art.gnome.org/download/themes/gdm_greeter/242/GDM-Valladolid.ta
 # Source79-md5:	1530c57898443bc3336cc4612a572055
 Source80:	http://art.gnome.org/download/themes/gdm_greeter/182/GDM-xpto.tar.gz
 # Source80-md5:	adcdc03f36d9a9c72d64a77ba98f5045
-
+URL:		http://art.gnome.org/
+Requires:	gdm
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package allows you to change the look of your GNOME Display
@@ -184,7 +184,6 @@ Manager :-)
 
 %description -l pl
 Ten pakiet pozwala na zmiane wygl�du Zarz�dcy ekran�w GNOME :-)
-
 
 %package 300-lantueno
 Summary:	Theme 300-lantueno for gdm (GNOME Display Manager)
@@ -194,16 +193,14 @@ Vendor:		Naciu
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/178/
 Requires:	%{name}
-BuildArch:	noarch
 
 %description 300-lantueno
-Theme '300-lantueno' by 'I Wayan Suryadarma' Author comment for the
+Theme '300-lantueno' by 'I Wayan Suryadarma'. Author's comment for the
 theme: Theme based on Lantueno; year 1911 (Cantabria, Spain).
 
 %description 300-lantueno -l pl
-Temat '300-lantueno' autorstwa 'I Wayan Suryadarma' Komentarz autora
-do tematu: Theme based on Lantueno; year 1911 (Cantabria, Spain).
-
+Motyw '300-lantueno' autorstwa 'I Wayan Suryadarma'. Komentarz autora
+do motywu: Theme based on Lantueno; year 1911 (Cantabria, Spain).
 
 %package 9nome-Darmis
 Summary:	Theme 9nome-Darmis for gdm (GNOME Display Manager)
@@ -213,16 +210,14 @@ Vendor:		I Wayan Suryadarma
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/178/
 Requires:	%{name}
-BuildArch:	noarch
 
 %description 9nome-Darmis
-Theme '9nome-Darmis' by 'I Wayan Suryadarma' Author comment for the
+Theme '9nome-Darmis' by 'I Wayan Suryadarma'. Author's comment for the
 theme: This is my first GDM and I like it.
 
 %description 9nome-Darmis -l pl
-Temat '9nome-Darmis' autorstwa 'I Wayan Suryadarma' Komentarz autora
-do tematu: This is my first GDM and I like it.
-
+Motyw '9nome-Darmis' autorstwa 'I Wayan Suryadarma'. Komentarz autora
+do motywu: This is my first GDM and I like it.
 
 %package Angel
 Summary:	Theme Angel for gdm (GNOME Display Manager)
@@ -232,20 +227,16 @@ Vendor:		Bert De Meyer
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/89/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Angel
-Theme 'Angel' by 'Bert De Meyer' Author comment for the theme: Note:
-This themes is based on an old Windowmaker theme from Largo that you
-can still find at: http://largo.windowmaker.org/themes/
+Theme 'Angel' by 'Bert De Meyer'. Author's comment for the theme:
+Note: This themes is based on an old Windowmaker theme from Largo that
+you can still find at: http://largo.windowmaker.org/themes/ .
 
 %description Angel -l pl
-Temat 'Angel' autorstwa 'Bert De Meyer' Komentarz autora do tematu:
+Motyw 'Angel' autorstwa 'Bert De Meyer'. Komentarz autora do motywu:
 Note: This themes is based on an old Windowmaker theme from Largo that
-you can still find at: http://largo.windowmaker.org/themes/
-
+you can still find at: http://largo.windowmaker.org/themes/ .
 
 %package Barcelona
 Summary:	Theme Barcelona for gdm (GNOME Display Manager)
@@ -255,20 +246,12 @@ Vendor:		Álvaro del Castillo
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/241/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Barcelona
-Theme 'Barcelona' by 'Álvaro del Castillo' Author comment for the
-theme:
-
+Theme 'Barcelona' by 'Álvaro del Castillo'.
 
 %description Barcelona -l pl
-Temat 'Barcelona' autorstwa 'Álvaro del Castillo' Komentarz autora do
-tematu:
-
-
+Motyw 'Barcelona' autorstwa 'Álvaro del Castillo'.
 
 %package Bee_at_Work
 Summary:	Theme Bee_at_Work for gdm (GNOME Display Manager)
@@ -278,20 +261,16 @@ Vendor:		Julian Coccia
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/509/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Bee_at_Work
-Theme 'Bee_at_Work' by 'Julian Coccia' Author comment for the theme: A
-nice GDM greeter theme in black and yellow, based on one of my
-pictures.
-
-%description Bee_at_Work -l pl
-Temat 'Bee_at_Work' autorstwa 'Julian Coccia' Komentarz autora do
-tematu: A nice GDM greeter theme in black and yellow, based on one of
+Theme 'Bee_at_Work' by 'Julian Coccia'. Author's comment for the
+theme: A nice GDM greeter theme in black and yellow, based on one of
 my pictures.
 
+%description Bee_at_Work -l pl
+Motyw 'Bee_at_Work' autorstwa 'Julian Coccia'. Komentarz autora do
+motywu: A nice GDM greeter theme in black and yellow, based on one of
+my pictures.
 
 %package Bijou
 Summary:	Theme Bijou for gdm (GNOME Display Manager)
@@ -301,18 +280,14 @@ Vendor:		Alex Fraser
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/257/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Bijou
-Theme 'Bijou' by 'Alex Fraser' Author comment for the theme: Simple
+Theme 'Bijou' by 'Alex Fraser'. Author's comment for the theme: Simple
 and clean with highly polished buttons
 
 %description Bijou -l pl
-Temat 'Bijou' autorstwa 'Alex Fraser' Komentarz autora do tematu:
+Motyw 'Bijou' autorstwa 'Alex Fraser'. Komentarz autora do motywu:
 Simple and clean with highly polished buttons
-
 
 %package Blueish
 Summary:	Theme Blueish for gdm (GNOME Display Manager)
@@ -322,20 +297,16 @@ Vendor:		Michael Thomas, Henrik Brix Andersen
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/90/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Blueish
-Theme 'Blueish' by 'Michael Thomas, Henrik Brix Andersen' Author
+Theme 'Blueish' by 'Michael Thomas, Henrik Brix Andersen'. Authors'
 comment for the theme: A metallic GNOME foot on a blue background.
 Credits for the background goes to Henrik Brix Andersen.
 
 %description Blueish -l pl
-Temat 'Blueish' autorstwa 'Michael Thomas, Henrik Brix Andersen'
-Komentarz autora do tematu: A metallic GNOME foot on a blue
+Motyw 'Blueish' autorstwa 'Michael Thomas, Henrik Brix Andersen'.
+Komentarz autor�w do motywu: A metallic GNOME foot on a blue
 background. Credits for the background goes to Henrik Brix Andersen.
-
 
 %package Butterfly
 Summary:	Theme Butterfly for gdm (GNOME Display Manager)
@@ -345,18 +316,14 @@ Vendor:		sgaap
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/443/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Butterfly
-Theme 'Butterfly' by 'sgaap' Author comment for the theme: A bright
+Theme 'Butterfly' by 'sgaap'. Author's comment for the theme: A bright
 theme :)
 
 %description Butterfly -l pl
-Temat 'Butterfly' autorstwa 'sgaap' Komentarz autora do tematu: A
+Motyw 'Butterfly' autorstwa 'sgaap'. Komentarz autora do motywu: A
 bright theme :)
-
 
 %package Colorado_Windmill
 Summary:	Theme Colorado_Windmill for gdm (GNOME Display Manager)
@@ -366,18 +333,14 @@ Vendor:		Scott W. Taylor
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/745/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Colorado_Windmill
-Theme 'Colorado_Windmill' by 'Scott W. Taylor' Author comment for the
-theme: Windmill in the grasslands of Colorado
+Theme 'Colorado_Windmill' by 'Scott W. Taylor'. Author's comment for
+the theme: Windmill in the grasslands of Colorado.
 
 %description Colorado_Windmill -l pl
-Temat 'Colorado_Windmill' autorstwa 'Scott W. Taylor' Komentarz autora
-do tematu: Windmill in the grasslands of Colorado
-
+Motyw 'Colorado_Windmill' autorstwa 'Scott W. Taylor'. Komentarz
+autora do motywu: Windmill in the grasslands of Colorado.
 
 %package Cracked_Windows
 Summary:	Theme Cracked_Windows for gdm (GNOME Display Manager)
@@ -387,20 +350,16 @@ Vendor:		Ovidiu Cernautan
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/91/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Cracked_Windows
-Theme 'Cracked_Windows' by 'Ovidiu Cernautan' Author comment for the
-theme: It's pretty colorful but I like it and I hope you'll like it
-too.
-
-%description Cracked_Windows -l pl
-Temat 'Cracked_Windows' autorstwa 'Ovidiu Cernautan' Komentarz autora
-do tematu: It's pretty colorful but I like it and I hope you'll like
+Theme 'Cracked_Windows' by 'Ovidiu Cernautan'. Author's comment for
+the theme: It's pretty colorful but I like it and I hope you'll like
 it too.
 
+%description Cracked_Windows -l pl
+Motyw 'Cracked_Windows' autorstwa 'Ovidiu Cernautan'. Komentarz autora
+do motywu: It's pretty colorful but I like it and I hope you'll like
+it too.
 
 %package Crop_Circles
 Summary:	Theme Crop_Circles for gdm (GNOME Display Manager)
@@ -410,22 +369,18 @@ Vendor:		Will Reinhart
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/543/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Crop_Circles
-Theme 'Crop_Circles' by 'Will Reinhart' Author comment for the theme:
-Signs of intelligent life! This is graphical face-browser theme, so it
-requires GDM from Gnome 2.4.0. Thanks to Jiin Yaroon for the wallpaper
-this theme's background is based on.
-
-%description Crop_Circles -l pl
-Temat 'Crop_Circles' autorstwa 'Will Reinhart' Komentarz autora do
-tematu: Signs of intelligent life! This is graphical face-browser
+Theme 'Crop_Circles' by 'Will Reinhart'. Author's comment for the
+theme: Signs of intelligent life! This is graphical face-browser
 theme, so it requires GDM from Gnome 2.4.0. Thanks to Jiin Yaroon for
 the wallpaper this theme's background is based on.
 
+%description Crop_Circles -l pl
+Motyw 'Crop_Circles' autorstwa 'Will Reinhart'. Komentarz autora do
+motywu: Signs of intelligent life! This is graphical face-browser
+theme, so it requires GDM from Gnome 2.4.0. Thanks to Jiin Yaroon for
+the wallpaper this theme's background is based on.
 
 %package Crystal
 Summary:	Theme Crystal for gdm (GNOME Display Manager)
@@ -435,20 +390,16 @@ Vendor:		Niek van der Maas
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/92/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Crystal
-Theme 'Crystal' by 'Niek van der Maas' Author comment for the theme:
-Crystal Theme for GDM by Niek van der Maas. All images were made by
-Everaldo.
-
-%description Crystal -l pl
-Temat 'Crystal' autorstwa 'Niek van der Maas' Komentarz autora do
-tematu: Crystal Theme for GDM by Niek van der Maas. All images were
+Theme 'Crystal' by 'Niek van der Maas'. Author's comment for the
+theme: Crystal Theme for GDM by Niek van der Maas. All images were
 made by Everaldo.
 
+%description Crystal -l pl
+Motyw 'Crystal' autorstwa 'Niek van der Maas'. Komentarz autora do
+motywu: Crystal Theme for GDM by Niek van der Maas. All images were
+made by Everaldo.
 
 %package Crystal_For_Gnome
 Summary:	Theme Crystal_For_GNOME for gdm (GNOME Display Manager)
@@ -458,22 +409,18 @@ Vendor:		Keifer
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/678/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Crystal_For_Gnome
-Theme 'Crystal_For_Gnome' by 'Keifer' Author comment for the theme: A
-crystal gdm theme that includes a wallpaper by Chromakode, and icons
+Theme 'Crystal_For_Gnome' by 'Keifer'. Author's comment for the theme:
+A crystal gdm theme that includes a wallpaper by Chromakode, and icons
 by Everaldo. Must have a version of gdm that is compatable with
 facethemes to function.
 
 %description Crystal_For_Gnome -l pl
-Temat 'Crystal_For_Gnome' autorstwa 'Keifer' Komentarz autora do
-tematu: A crystal gdm theme that includes a wallpaper by Chromakode,
+Motyw 'Crystal_For_Gnome' autorstwa 'Keifer'. Komentarz autora do
+motywu: A crystal gdm theme that includes a wallpaper by Chromakode,
 and icons by Everaldo. Must have a version of gdm that is compatable
 with facethemes to function.
-
 
 %package Crystal_for_Gnome_-_theme_2
 Summary:	Theme Crystal_for_GNOME_-_theme_2 for gdm (GNOME Display Manager)
@@ -483,20 +430,16 @@ Vendor:		Keifer Miller
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/720/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Crystal_for_Gnome_-_theme_2
-Theme 'Crystal_for_Gnome_-_theme_2' by 'Keifer Miller' Author comment
-for the theme: Created by member Keifer of the Crystal for Gnome
-project.
+Theme 'Crystal_for_Gnome_-_theme_2' by 'Keifer Miller'. Author's
+comment for the theme: Created by member Keifer of the Crystal for
+Gnome project.
 
 %description Crystal_for_Gnome_-_theme_2 -l pl
-Temat 'Crystal_for_Gnome_-_theme_2' autorstwa 'Keifer Miller'
-Komentarz autora do tematu: Created by member Keifer of the Crystal
+Motyw 'Crystal_for_Gnome_-_theme_2' autorstwa 'Keifer Miller'.
+Komentarz autora do motywu: Created by member Keifer of the Crystal
 for Gnome project.
-
 
 %package Crystal_Rose
 Summary:	Theme Crystal_Rose for gdm (GNOME Display Manager)
@@ -506,20 +449,16 @@ Vendor:		Carlos (StackGuard) Ferreira
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/403/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Crystal_Rose
-Theme 'Crystal_Rose' by 'Carlos (StackGuard) Ferreira' Author comment
-for the theme: Blue and shadded theme I've made for my girfriend,
-based on a wallpaper found in deviantart.com
+Theme 'Crystal_Rose' by 'Carlos (StackGuard) Ferreira'. Author's
+comment for the theme: Blue and shadded theme I've made for my
+girlfriend, based on a wallpaper found in deviantart.com .
 
 %description Crystal_Rose -l pl
-Temat 'Crystal_Rose' autorstwa 'Carlos (StackGuard) Ferreira'
-Komentarz autora do tematu: Blue and shadded theme I've made for my
-girfriend, based on a wallpaper found in deviantart.com
-
+Motyw 'Crystal_Rose' autorstwa 'Carlos (StackGuard) Ferreira'.
+Komentarz autora do motywu: Blue and shadded theme I've made for my
+girfriend, based on a wallpaper found in deviantart.com .
 
 %package Cubic_Linux_and_Gnome
 Summary:	Theme Cubic_Linux_and_GNOME for gdm (GNOME Display Manager)
@@ -529,20 +468,16 @@ Vendor:		jam
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/420/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Cubic_Linux_and_Gnome
-Theme 'Cubic_Linux_and_Gnome' by 'jam' Author comment for the theme:
-Background is render of a cube showing 2 faces. Tux on 1 face, Gnome
-logo on the other
+Theme 'Cubic_Linux_and_Gnome' by 'jam'. Author's comment for the
+theme: Background is render of a cube showing 2 faces. Tux on 1 face,
+Gnome logo on the other.
 
 %description Cubic_Linux_and_Gnome -l pl
-Temat 'Cubic_Linux_and_Gnome' autorstwa 'jam' Komentarz autora do
-tematu: Background is render of a cube showing 2 faces. Tux on 1 face,
-Gnome logo on the other
-
+Motyw 'Cubic_Linux_and_Gnome' autorstwa 'jam'. Komentarz autora do
+motywu: Background is render of a cube showing 2 faces. Tux on 1 face,
+Gnome logo on the other.
 
 %package Dart_Frog
 Summary:	Theme Dart_Frog for gdm (GNOME Display Manager)
@@ -552,20 +487,16 @@ Vendor:		Wreckd
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/93/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Dart_Frog
-Theme 'Dart_Frog' by 'Wreckd' Author comment for the theme: Nice
+Theme 'Dart_Frog' by 'Wreckd'. Author's comment for the theme: Nice
 little theme with a background I found. So, can anyone tell me what
 kinda frog this is?
 
 %description Dart_Frog -l pl
-Temat 'Dart_Frog' autorstwa 'Wreckd' Komentarz autora do tematu: Nice
+Motyw 'Dart_Frog' autorstwa 'Wreckd'. Komentarz autora do motywu: Nice
 little theme with a background I found. So, can anyone tell me what
 kinda frog this is?
-
 
 %package Dawn
 Summary:	Theme Dawn for gdm (GNOME Display Manager)
@@ -575,18 +506,14 @@ Vendor:		Gianluca Masci
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/184/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Dawn
-Theme 'Dawn' by 'Gianluca Masci' Author comment for the theme: Dawn in
-mountain.
+Theme 'Dawn' by 'Gianluca Masci'. Author's comment for the theme: Dawn
+in mountain.
 
 %description Dawn -l pl
-Temat 'Dawn' autorstwa 'Gianluca Masci' Komentarz autora do tematu:
+Motyw 'Dawn' autorstwa 'Gianluca Masci'. Komentarz autora do motywu:
 Dawn in mountain.
-
 
 %package Daybreak
 Summary:	Theme Daybreak for gdm (GNOME Display Manager)
@@ -596,20 +523,16 @@ Vendor:		Francis Tyers
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/256/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Daybreak
-Theme 'Daybreak' by 'Francis Tyers' Author comment for the theme:
+Theme 'Daybreak' by 'Francis Tyers'. Author's comment for the theme:
 Found a cool background on deviantart.com and set myself up the gdm
 theme.
 
 %description Daybreak -l pl
-Temat 'Daybreak' autorstwa 'Francis Tyers' Komentarz autora do tematu:
-Found a cool background on deviantart.com and set myself up the gdm
-theme.
-
+Motyw 'Daybreak' autorstwa 'Francis Tyers'. Komentarz autora do
+motywu: Found a cool background on deviantart.com and set myself up
+the gdm theme.
 
 %package Delicious
 Summary:	Theme Delicious for gdm (GNOME Display Manager)
@@ -619,20 +542,16 @@ Vendor:		Roman Joost
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/449/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Delicious
-Theme 'Delicious' by 'Roman Joost' Author comment for the theme:
+Theme 'Delicious' by 'Roman Joost'. Author's comment for the theme:
 Delicious is a comic theme that uses clean icons and a funny
 background.
 
 %description Delicious -l pl
-Temat 'Delicious' autorstwa 'Roman Joost' Komentarz autora do tematu:
+Motyw 'Delicious' autorstwa 'Roman Joost'. Komentarz autora do motywu:
 Delicious is a comic theme that uses clean icons and a funny
 background.
-
 
 %package Devils_Candy
 Summary:	Theme Devils_Candy for gdm (GNOME Display Manager)
@@ -642,18 +561,14 @@ Vendor:		Slayer[nFc]
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/404/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Devils_Candy
-Theme 'Devils_Candy' by 'Slayer[nFc]' Author comment for the theme: My
-First GDM theme based on DevilsCandy by Xebra 2001
+Theme 'Devils_Candy' by 'Slayer[nFc]'. Author's comment for the theme:
+My first GDM theme based on DevilsCandy by Xebra 2001.
 
 %description Devils_Candy -l pl
-Temat 'Devils_Candy' autorstwa 'Slayer[nFc]' Komentarz autora do
-tematu: My First GDM theme based on DevilsCandy by Xebra 2001
-
+Motyw 'Devils_Candy' autorstwa 'Slayer[nFc]'. Komentarz autora do
+motywu: My first GDM theme based on DevilsCandy by Xebra 2001.
 
 %package Dreaming_Alien
 Summary:	Theme Dreaming_Alien for gdm (GNOME Display Manager)
@@ -663,20 +578,16 @@ Vendor:		Christopher V. Browne
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/459/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Dreaming_Alien
-Theme 'Dreaming_Alien' by 'Christopher V. Browne' Author comment for
-the theme: Renoiro's Dreaming Alien - artist approved Buttons borrow
-from Bijou.
-
-%description Dreaming_Alien -l pl
-Temat 'Dreaming_Alien' autorstwa 'Christopher V. Browne' Komentarz
-autora do tematu: Renoiro's Dreaming Alien - artist approved Buttons
+Theme 'Dreaming_Alien' by 'Christopher V. Browne'. Author's comment
+for the theme: Renoiro's Dreaming Alien - artist approved Buttons
 borrow from Bijou.
 
+%description Dreaming_Alien -l pl
+Motyw 'Dreaming_Alien' autorstwa 'Christopher V. Browne'. Komentarz
+autora do motywu: Renoiro's Dreaming Alien - artist approved Buttons
+borrow from Bijou.
 
 %package DumbCloud
 Summary:	Theme DumbCloud for gdm (GNOME Display Manager)
@@ -686,32 +597,28 @@ Vendor:		Unknown
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/96/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description DumbCloud
-Theme 'DumbCloud' by 'Unknown' Author comment for the theme: Dunno if
-this is 'legal', I'm not an artist or technically inclined but I took
-the photo of the cloud & made the image of lines & borrowed the other
-graphics from the default Circles GDM greeter theme. I'm don't know
-XML & don't want to learn it, so I only changed the filenames to
-display my own. This is my attempt, its worse than the default one but
-I just wanted to try it & have something different. For real artists,
-just edit the files in /usr/share/gdm/themes - if I could do it, you
-can.
+Theme 'DumbCloud' by 'Unknown'. Author's comment for the theme: Dunno
+if this is 'legal', I'm not an artist or technically inclined but I
+took the photo of the cloud & made the image of lines & borrowed the
+other graphics from the default Circles GDM greeter theme. I'm don't
+know XML & don't want to learn it, so I only changed the filenames to
+display my own. This is my attempt, it's worse than the default one
+but I just wanted to try it & have something different. For real
+artists, just edit the files in /usr/share/gdm/themes - if I could do
+it, you can.
 
 %description DumbCloud -l pl
-Temat 'DumbCloud' autorstwa 'Unknown' Komentarz autora do tematu:
+Motyw 'DumbCloud' autorstwa 'Unknown'. Komentarz autora do motywu:
 Dunno if this is 'legal', I'm not an artist or technically inclined
 but I took the photo of the cloud & made the image of lines & borrowed
 the other graphics from the default Circles GDM greeter theme. I'm
 don't know XML & don't want to learn it, so I only changed the
-filenames to display my own. This is my attempt, its worse than the
+filenames to display my own. This is my attempt, it's worse than the
 default one but I just wanted to try it & have something different.
 For real artists, just edit the files in /usr/share/gdm/themes - if I
 could do it, you can.
-
 
 %package Emo-Blue
 Summary:	Theme Emo-Blue for gdm (GNOME Display Manager)
@@ -721,18 +628,15 @@ Vendor:		Paul Hendrick
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/98/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Emo-Blue
-Theme 'Emo-Blue' by 'Paul Hendrick' Author comment for the theme: A
+Theme 'Emo-Blue' by 'Paul Hendrick'. Author's comment for the theme: A
 theme using a cool futuristic background and nice GNOME2 icons.
 
 %description Emo-Blue -l pl
-Temat 'Emo-Blue' autorstwa 'Paul Hendrick' Komentarz autora do tematu:
-A theme using a cool futuristic background and nice GNOME2 icons.
-
+Motyw 'Emo-Blue' autorstwa 'Paul Hendrick'. Komentarz autora do
+motywu: A theme using a cool futuristic background and nice GNOME2
+icons.
 
 %package Falling_Angel
 Summary:	Theme Falling_Angel for gdm (GNOME Display Manager)
@@ -742,20 +646,16 @@ Vendor:		Carlos (StackGuard) Ferreira
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/310/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Falling_Angel
-Theme 'Falling_Angel' by 'Carlos (StackGuard) Ferreira' Author comment
-for the theme: An atempt to make a GDM Greeter theme, based on a
-beautyfull wallpaper :)
+Theme 'Falling_Angel' by 'Carlos (StackGuard) Ferreira'. Author's
+comment for the theme: An atempt to make a GDM Greeter theme, based on
+a beautiful wallpaper :)
 
 %description Falling_Angel -l pl
-Temat 'Falling_Angel' autorstwa 'Carlos (StackGuard) Ferreira'
-Komentarz autora do tematu: An atempt to make a GDM Greeter theme,
-based on a beautyfull wallpaper :)
-
+Motyw 'Falling_Angel' autorstwa 'Carlos (StackGuard) Ferreira'.
+Komentarz autora do motywu: An atempt to make a GDM Greeter theme,
+based on a beautiful wallpaper :)
 
 %package Fire_Breathing_Robot
 Summary:	Theme Fire_Breathing_Robot for gdm (GNOME Display Manager)
@@ -765,20 +665,16 @@ Vendor:		John Cantrell
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/223/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Fire_Breathing_Robot
-Theme 'Fire_Breathing_Robot' by 'John Cantrell' Author comment for the
-theme: A neat little fire breathing robot for your login. Based off
-the Redhat's bluecurve.
+Theme 'Fire_Breathing_Robot' by 'John Cantrell'. Author's comment for
+the theme: A neat little fire breathing robot for your login. Based
+off the Redhat's bluecurve.
 
 %description Fire_Breathing_Robot -l pl
-Temat 'Fire_Breathing_Robot' autorstwa 'John Cantrell' Komentarz
-autora do tematu: A neat little fire breathing robot for your login.
+Motyw 'Fire_Breathing_Robot' autorstwa 'John Cantrell'. Komentarz
+autora do motywu: A neat little fire breathing robot for your login.
 Based off the Redhat's bluecurve.
-
 
 %package Flowers
 Summary:	Theme Flowers for gdm (GNOME Display Manager)
@@ -788,18 +684,14 @@ Vendor:		Gianluca Masci
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/99/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Flowers
-Theme 'Flowers' by 'Gianluca Masci' Author comment for the theme: A
+Theme 'Flowers' by 'Gianluca Masci'. Author's comment for the theme: A
 Theme with Flowers.
 
 %description Flowers -l pl
-Temat 'Flowers' autorstwa 'Gianluca Masci' Komentarz autora do tematu:
+Motyw 'Flowers' autorstwa 'Gianluca Masci'. Komentarz autora do motywu:
 A Theme with Flowers.
-
 
 %package gcr-ddlm
 Summary:	Theme gcr-ddlm for gdm (GNOME Display Manager)
@@ -809,20 +701,16 @@ Vendor:		ghost_crab
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/460/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description gcr-ddlm
-Theme 'gcr-ddlm' by 'ghost_crab' Author comment for the theme: dia de
-los muertos GDM theme. My first. Please let me know what I need to do
-to fix it. Rock!
+Theme 'gcr-ddlm' by 'ghost_crab'. Author's comment for the theme: dia
+de los muertos GDM theme. My first. Please let me know what I need to
+do to fix it. Rock!
 
 %description gcr-ddlm -l pl
-Temat 'gcr-ddlm' autorstwa 'ghost_crab' Komentarz autora do tematu:
+Motyw 'gcr-ddlm' autorstwa 'ghost_crab'. Komentarz autora do motywu:
 dia de los muertos GDM theme. My first. Please let me know what I need
 to do to fix it. Rock!
-
 
 %package Gdm_Dropline
 Summary:	Theme Gdm_Dropline for gdm (GNOME Display Manager)
@@ -832,18 +720,14 @@ Vendor:		elmaya
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/508/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Gdm_Dropline
-Theme 'Gdm_Dropline' by 'elmaya' Author comment for the theme: A GDM
-theme to go with the dropline splash screen
+Theme 'Gdm_Dropline' by 'elmaya'. Author's comment for the theme: A
+GDM theme to go with the dropline splash screen.
 
 %description Gdm_Dropline -l pl
-Temat 'Gdm_Dropline' autorstwa 'elmaya' Komentarz autora do tematu: A
-GDM theme to go with the dropline splash screen
-
+Motyw 'Gdm_Dropline' autorstwa 'elmaya'. Komentarz autora do motywu: A
+GDM theme to go with the dropline splash screen.
 
 %package GDM_Waves
 Summary:	Theme GDM_Waves for gdm (GNOME Display Manager)
@@ -853,18 +737,14 @@ Vendor:		Marco
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/775/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description GDM_Waves
-Theme 'GDM_Waves' by 'Marco' Author comment for the theme: my first
-GDM theme
+Theme 'GDM_Waves' by 'Marco'. Author's comment for the theme: my first
+GDM theme.
 
 %description GDM_Waves -l pl
-Temat 'GDM_Waves' autorstwa 'Marco' Komentarz autora do tematu: my
-first GDM theme
-
+Motyw 'GDM_Waves' autorstwa 'Marco'. Komentarz autora do motywu: my
+first GDM theme.
 
 %package GDM-GlassFoot
 Summary:	Theme GDM-GlassFoot for gdm (GNOME Display Manager)
@@ -874,19 +754,16 @@ Vendor:		Burcin Donmez
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/196/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description GDM-GlassFoot
-Theme 'GDM-GlassFoot' by 'Burcin Donmez' Author comment for the theme:
-GDM greeter using GNOME-GlassFoot background image from Waldgeist.
-
-%description GDM-GlassFoot -l pl
-Temat 'GDM-GlassFoot' autorstwa 'Burcin Donmez' Komentarz autora do
-tematu: GDM greeter using GNOME-GlassFoot background image from
+Theme 'GDM-GlassFoot' by 'Burcin Donmez'. Author's comment for the
+theme: GDM greeter using GNOME-GlassFoot background image from
 Waldgeist.
 
+%description GDM-GlassFoot -l pl
+Motyw 'GDM-GlassFoot' autorstwa 'Burcin Donmez'. Komentarz autora do
+motywu: GDM greeter using GNOME-GlassFoot background image from
+Waldgeist.
 
 %package GDM-Mosaic
 Summary:	Theme GDM-Mosaic for gdm (GNOME Display Manager)
@@ -896,18 +773,14 @@ Vendor:		soho501
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/361/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description GDM-Mosaic
-Theme 'GDM-Mosaic' by 'soho501' Author comment for the theme: That's
-the bull's shadow mosaic...
-
-%description GDM-Mosaic -l pl
-Temat 'GDM-Mosaic' autorstwa 'soho501' Komentarz autora do tematu:
+Theme 'GDM-Mosaic' by 'soho501'. Author's comment for the theme:
 That's the bull's shadow mosaic...
 
+%description GDM-Mosaic -l pl
+Motyw 'GDM-Mosaic' autorstwa 'soho501'. Komentarz autora do motywu:
+That's the bull's shadow mosaic...
 
 %package Glassy
 Summary:	Theme Glassy for gdm (GNOME Display Manager)
@@ -917,18 +790,14 @@ Vendor:		Christopher A. Shamis
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/298/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Glassy
-Theme 'Glassy' by 'Christopher A. Shamis' Author comment for the
+Theme 'Glassy' by 'Christopher A. Shamis'. Author's comment for the
 theme: Ray-traced glass cork-screw over a shiny checkered floor.
 
 %description Glassy -l pl
-Temat 'Glassy' autorstwa 'Christopher A. Shamis' Komentarz autora do
-tematu: Ray-traced glass cork-screw over a shiny checkered floor.
-
+Motyw 'Glassy' autorstwa 'Christopher A. Shamis'. Komentarz autora do
+motywu: Ray-traced glass cork-screw over a shiny checkered floor.
 
 %package Gnome_Chile
 Summary:	Theme GNOME_Chile for gdm (GNOME Display Manager)
@@ -938,20 +807,16 @@ Vendor:		Andrés "Death_Knight" Villagrán
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/294/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Gnome_Chile
-Theme 'Gnome_Chile' by 'Andrés "Death_Knight" Villagrán' Author
+Theme 'Gnome_Chile' by 'Andrés "Death_Knight" Villagrán'. Author's
 comment for the theme: EN: It's a best Theme of GNOME in Chile ES:
-Este tema es exelente, bonito y muy atrallente MADE IN CHILE
+Este tema es exelente, bonito y muy atrallente MADE IN CHILE.
 
 %description Gnome_Chile -l pl
-Temat 'Gnome_Chile' autorstwa 'Andrés "Death_Knight" Villagrán'
-Komentarz autora do tematu: EN: It's a best Theme of GNOME in Chile
-ES: Este tema es exelente, bonito y muy atrallente MADE IN CHILE
-
+Motyw 'Gnome_Chile' autorstwa 'Andrés "Death_Knight" Villagrán'.
+Komentarz autora do motywu: EN: It's a best Theme of GNOME in Chile
+ES: Este tema es exelente, bonito y muy atrallente MADE IN CHILE.
 
 %package Gnome_Plain_Swoosh_GDM_Theme
 Summary:	Theme GNOME_Plain_Swoosh_GDM_Theme for gdm (GNOME Display Manager)
@@ -961,24 +826,20 @@ Vendor:		Michael Flaig
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/772/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Gnome_Plain_Swoosh_GDM_Theme
-Theme 'Gnome_Plain_Swoosh_GDM_Theme' by 'Michael Flaig' Author comment
-for the theme: This theme features "Gnome Plain Swoosh" (an 1600x1200
-Wallpaper) which I found on art.gnome.org... I hope you like it
-Wallpaper "Gnome Plain Swoosh" by: Morgan Collins Based on: Onebase
-GDM Theme by P.Yavitz
+Theme 'Gnome_Plain_Swoosh_GDM_Theme' by 'Michael Flaig'. Author's
+comment for the theme: This theme features "Gnome Plain Swoosh" (an
+1600x1200 Wallpaper) which I found on art.gnome.org... I hope you like
+it Wallpaper "Gnome Plain Swoosh" by: Morgan Collins Based on: Onebase
+GDM Theme by P.Yavitz.
 
 %description Gnome_Plain_Swoosh_GDM_Theme -l pl
-Temat 'Gnome_Plain_Swoosh_GDM_Theme' autorstwa 'Michael Flaig'
-Komentarz autora do tematu: This theme features "Gnome Plain Swoosh"
+Motyw 'Gnome_Plain_Swoosh_GDM_Theme' autorstwa 'Michael Flaig'.
+Komentarz autora do motywu: This theme features "Gnome Plain Swoosh"
 (an 1600x1200 Wallpaper) which I found on art.gnome.org... I hope you
 like it Wallpaper "Gnome Plain Swoosh" by: Morgan Collins Based on:
-Onebase GDM Theme by P.Yavitz
-
+Onebase GDM Theme by P.Yavitz.
 
 %package Gnome_Plain_Swoosh_GDM_Theme_TNG
 Summary:	Theme GNOME_Plain_Swoosh_GDM_Theme_TNG for gdm (GNOME Display Manager)
@@ -988,24 +849,20 @@ Vendor:		Michael Flaig
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/773/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Gnome_Plain_Swoosh_GDM_Theme_TNG
-Theme 'Gnome_Plain_Swoosh_GDM_Theme_TNG' by 'Michael Flaig' Author
+Theme 'Gnome_Plain_Swoosh_GDM_Theme_TNG' by 'Michael Flaig'. Author's
 comment for the theme: This theme features "Gnome Plain Swoosh" (an
 1600x1200 Wallpaper) and the Novell Linux Desktop GDM Theme. Theme by:
 Michael Flaig Based on: Novel Linux Desktop GDM Theme by Tigert
-Wallpaper "Gnome Plain Swoosh" by: Morgan Collins 
+Wallpaper "Gnome Plain Swoosh" by: Morgan Collins.
 
 %description Gnome_Plain_Swoosh_GDM_Theme_TNG -l pl
-Temat 'Gnome_Plain_Swoosh_GDM_Theme_TNG' autorstwa 'Michael Flaig'
-Komentarz autora do tematu: This theme features "Gnome Plain Swoosh"
+Motyw 'Gnome_Plain_Swoosh_GDM_Theme_TNG' autorstwa 'Michael Flaig'.
+Komentarz autora do motywu: This theme features "Gnome Plain Swoosh"
 (an 1600x1200 Wallpaper) and the Novell Linux Desktop GDM Theme. Theme
 by: Michael Flaig Based on: Novel Linux Desktop GDM Theme by Tigert
-Wallpaper "Gnome Plain Swoosh" by: Morgan Collins 
-
+Wallpaper "Gnome Plain Swoosh" by: Morgan Collins.
 
 %package Hantzley
 Summary:	Theme Hantzley for gdm (GNOME Display Manager)
@@ -1015,18 +872,14 @@ Vendor:		Hantzley
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/311/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Hantzley
-Theme 'Hantzley' by 'Hantzley' Author comment for the theme: My first
-GDM Greeter Theme. Hope you like it
+Theme 'Hantzley' by 'Hantzley'. Author's comment for the theme: My
+first GDM Greeter Theme. Hope you like it.
 
 %description Hantzley -l pl
-Temat 'Hantzley' autorstwa 'Hantzley' Komentarz autora do tematu: My
-first GDM Greeter Theme. Hope you like it
-
+Motyw 'Hantzley' autorstwa 'Hantzley'. Komentarz autora do motywu: My
+first GDM Greeter Theme. Hope you like it.
 
 %package Hunter
 Summary:	Theme Hunter for gdm (GNOME Display Manager)
@@ -1036,18 +889,14 @@ Vendor:		Michael Thomas
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/33/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Hunter
-Theme 'Hunter' by 'Michael Thomas' Author comment for the theme:
-Circles theme that uses a image instead of a svg file.
+Theme 'Hunter' by 'Michael Thomas'. Author's comment for the theme:
+Circles theme that uses a image instead of a SVG file.
 
 %description Hunter -l pl
-Temat 'Hunter' autorstwa 'Michael Thomas' Komentarz autora do tematu:
+Motyw 'Hunter' autorstwa 'Michael Thomas'. Komentarz autora do motywu:
 Circles theme that uses a image instead of a svg file.
-
 
 %package hybridFUSION
 Summary:	Theme hybridFUSION for gdm (GNOME Display Manager)
@@ -1057,20 +906,16 @@ Vendor:		Vincent Mac
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/240/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description hybridFUSION
-Theme 'hybridFUSION' by 'Vincent Mac' Author comment for the theme:
+Theme 'hybridFUSION' by 'Vincent Mac'. Author's comment for the theme:
 hybridFUSION is a theme based on Night Elf with some different
 artwork.
 
 %description hybridFUSION -l pl
-Temat 'hybridFUSION' autorstwa 'Vincent Mac' Komentarz autora do
-tematu: hybridFUSION is a theme based on Night Elf with some different
+Motyw 'hybridFUSION' autorstwa 'Vincent Mac'. Komentarz autora do
+motywu: hybridFUSION is a theme based on Night Elf with some different
 artwork.
-
 
 %package In_This_World
 Summary:	Theme In_This_World for gdm (GNOME Display Manager)
@@ -1080,20 +925,16 @@ Vendor:		Job Diogenes Ribeiro Borges
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/742/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description In_This_World
-Theme 'In_This_World' by 'Job Diogenes Ribeiro Borges' Author comment
-for the theme: Theme based on the background In This World from Vlad
-Gerasimov http://www.vladstudio.com
+Theme 'In_This_World' by 'Job Diogenes Ribeiro Borges'. Author's
+comment for the theme: Theme based on the background In This World
+from Vlad Gerasimov http://www.vladstudio.com/ .
 
 %description In_This_World -l pl
-Temat 'In_This_World' autorstwa 'Job Diogenes Ribeiro Borges'
-Komentarz autora do tematu: Theme based on the background In This
-World from Vlad Gerasimov http://www.vladstudio.com
-
+Motyw 'In_This_World' autorstwa 'Job Diogenes Ribeiro Borges'.
+Komentarz autora do motywu: Theme based on the background In This
+World from Vlad Gerasimov http://www.vladstudio.com/ .
 
 %package KDE_Crystal
 Summary:	Theme KDE_Crystal for gdm (GNOME Display Manager)
@@ -1103,18 +944,14 @@ Vendor:		Yann Bouan
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/396/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description KDE_Crystal
-Theme 'KDE_Crystal' by 'Yann Bouan' Author comment for the theme: A
+Theme 'KDE_Crystal' by 'Yann Bouan'. Author's comment for the theme: A
 theme inspired by the KDE crystal icon theme.
 
 %description KDE_Crystal -l pl
-Temat 'KDE_Crystal' autorstwa 'Yann Bouan' Komentarz autora do tematu:
-A theme inspired by the KDE crystal icon theme.
-
+Motyw 'KDE_Crystal' autorstwa 'Yann Bouan'. Komentarz autora do
+motywu: A theme inspired by the KDE crystal icon theme.
 
 %package Kinkakuji
 Summary:	Theme Kinkakuji for gdm (GNOME Display Manager)
@@ -1124,18 +961,14 @@ Vendor:		Cholwich Nattee
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/527/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Kinkakuji
-Theme 'Kinkakuji' by 'Cholwich Nattee' Author comment for the theme:
-Kinkakuji (The temple of the Golden Pavilion) in Kyoto Japan.
+Theme 'Kinkakuji' by 'Cholwich Nattee'. Author's comment for the
+theme: Kinkakuji (The temple of the Golden Pavilion) in Kyoto Japan.
 
 %description Kinkakuji -l pl
-Temat 'Kinkakuji' autorstwa 'Cholwich Nattee' Komentarz autora do
-tematu: Kinkakuji (The temple of the Golden Pavilion) in Kyoto Japan.
-
+Motyw 'Kinkakuji' autorstwa 'Cholwich Nattee'. Komentarz autora do
+motywu: Kinkakuji (The temple of the Golden Pavilion) in Kyoto Japan.
 
 %package Knoke
 Summary:	Theme Knoke for gdm (GNOME Display Manager)
@@ -1145,18 +978,14 @@ Vendor:		Dietrich Heise
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/278/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Knoke
-Theme 'Knoke' by 'Dietrich Heise' Author comment for the theme: A GDM
-Greeter Theme with my cat 'Knoke'.
-
-%description Knoke -l pl
-Temat 'Knoke' autorstwa 'Dietrich Heise' Komentarz autora do tematu: A
+Theme 'Knoke' by 'Dietrich Heise'. Author's comment for the theme: A
 GDM Greeter Theme with my cat 'Knoke'.
 
+%description Knoke -l pl
+Motyw 'Knoke' autorstwa 'Dietrich Heise'. Komentarz autora do motywu:
+A GDM Greeter Theme with my cat 'Knoke'.
 
 %package La_Bisbal_dEmpord_nevada
 Summary:	Theme La_Bisbal_dEmpord_nevada for gdm (GNOME Display Manager)
@@ -1166,20 +995,16 @@ Vendor:		Radio Bisbal
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/303/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description La_Bisbal_dEmpord_nevada
-Theme 'La_Bisbal_dEmpord_nevada' by 'Radio Bisbal' Author comment for
-the theme: Nice pictures taken after snowing at La Bisbal d'Empord�
-(Catalonian town).
+Theme 'La_Bisbal_dEmpord_nevada' by 'Radio Bisbal'. Author's comment
+for the theme: Nice pictures taken after snowing at La Bisbal
+d'Emporda (Catalonian town).
 
 %description La_Bisbal_dEmpord_nevada -l pl
-Temat 'La_Bisbal_dEmpord_nevada' autorstwa 'Radio Bisbal' Komentarz
-autora do tematu: Nice pictures taken after snowing at La Bisbal
-d'Empord� (Catalonian town).
-
+Motyw 'La_Bisbal_dEmpord_nevada' autorstwa 'Radio Bisbal'. Komentarz
+autora do motywu: Nice pictures taken after snowing at La Bisbal
+d'Emporda (Catalonian town).
 
 %package Leon
 Summary:	Theme Leon for gdm (GNOME Display Manager)
@@ -1189,18 +1014,14 @@ Vendor:		Álvaro del Castillo
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/244/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Leon
-Theme 'Leon' by 'Álvaro del Castillo' Author comment for the theme:
-Leon spanish city
+Theme 'Leon' by 'Álvaro del Castillo'. Author's comment for the
+theme: Leon Spanish city.
 
 %description Leon -l pl
-Temat 'Leon' autorstwa 'Álvaro del Castillo' Komentarz autora do
-tematu: Leon spanish city
-
+Motyw 'Leon' autorstwa 'Álvaro del Castillo'. Komentarz autora do
+motywu: Leon Spanish city.
 
 %package Linux_Crystal
 Summary:	Theme Linux_Crystal for gdm (GNOME Display Manager)
@@ -1210,18 +1031,14 @@ Vendor:		Hayl (D K D)
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/588/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Linux_Crystal
-Theme 'Linux_Crystal' by 'Hayl (D K D)' Author comment for the theme:
-Crystal Icons-based GDM theme for GDM 2.4 and higher.
+Theme 'Linux_Crystal' by 'Hayl (D K D)'. Author's comment for the
+theme: Crystal Icons-based GDM theme for GDM 2.4 and higher.
 
 %description Linux_Crystal -l pl
-Temat 'Linux_Crystal' autorstwa 'Hayl (D K D)' Komentarz autora do
-tematu: Crystal Icons-based GDM theme for GDM 2.4 and higher.
-
+Motyw 'Linux_Crystal' autorstwa 'Hayl (D K D)'. Komentarz autora do
+motywu: Crystal Icons-based GDM theme for GDM 2.4 and higher.
 
 %package LinuxTux
 Summary:	Theme LinuxTux for gdm (GNOME Display Manager)
@@ -1231,18 +1048,14 @@ Vendor:		Rebel
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/511/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description LinuxTux
-Theme 'LinuxTux' by 'Rebel' Author comment for the theme: Tux
-gdmgreeter
+Theme 'LinuxTux' by 'Rebel'. Author's comment for the theme: Tux
+gdmgreeter.
 
 %description LinuxTux -l pl
-Temat 'LinuxTux' autorstwa 'Rebel' Komentarz autora do tematu: Tux
-gdmgreeter
-
+Motyw 'LinuxTux' autorstwa 'Rebel'. Komentarz autora do motywu: Tux
+gdmgreeter.
 
 %package Luna_GDM_Theme
 Summary:	Theme Luna_GDM_Theme for gdm (GNOME Display Manager)
@@ -1252,20 +1065,16 @@ Vendor:		Harshwardhan Nagaonkar
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/774/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Luna_GDM_Theme
-Theme 'Luna_GDM_Theme' by 'Harshwardhan Nagaonkar' Author comment for
-the theme: A GDM login screen emulating a popular OS. Also illustrates
-the flexibility of the GDM theming engine.
-
-%description Luna_GDM_Theme -l pl
-Temat 'Luna_GDM_Theme' autorstwa 'Harshwardhan Nagaonkar' Komentarz
-autora do tematu: A GDM login screen emulating a popular OS. Also
+Theme 'Luna_GDM_Theme' by 'Harshwardhan Nagaonkar'. Author's comment
+for the theme: A GDM login screen emulating a popular OS. Also
 illustrates the flexibility of the GDM theming engine.
 
+%description Luna_GDM_Theme -l pl
+Motyw 'Luna_GDM_Theme' autorstwa 'Harshwardhan Nagaonkar'. Komentarz
+autora do motywu: A GDM login screen emulating a popular OS. Also
+illustrates the flexibility of the GDM theming engine.
 
 %package M-83
 Summary:	Theme M-83 for gdm (GNOME Display Manager)
@@ -1275,18 +1084,14 @@ Vendor:		Nexxuz
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/743/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description M-83
-Theme 'M-83' by 'Nexxuz' Author comment for the theme: The well known
-spiral galaxy, Messier 83, also known as NGC 5236.
-
-%description M-83 -l pl
-Temat 'M-83' autorstwa 'Nexxuz' Komentarz autora do tematu: The well
+Theme 'M-83' by 'Nexxuz'. Author's comment for the theme: The well
 known spiral galaxy, Messier 83, also known as NGC 5236.
 
+%description M-83 -l pl
+Motyw 'M-83' autorstwa 'Nexxuz'. Komentarz autora do motywu: The well
+known spiral galaxy, Messier 83, also known as NGC 5236.
 
 %package Machu_Picchu
 Summary:	Theme Machu_Picchu for gdm (GNOME Display Manager)
@@ -1296,18 +1101,14 @@ Vendor:		David Thompson
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/300/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Machu_Picchu
-Theme 'Machu_Picchu' by 'David Thompson' Author comment for the theme:
-Pictures of the Inca remains at Machu Picchu in Peru.
+Theme 'Machu_Picchu' by 'David Thompson'. Author's comment for the
+theme: Pictures of the Inca remains at Machu Picchu in Peru.
 
 %description Machu_Picchu -l pl
-Temat 'Machu_Picchu' autorstwa 'David Thompson' Komentarz autora do
-tematu: Pictures of the Inca remains at Machu Picchu in Peru.
-
+Motyw 'Machu_Picchu' autorstwa 'David Thompson'. Komentarz autora do
+motywu: Pictures of the Inca remains at Machu Picchu in Peru.
 
 %package ManzanaTux
 Summary:	Theme ManzanaTux for gdm (GNOME Display Manager)
@@ -1317,22 +1118,18 @@ Vendor:		Rogelio Domínguez Hernández
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/747/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description ManzanaTux
-Theme 'ManzanaTux' by 'Rogelio Domínguez Hernández' Author comment
-for the theme: Theme based in Crystal Theme by Niek van der Maas. All
-icons are made by Everaldo - www.everaldo.com.The background is by
-Bandar Raffa - www.sadeem.net/tux.html)
+Theme 'ManzanaTux' by 'Rogelio Domínguez Hernández'. Author's
+comment for the theme: Theme based in Crystal Theme by Niek van der
+Maas. All icons are made by Everaldo - http://www.everaldo.com/ . The
+background is by Bandar Raffa - http://www.sadeem.net/tux.html ).
 
 %description ManzanaTux -l pl
-Temat 'ManzanaTux' autorstwa 'Rogelio Domínguez Hernández' Komentarz
-autora do tematu: Theme based in Crystal Theme by Niek van der Maas.
-All icons are made by Everaldo - www.everaldo.com.The background is by
-Bandar Raffa - www.sadeem.net/tux.html)
-
+Motyw 'ManzanaTux' autorstwa 'Rogelio Domínguez Hernández'.
+Komentarz autora do motywu: Theme based in Crystal Theme by Niek van
+der Maas. All icons are made by Everaldo - http://www.everaldo.com/ .
+The background is by Bandar Raffa - http://www.sadeem.net/tux.html ).
 
 %package ManzanaTuxBlack
 Summary:	Theme ManzanaTuxBlack for gdm (GNOME Display Manager)
@@ -1342,22 +1139,18 @@ Vendor:		Rogelio Domínguez Hernández
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/748/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description ManzanaTuxBlack
-Theme 'ManzanaTuxBlack' by 'Rogelio Domínguez Hernández' Author
+Theme 'ManzanaTuxBlack' by 'Rogelio Domínguez Hernández'. Author's
 comment for the theme: Theme based in Crystal Theme by Niek van der
-Maas. All icons are made by Everaldo - www.everaldo.com.The background
-is by Bandar Raffa - www.sadeem.net/tux.html)
+Maas. All icons are made by Everaldo - http://www.everaldo.com/. The
+background is by Bandar Raffa - http://www.sadeem.net/tux.html ).
 
 %description ManzanaTuxBlack -l pl
-Temat 'ManzanaTuxBlack' autorstwa 'Rogelio Domínguez Hernández'
-Komentarz autora do tematu: Theme based in Crystal Theme by Niek van
-der Maas. All icons are made by Everaldo - www.everaldo.com.The
-background is by Bandar Raffa - www.sadeem.net/tux.html)
-
+Motyw 'ManzanaTuxBlack' autorstwa 'Rogelio Domínguez Hernández'.
+Komentarz autora do motywu: Theme based in Crystal Theme by Niek van
+der Maas. All icons are made by Everaldo - http://www.everaldo.com/ .
+The background is by Bandar Raffa - http://www.sadeem.net/tux.html ).
 
 %package Milk
 Summary:	Theme Milk for gdm (GNOME Display Manager)
@@ -1367,22 +1160,18 @@ Vendor:		Will Reinhart
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/533/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Milk
-Theme 'Milk' by 'Will Reinhart' Author comment for the theme: A
+Theme 'Milk' by 'Will Reinhart'. Author's comment for the theme: A
 graphical greeter theme with face browser. It is based on the
 MilkGnome background by [Kony], Bluecurve icons, and the Happy GNOME
 GDM theme. Requires GDM 2.4.2.95 or newer.
 
 %description Milk -l pl
-Temat 'Milk' autorstwa 'Will Reinhart' Komentarz autora do tematu: A
+Motyw 'Milk' autorstwa 'Will Reinhart'. Komentarz autora do motywu: A
 graphical greeter theme with face browser. It is based on the
 MilkGnome background by [Kony], Bluecurve icons, and the Happy GNOME
 GDM theme. Requires GDM 2.4.2.95 or newer.
-
 
 %package Mirrored
 Summary:	Theme Mirrored for gdm (GNOME Display Manager)
@@ -1392,20 +1181,16 @@ Vendor:		Roman Joost
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/448/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Mirrored
-Theme 'Mirrored' by 'Roman Joost' Author comment for the theme:
+Theme 'Mirrored' by 'Roman Joost'. Author's comment for the theme:
 Mirrored desktop is a mirrored login screen with comic art. Not all of
 the text is mirrored (for usability reasons).
 
 %description Mirrored -l pl
-Temat 'Mirrored' autorstwa 'Roman Joost' Komentarz autora do tematu:
+Motyw 'Mirrored' autorstwa 'Roman Joost'. Komentarz autora do motywu:
 Mirrored desktop is a mirrored login screen with comic art. Not all of
 the text is mirrored (for usability reasons).
-
 
 %package Mono_Metal
 Summary:	Theme Mono_Metal for gdm (GNOME Display Manager)
@@ -1415,18 +1200,14 @@ Vendor:		crahs
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/494/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Mono_Metal
-Theme 'Mono_Metal' by 'crahs' Author comment for the theme: This is my
-first theme, for GDM based on mono with metal style.
+Theme 'Mono_Metal' by 'crahs'. Author's comment for the theme: This is
+my first theme, for GDM based on mono with metal style.
 
 %description Mono_Metal -l pl
-Temat 'Mono_Metal' autorstwa 'crahs' Komentarz autora do tematu: This
+Motyw 'Mono_Metal' autorstwa 'crahs'. Komentarz autora do motywu: This
 is my first theme, for GDM based on mono with metal style.
-
 
 %package Morning_Light
 Summary:	Theme Morning_Light for gdm (GNOME Display Manager)
@@ -1436,20 +1217,14 @@ Vendor:		Moses Lei
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/103/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Morning_Light
-Theme 'Morning_Light' by 'Moses Lei' Author comment for the theme:
-Background by Ryan Bliss, <a
-href="http://www.digitalblasphemy.com">http://www.digitalblasphemy.com.
+Theme 'Morning_Light' by 'Moses Lei'. Author's comment for the theme:
+Background by Ryan Bliss, http://www.digitalblasphemy.com/ .
 
 %description Morning_Light -l pl
-Temat 'Morning_Light' autorstwa 'Moses Lei' Komentarz autora do
-tematu: Background by Ryan Bliss, <a
-href="http://www.digitalblasphemy.com">http://www.digitalblasphemy.com.
-
+Motyw 'Morning_Light' autorstwa 'Moses Lei'. Komentarz autora do
+motywu: Background by Ryan Bliss, http://www.digitalblasphemy.com/ .
 
 %package Mozi
 Summary:	Theme Mozi for gdm (GNOME Display Manager)
@@ -1459,18 +1234,14 @@ Vendor:		Soho501
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/325/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Mozi
-Theme 'Mozi' by 'Soho501' Author comment for the theme: Iguana eating
-msn butterfly
+Theme 'Mozi' by 'Soho501'. Author's comment for the theme: Iguana
+eating msn butterfly.
 
 %description Mozi -l pl
-Temat 'Mozi' autorstwa 'Soho501' Komentarz autora do tematu: Iguana
-eating msn butterfly
-
+Motyw 'Mozi' autorstwa 'Soho501'. Komentarz autora do motywu: Iguana
+eating msn butterfly.
 
 %package Murcia
 Summary:	Theme Murcia for gdm (GNOME Display Manager)
@@ -1480,18 +1251,14 @@ Vendor:		Álvaro del Castillo
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/243/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Murcia
-Theme 'Murcia' by 'Álvaro del Castillo' Author comment for the theme:
-Murcia spanish city
+Theme 'Murcia' by 'Álvaro del Castillo'. Author's comment for the
+theme: Murcia Spanish city.
 
 %description Murcia -l pl
-Temat 'Murcia' autorstwa 'Álvaro del Castillo' Komentarz autora do
-tematu: Murcia spanish city
-
+Motyw 'Murcia' autorstwa 'Álvaro del Castillo'. Komentarz autora do
+motywu: Murcia Spanish city.
 
 %package Open_Source_Initiative
 Summary:	Theme Open_Source_Initiative for gdm (GNOME Display Manager)
@@ -1501,20 +1268,16 @@ Vendor:		Bryan W Clark
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/270/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Open_Source_Initiative
-Theme 'Open_Source_Initiative' by 'Bryan W Clark' Author comment for
-the theme: The Open Source Initiative (tm) logo http://opensource.org/
-upgraded with a little gimp action.
+Theme 'Open_Source_Initiative' by 'Bryan W Clark'. Author's comment
+for the theme: The Open Source Initiative (tm) logo
+http://opensource.org/ upgraded with a little GIMP action.
 
 %description Open_Source_Initiative -l pl
-Temat 'Open_Source_Initiative' autorstwa 'Bryan W Clark' Komentarz
-autora do tematu: The Open Source Initiative (tm) logo
-http://opensource.org/ upgraded with a little gimp action.
-
+Motyw 'Open_Source_Initiative' autorstwa 'Bryan W Clark'. Komentarz
+autora do motywu: The Open Source Initiative (tm) logo
+http://opensource.org/ upgraded with a little GIMP action.
 
 %package Penguin_Computing
 Summary:	Theme Penguin_Computing for gdm (GNOME Display Manager)
@@ -1524,18 +1287,14 @@ Vendor:		Lars Strojny
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/272/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Penguin_Computing
-Theme 'Penguin_Computing' by 'Lars Strojny' Author comment for the
-theme: Theme which funny Quake-porting-image
+Theme 'Penguin_Computing' by 'Lars Strojny'. Author's comment for the
+theme: Theme with funny Quake-porting-image.
 
 %description Penguin_Computing -l pl
-Temat 'Penguin_Computing' autorstwa 'Lars Strojny' Komentarz autora do
-tematu: Theme which funny Quake-porting-image
-
+Motyw 'Penguin_Computing' autorstwa 'Lars Strojny'. Komentarz autora
+do motywu: Theme with funny Quake-porting-image.
 
 %package Peppe_for_Gonme
 Summary:	Theme Peppe_for_Gonme for gdm (GNOME Display Manager)
@@ -1545,18 +1304,14 @@ Vendor:		Peppe
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/754/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Peppe_for_Gonme
-Theme 'Peppe_for_Gonme' by 'Peppe' Author comment for the theme: My
+Theme 'Peppe_for_Gonme' by 'Peppe'. Author's comment for the theme: My
 first work.
 
 %description Peppe_for_Gonme -l pl
-Temat 'Peppe_for_Gonme' autorstwa 'Peppe' Komentarz autora do tematu:
+Motyw 'Peppe_for_Gonme' autorstwa 'Peppe'. Komentarz autora do motywu:
 My first work.
-
 
 %package pixelGDM
 Summary:	Theme pixelGDM for gdm (GNOME Display Manager)
@@ -1566,18 +1321,14 @@ Vendor:		Roman Joost
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/463/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description pixelGDM
-Theme 'pixelGDM' by 'Roman Joost' Author comment for the theme:
+Theme 'pixelGDM' by 'Roman Joost'. Author's comment for the theme:
 pixelGDM is a theme with pixel icons.
 
 %description pixelGDM -l pl
-Temat 'pixelGDM' autorstwa 'Roman Joost' Komentarz autora do tematu:
+Motyw 'pixelGDM' autorstwa 'Roman Joost'. Komentarz autora do motywu:
 pixelGDM is a theme with pixel icons.
-
 
 %package Red_Leaves
 Summary:	Theme Red_Leaves for gdm (GNOME Display Manager)
@@ -1587,20 +1338,16 @@ Vendor:		Christopher "3-D" Fowler
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/464/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Red_Leaves
-Theme 'Red_Leaves' by 'Christopher "3-D" Fowler' Author comment for
+Theme 'Red_Leaves' by 'Christopher "3-D" Fowler'. Author's comment for
 the theme: Japanese maple Red on a crisp blue fall sky makes a great
 greeter.
 
 %description Red_Leaves -l pl
-Temat 'Red_Leaves' autorstwa 'Christopher "3-D" Fowler' Komentarz
-autora do tematu: Japanese maple Red on a crisp blue fall sky makes a
+Motyw 'Red_Leaves' autorstwa 'Christopher "3-D" Fowler'. Komentarz
+autora do motywu: Japanese maple Red on a crisp blue fall sky makes a
 great greeter.
-
 
 %package RightVision
 Summary:	Theme RightVision for gdm (GNOME Display Manager)
@@ -1610,20 +1357,16 @@ Vendor:		Thibaut Dabonneville & Alexandre Notteau
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/301/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description RightVision
-Theme 'RightVision' by 'Thibaut Dabonneville & Alexandre Notteau'
-Author comment for the theme: A colorfull theme used by linux users @
-RightVision.
+Motyw 'RightVision' by 'Thibaut Dabonneville & Alexandre Notteau'.
+Authors' comment for the theme: A colorfull theme used by Linux users
+@ RightVision.
 
 %description RightVision -l pl
-Temat 'RightVision' autorstwa 'Thibaut Dabonneville & Alexandre
-Notteau' Komentarz autora do tematu: A colorfull theme used by linux
+Motyw 'RightVision' autorstwa 'Thibaut Dabonneville & Alexandre
+Notteau'. Komentarz autor�w do motywu: A colorfull theme used by Linux
 users @ RightVision.
-
 
 %package Sea
 Summary:	Theme Sea for gdm (GNOME Display Manager)
@@ -1633,18 +1376,14 @@ Vendor:		Gianluca Masci
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/107/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Sea
-Theme 'Sea' by 'Gianluca Masci' Author comment for the theme: A "Sea
-and Sunset" theme.
-
-%description Sea -l pl
-Temat 'Sea' autorstwa 'Gianluca Masci' Komentarz autora do tematu: A
+Theme 'Sea' by 'Gianluca Masci'. Author's comment for the theme: A
 "Sea and Sunset" theme.
 
+%description Sea -l pl
+Motyw 'Sea' autorstwa 'Gianluca Masci'. Komentarz autora do motywu: A
+"Sea and Sunset" theme.
 
 %package Segovia
 Summary:	Theme Segovia for gdm (GNOME Display Manager)
@@ -1654,18 +1393,14 @@ Vendor:		Alvaro del Castillo
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/111/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Segovia
-Theme 'Segovia' by 'Alvaro del Castillo' Author comment for the theme:
-A Spanish historical city.
+Theme 'Segovia' by 'Alvaro del Castillo'. Author's comment for the
+theme: A Spanish historical city.
 
 %description Segovia -l pl
-Temat 'Segovia' autorstwa 'Alvaro del Castillo' Komentarz autora do
-tematu: A Spanish historical city.
-
+Motyw 'Segovia' autorstwa 'Alvaro del Castillo'. Komentarz autora do
+motywu: A Spanish historical city.
 
 %package Segovia_Night
 Summary:	Theme Segovia_Night for gdm (GNOME Display Manager)
@@ -1675,18 +1410,14 @@ Vendor:		Alvaro del Castillo
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/108/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Segovia_Night
-Theme 'Segovia_Night' by 'Alvaro del Castillo' Author comment for the
-theme: A Spanish historical city in the night.
+Theme 'Segovia_Night' by 'Alvaro del Castillo'. Author's comment for
+the theme: A Spanish historical city in the night.
 
 %description Segovia_Night -l pl
-Temat 'Segovia_Night' autorstwa 'Alvaro del Castillo' Komentarz autora
-do tematu: A Spanish historical city in the night.
-
+Motyw 'Segovia_Night' autorstwa 'Alvaro del Castillo'. Komentarz
+autora do motywu: A Spanish historical city in the night.
 
 %package Shapy
 Summary:	Theme Shapy for gdm (GNOME Display Manager)
@@ -1696,18 +1427,14 @@ Vendor:		T.Thiessens
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/776/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Shapy
-Theme 'Shapy' by 'T.Thiessens' Author comment for the theme: Shapy and
-colorful
+Theme 'Shapy' by 'T.Thiessens' Author's comment for the theme: Shapy and
+colorful.
 
 %description Shapy -l pl
-Temat 'Shapy' autorstwa 'T.Thiessens' Komentarz autora do tematu:
-Shapy and colorful
-
+Motyw 'Shapy' autorstwa 'T.Thiessens'. Komentarz autora do motywu:
+Shapy and colorful.
 
 %package Simple-Gnome-Logo
 Summary:	Theme Simple-GNOME-Logo for gdm (GNOME Display Manager)
@@ -1717,24 +1444,20 @@ Vendor:		Theme by DekuHaze - Background (c) 2003 Bryan W. C
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/617/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Simple-Gnome-Logo
 Theme 'Simple-Gnome-Logo' by 'Theme by DekuHaze - Background (c) 2003
-Bryan W. C' Author comment for the theme: A simple GDM theme based on
-the desktop background (Simple Black with Gnome Foot
-(http://art.gnome.org/backgrounds/gnome/128.php))created by Bryan W.
+Bryan W. C'. Author's comment for the theme: A simple GDM theme based
+on the desktop background (Simple Black with Gnome Foot -
+http://art.gnome.org/backgrounds/gnome/128.php ) created by Bryan W.
 Clark.
 
 %description Simple-Gnome-Logo -l pl
-Temat 'Simple-Gnome-Logo' autorstwa 'Theme by DekuHaze - Background
-(c) 2003 Bryan W. C' Komentarz autora do tematu: A simple GDM theme
-based on the desktop background (Simple Black with Gnome Foot
-(http://art.gnome.org/backgrounds/gnome/128.php))created by Bryan W.
+Motyw 'Simple-Gnome-Logo' autorstwa 'Theme by DekuHaze - Background
+(c) 2003 Bryan W. C'. Komentarz autora do motywu: A simple GDM theme
+based on the desktop background (Simple Black with Gnome Foot -
+http://art.gnome.org/backgrounds/gnome/128.php ) created by Bryan W.
 Clark.
-
 
 %package Space
 Summary:	Theme Space for gdm (GNOME Display Manager)
@@ -1744,18 +1467,14 @@ Vendor:		Guille (bisho)
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/222/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Space
-Theme 'Space' by 'Guille (bisho)' Author comment for the theme: A
+Theme 'Space' by 'Guille (bisho)'. Author's comment for the theme: A
 space based greeter with icons borrowed from other themes.
 
 %description Space -l pl
-Temat 'Space' autorstwa 'Guille (bisho)' Komentarz autora do tematu: A
-space based greeter with icons borrowed from other themes.
-
+Motyw 'Space' autorstwa 'Guille (bisho)'. Komentarz autora do motywu:
+A space based greeter with icons borrowed from other themes.
 
 %package SpreadFirefox
 Summary:	Theme SpreadFirefox for gdm (GNOME Display Manager)
@@ -1765,20 +1484,16 @@ Vendor:		DekuHaze
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/744/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description SpreadFirefox
-Theme 'SpreadFirefox' by 'DekuHaze' Author comment for the theme: My
-personal contribution to the \'Spread Firefox\' project using the
+Theme 'SpreadFirefox' by 'DekuHaze'. Author's comment for the theme:
+My personal contribution to the 'Spread Firefox' project using the
 wallpaper designed by LouCypher. Enjoy.
 
 %description SpreadFirefox -l pl
-Temat 'SpreadFirefox' autorstwa 'DekuHaze' Komentarz autora do tematu:
-My personal contribution to the \'Spread Firefox\' project using the
-wallpaper designed by LouCypher. Enjoy.
-
+Motyw 'SpreadFirefox' autorstwa 'DekuHaze'. Komentarz autora do
+motywu: My personal contribution to the 'Spread Firefox' project using
+the wallpaper designed by LouCypher. Enjoy.
 
 %package STGO
 Summary:	Theme STGO for gdm (GNOME Display Manager)
@@ -1788,18 +1503,14 @@ Vendor:		Phillip
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/109/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description STGO
-Theme 'STGO' by 'Phillip' Author comment for the theme: A photo from
-Santiago.
-
-%description STGO -l pl
-Temat 'STGO' autorstwa 'Phillip' Komentarz autora do tematu: A photo
+Theme 'STGO' by 'Phillip'. Author's comment for the theme: A photo
 from Santiago.
 
+%description STGO -l pl
+Motyw 'STGO' autorstwa 'Phillip'. Komentarz autora do motywu: A photo
+from Santiago.
 
 %package Stop_TCPA
 Summary:	Theme Stop_TCPA for gdm (GNOME Display Manager)
@@ -1809,18 +1520,14 @@ Vendor:		Lars Strojny
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/267/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Stop_TCPA
-Theme 'Stop_TCPA' by 'Lars Strojny' Author comment for the theme: A
+Theme 'Stop_TCPA' by 'Lars Strojny'. Author's comment for the theme: A
 Theme against TCPA, Palladium and Censorship.
 
 %description Stop_TCPA -l pl
-Temat 'Stop_TCPA' autorstwa 'Lars Strojny' Komentarz autora do tematu:
-A Theme against TCPA, Palladium and Censorship.
-
+Motyw 'Stop_TCPA' autorstwa 'Lars Strojny'. Komentarz autora do
+motywu: A Theme against TCPA, Palladium and Censorship.
 
 %package SVG_Sakura
 Summary:	Theme SVG_Sakura for gdm (GNOME Display Manager)
@@ -1830,18 +1537,14 @@ Vendor:		Ben
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/746/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description SVG_Sakura
-Theme 'SVG_Sakura' by 'Ben' Author comment for the theme: A cherry
+Theme 'SVG_Sakura' by 'Ben'. Author's comment for the theme: A cherry
 blossom theme using exclusively SVG images.
 
 %description SVG_Sakura -l pl
-Temat 'SVG_Sakura' autorstwa 'Ben' Komentarz autora do tematu: A
+Motyw 'SVG_Sakura' autorstwa 'Ben'. Komentarz autora do motywu: A
 cherry blossom theme using exclusively SVG images.
-
 
 %package Synergy
 Summary:	Theme Synergy for gdm (GNOME Display Manager)
@@ -1851,18 +1554,14 @@ Vendor:		jam
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/419/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Synergy
-Theme 'Synergy' by 'jam' Author comment for the theme: Synergy: cube
-showing 2 faces. KDE logo on left face, Gnome logo on the other
+Theme 'Synergy' by 'jam'. Author's comment for the theme: Synergy:
+cube showing 2 faces. KDE logo on left face, Gnome logo on the other.
 
 %description Synergy -l pl
-Temat 'Synergy' autorstwa 'jam' Komentarz autora do tematu: Synergy:
-cube showing 2 faces. KDE logo on left face, Gnome logo on the other
-
+Motyw 'Synergy' autorstwa 'jam'. Komentarz autora do motywu: Synergy:
+cube showing 2 faces. KDE logo on left face, Gnome logo on the other.
 
 %package Taipei
 Summary:	Theme Taipei for gdm (GNOME Display Manager)
@@ -1872,18 +1571,14 @@ Vendor:		Julian Coccia
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/525/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Taipei
-Theme 'Taipei' by 'Julian Coccia' Author comment for the theme:
-Taipei, CKS Memorial Entrance (1600x1200)
+Theme 'Taipei' by 'Julian Coccia'. Author's comment for the theme:
+Taipei, CKS Memorial Entrance (1600x1200).
 
 %description Taipei -l pl
-Temat 'Taipei' autorstwa 'Julian Coccia' Komentarz autora do tematu:
-Taipei, CKS Memorial Entrance (1600x1200)
-
+Motyw 'Taipei' autorstwa 'Julian Coccia'. Komentarz autora do motywu:
+Taipei, CKS Memorial Entrance (1600x1200).
 
 %package The_Dark_Crystal
 Summary:	Theme The_Dark_Crystal for gdm (GNOME Display Manager)
@@ -1893,18 +1588,14 @@ Vendor:		Bobby Corbell
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/293/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description The_Dark_Crystal
-Theme 'The_Dark_Crystal' by 'Bobby Corbell' Author comment for the
+Theme 'The_Dark_Crystal' by 'Bobby Corbell'. Author's comment for the
 theme: A collage of images from the movie The Dark Crystal.
 
 %description The_Dark_Crystal -l pl
-Temat 'The_Dark_Crystal' autorstwa 'Bobby Corbell' Komentarz autora do
-tematu: A collage of images from the movie The Dark Crystal.
-
+Motyw 'The_Dark_Crystal' autorstwa 'Bobby Corbell'. Komentarz autora
+do motywu: A collage of images from the movie The Dark Crystal.
 
 %package Todmorden
 Summary:	Theme Todmorden for gdm (GNOME Display Manager)
@@ -1914,18 +1605,14 @@ Vendor:		Todd Jones
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/332/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Todmorden
-Theme 'Todmorden' by 'Todd Jones' Author comment for the theme: A pic
-I took from a hill over Todmorden, England.
-
-%description Todmorden -l pl
-Temat 'Todmorden' autorstwa 'Todd Jones' Komentarz autora do tematu: A
+Theme 'Todmorden' by 'Todd Jones'. Author's comment for the theme: A
 pic I took from a hill over Todmorden, England.
 
+%description Todmorden -l pl
+Motyw 'Todmorden' autorstwa 'Todd Jones'. Komentarz autora do motywu:
+A pic I took from a hill over Todmorden, England.
 
 %package Valladolid
 Summary:	Theme Valladolid for gdm (GNOME Display Manager)
@@ -1935,18 +1622,14 @@ Vendor:		Álvaro del Castillo
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/242/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description Valladolid
-Theme 'Valladolid' by 'Álvaro del Castillo' Author comment for the
-theme: Valladolid spanish city
+Theme 'Valladolid' by 'Álvaro del Castillo'. Author's comment for
+the theme: Valladolid Spanish city.
 
 %description Valladolid -l pl
-Temat 'Valladolid' autorstwa 'Álvaro del Castillo' Komentarz autora
-do tematu: Valladolid spanish city
-
+Motyw 'Valladolid' autorstwa 'Álvaro del Castillo'. Komentarz autora
+do motywu: Valladolid Spanish city.
 
 %package XPTO
 Summary:	Theme XPTO for gdm (GNOME Display Manager)
@@ -1956,22 +1639,17 @@ Vendor:		Nelson Marques
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/182/
 Requires:	%{name}
-BuildArch:	noarch
-
-
 
 %description XPTO
-Theme 'XPTO' by 'Nelson Marques' Author comment for the theme: A theme
-made for the common GDM login's of our humble machines.
+Theme 'XPTO' by 'Nelson Marques'. Author's comment for the theme: A
+theme made for the common GDM logins of our humble machines.
 
 %description XPTO -l pl
-Temat 'XPTO' autorstwa 'Nelson Marques' Komentarz autora do tematu: A
-theme made for the common GDM login's of our humble machines.
-
+Motyw 'XPTO' autorstwa 'Nelson Marques'. Komentarz autora do motywu: A
+theme made for the common GDM logins of our humble machines.
 
 %prep
 %setup -q -c %{_builddir}/%{name}-%{version}  -a0 -a1 -a2 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27 -a28 -a29 -a30 -a31 -a32 -a33 -a34 -a35 -a36 -a37 -a38 -a39 -a40 -a41 -a42 -a43 -a44 -a45 -a46 -a47 -a48 -a49 -a50 -a51 -a52 -a53 -a54 -a55 -a56 -a57 -a58 -a59 -a60 -a61 -a62 -a63 -a64 -a65 -a66 -a67 -a68 -a69 -a71 -a72 -a73 -a74 -a75 -a76 -a77 -a78 -a79 -a80
-
 
 cat>README<<E_O_F
 This is small x-mas gift from yoshi to all PLD users, developers and
@@ -1980,10 +1658,6 @@ Have fun and support art.gnome.org with your own creations (if you can).
 
 Merry Christmas :)
 E_O_F
-
-
-%build
-
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -3140,10 +2814,12 @@ install xpto/xpto_shot.png $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
 install xpto/xpto.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
 install xpto/xpt.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
 
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{_datadir}/gdm/themes/
+%dir %{_datadir}/gdm/themes
 %doc README
 
 #
@@ -4368,7 +4044,3 @@ install xpto/xpt.xml $RPM_BUILD_ROOT%{_datadir}/gdm/themes/XPTO
 %{_datadir}/gdm/themes/XPTO/xpto_shot.png
 %{_datadir}/gdm/themes/XPTO/xpto.xml
 %{_datadir}/gdm/themes/XPTO/xpt.xml
-
-
-%clean
-rm -rf $RPM_BUILD_ROOT
