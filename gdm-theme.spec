@@ -231,12 +231,12 @@ Requires:	%{name}
 %description Angel
 Theme 'Angel' by 'Bert De Meyer'. Author's comment for the theme:
 Note: This themes is based on an old Windowmaker theme from Largo that
-you can still find at: http://largo.windowmaker.org/themes/ .
+you can still find at: <http://largo.windowmaker.org/themes/>.
 
 %description Angel -l pl
 Motyw 'Angel' autorstwa 'Bert De Meyer'. Komentarz autora do motywu:
 Note: This themes is based on an old Windowmaker theme from Largo that
-you can still find at: http://largo.windowmaker.org/themes/ .
+you can still find at: <http://largo.windowmaker.org/themes/>.
 
 %package Barcelona
 Summary:	Theme Barcelona for gdm (GNOME Display Manager)
@@ -929,12 +929,12 @@ Requires:	%{name}
 %description In_This_World
 Theme 'In_This_World' by 'Job Diogenes Ribeiro Borges'. Author's
 comment for the theme: Theme based on the background In This World
-from Vlad Gerasimov http://www.vladstudio.com/ .
+from Vlad Gerasimov <http://www.vladstudio.com/>.
 
 %description In_This_World -l pl
 Motyw 'In_This_World' autorstwa 'Job Diogenes Ribeiro Borges'.
 Komentarz autora do motywu: Theme based on the background In This
-World from Vlad Gerasimov http://www.vladstudio.com/ .
+World from Vlad Gerasimov <http://www.vladstudio.com/>.
 
 %package KDE_Crystal
 Summary:	Theme KDE_Crystal for gdm (GNOME Display Manager)
@@ -1122,13 +1122,13 @@ Requires:	%{name}
 %description ManzanaTux
 Theme 'ManzanaTux' by 'Rogelio Domínguez Hernández'. Author's
 comment for the theme: Theme based in Crystal Theme by Niek van der
-Maas. All icons are made by Everaldo - http://www.everaldo.com/ . The
+Maas. All icons are made by Everaldo - <http://www.everaldo.com/>. The
 background is by Bandar Raffa - http://www.sadeem.net/tux.html ).
 
 %description ManzanaTux -l pl
 Motyw 'ManzanaTux' autorstwa 'Rogelio Domínguez Hernández'.
 Komentarz autora do motywu: Theme based in Crystal Theme by Niek van
-der Maas. All icons are made by Everaldo - http://www.everaldo.com/ .
+der Maas. All icons are made by Everaldo - <http://www.everaldo.com/>.
 The background is by Bandar Raffa - http://www.sadeem.net/tux.html ).
 
 %package ManzanaTuxBlack
@@ -1149,7 +1149,7 @@ background is by Bandar Raffa - http://www.sadeem.net/tux.html ).
 %description ManzanaTuxBlack -l pl
 Motyw 'ManzanaTuxBlack' autorstwa 'Rogelio Domínguez Hernández'.
 Komentarz autora do motywu: Theme based in Crystal Theme by Niek van
-der Maas. All icons are made by Everaldo - http://www.everaldo.com/ .
+der Maas. All icons are made by Everaldo - <http://www.everaldo.com/>.
 The background is by Bandar Raffa - http://www.sadeem.net/tux.html ).
 
 %package Milk
@@ -1220,11 +1220,11 @@ Requires:	%{name}
 
 %description Morning_Light
 Theme 'Morning_Light' by 'Moses Lei'. Author's comment for the theme:
-Background by Ryan Bliss, http://www.digitalblasphemy.com/ .
+Background by Ryan Bliss, <http://www.digitalblasphemy.com/>.
 
 %description Morning_Light -l pl
 Motyw 'Morning_Light' autorstwa 'Moses Lei'. Komentarz autora do
-motywu: Background by Ryan Bliss, http://www.digitalblasphemy.com/ .
+motywu: Background by Ryan Bliss, <http://www.digitalblasphemy.com/>.
 
 %package Mozi
 Summary:	Theme Mozi for gdm (GNOME Display Manager)
