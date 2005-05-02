@@ -690,8 +690,8 @@ Theme 'Flowers' by 'Gianluca Masci'. Author's comment for the theme: A
 Theme with Flowers.
 
 %description Flowers -l pl
-Motyw 'Flowers' autorstwa 'Gianluca Masci'. Komentarz autora do motywu:
-A Theme with Flowers.
+Motyw 'Flowers' autorstwa 'Gianluca Masci'. Komentarz autora do
+motywu: A Theme with Flowers.
 
 %package gcr-ddlm
 Summary:	Theme gcr-ddlm for gdm (GNOME Display Manager)
@@ -1429,8 +1429,8 @@ URL:		http://art.gnome.org/themes/gdm_greeter/776/
 Requires:	%{name}
 
 %description Shapy
-Theme 'Shapy' by 'T.Thiessens' Author's comment for the theme: Shapy and
-colorful.
+Theme 'Shapy' by 'T.Thiessens' Author's comment for the theme: Shapy
+and colorful.
 
 %description Shapy -l pl
 Motyw 'Shapy' autorstwa 'T.Thiessens'. Komentarz autora do motywu:
