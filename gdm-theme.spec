@@ -9,7 +9,7 @@
 # ??? -- I can't find any
 #
 Summary:	Themes for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motywy dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motywy dla gdm (Zarządcy ekranów GNOME)
 Name:		gdm-theme
 Version:	2.6.0.6
 Release:	1
@@ -187,7 +187,7 @@ Ten pakiet pozwala na zmiane wyglądu Zarządcy ekranów GNOME :-)
 
 %package 300-lantueno
 Summary:	Theme 300-lantueno for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw 300-lantueno dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw 300-lantueno dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Naciu
 Group:		Themes
@@ -204,7 +204,7 @@ do motywu: Theme based on Lantueno; year 1911 (Cantabria, Spain).
 
 %package 9nome-Darmis
 Summary:	Theme 9nome-Darmis for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw 9nome-Darmis dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw 9nome-Darmis dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		I Wayan Suryadarma
 Group:		Themes
@@ -221,7 +221,7 @@ do motywu: This is my first GDM and I like it.
 
 %package Angel
 Summary:	Theme Angel for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Angel dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Angel dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Bert De Meyer
 Group:		Themes
@@ -240,7 +240,7 @@ you can still find at: <http://largo.windowmaker.org/themes/>.
 
 %package Barcelona
 Summary:	Theme Barcelona for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Barcelona dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Barcelona dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Álvaro del Castillo
 Group:		Themes
@@ -255,7 +255,7 @@ Motyw 'Barcelona' autorstwa 'Ălvaro del Castillo'.
 
 %package Bee_at_Work
 Summary:	Theme Bee_at_Work for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Bee_at_Work dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Bee_at_Work dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Julian Coccia
 Group:		Themes
@@ -274,7 +274,7 @@ my pictures.
 
 %package Bijou
 Summary:	Theme Bijou for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Bijou dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Bijou dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Alex Fraser
 Group:		Themes
@@ -291,7 +291,7 @@ Simple and clean with highly polished buttons
 
 %package Blueish
 Summary:	Theme Blueish for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Blueish dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Blueish dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Michael Thomas, Henrik Brix Andersen
 Group:		Themes
@@ -310,7 +310,7 @@ background. Credits for the background goes to Henrik Brix Andersen.
 
 %package Butterfly
 Summary:	Theme Butterfly for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Butterfly dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Butterfly dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		sgaap
 Group:		Themes
@@ -327,7 +327,7 @@ bright theme :)
 
 %package Colorado_Windmill
 Summary:	Theme Colorado_Windmill for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Colorado_Windmill dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Colorado_Windmill dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Scott W. Taylor
 Group:		Themes
@@ -344,7 +344,7 @@ autora do motywu: Windmill in the grasslands of Colorado.
 
 %package Cracked_Windows
 Summary:	Theme Cracked_Windows for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Cracked_Windows dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Cracked_Windows dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Ovidiu Cernautan
 Group:		Themes
@@ -363,7 +363,7 @@ it too.
 
 %package Crop_Circles
 Summary:	Theme Crop_Circles for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Crop_Circles dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Crop_Circles dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Will Reinhart
 Group:		Themes
@@ -384,7 +384,7 @@ the wallpaper this theme's background is based on.
 
 %package Crystal
 Summary:	Theme Crystal for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Crystal dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Crystal dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Niek van der Maas
 Group:		Themes
@@ -403,7 +403,7 @@ made by Everaldo.
 
 %package Crystal_For_Gnome
 Summary:	Theme Crystal_For_GNOME for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Crystal_For_GNOME dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Crystal_For_GNOME dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Keifer
 Group:		Themes
@@ -424,7 +424,7 @@ with facethemes to function.
 
 %package Crystal_for_Gnome_-_theme_2
 Summary:	Theme Crystal_for_GNOME_-_theme_2 for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Crystal_for_GNOME_-_theme_2 dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Crystal_for_GNOME_-_theme_2 dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Keifer Miller
 Group:		Themes
@@ -443,7 +443,7 @@ for Gnome project.
 
 %package Crystal_Rose
 Summary:	Theme Crystal_Rose for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Crystal_Rose dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Crystal_Rose dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Carlos (StackGuard) Ferreira
 Group:		Themes
@@ -462,7 +462,7 @@ girfriend, based on a wallpaper found in deviantart.com .
 
 %package Cubic_Linux_and_Gnome
 Summary:	Theme Cubic_Linux_and_GNOME for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Cubic_Linux_and_GNOME dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Cubic_Linux_and_GNOME dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		jam
 Group:		Themes
@@ -481,7 +481,7 @@ Gnome logo on the other.
 
 %package Dart_Frog
 Summary:	Theme Dart_Frog for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Dart_Frog dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Dart_Frog dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Wreckd
 Group:		Themes
@@ -500,7 +500,7 @@ kinda frog this is?
 
 %package Dawn
 Summary:	Theme Dawn for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Dawn dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Dawn dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Gianluca Masci
 Group:		Themes
@@ -517,7 +517,7 @@ Dawn in mountain.
 
 %package Daybreak
 Summary:	Theme Daybreak for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Daybreak dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Daybreak dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Francis Tyers
 Group:		Themes
@@ -536,7 +536,7 @@ the gdm theme.
 
 %package Delicious
 Summary:	Theme Delicious for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Delicious dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Delicious dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Roman Joost
 Group:		Themes
@@ -555,7 +555,7 @@ background.
 
 %package Devils_Candy
 Summary:	Theme Devils_Candy for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Devils_Candy dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Devils_Candy dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Slayer[nFc]
 Group:		Themes
@@ -572,7 +572,7 @@ motywu: My first GDM theme based on DevilsCandy by Xebra 2001.
 
 %package Dreaming_Alien
 Summary:	Theme Dreaming_Alien for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Dreaming_Alien dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Dreaming_Alien dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Christopher V. Browne
 Group:		Themes
@@ -591,7 +591,7 @@ borrow from Bijou.
 
 %package DumbCloud
 Summary:	Theme DumbCloud for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw DumbCloud dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw DumbCloud dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Unknown
 Group:		Themes
@@ -622,7 +622,7 @@ could do it, you can.
 
 %package Emo-Blue
 Summary:	Theme Emo-Blue for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Emo-Blue dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Emo-Blue dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Paul Hendrick
 Group:		Themes
@@ -640,7 +640,7 @@ icons.
 
 %package Falling_Angel
 Summary:	Theme Falling_Angel for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Falling_Angel dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Falling_Angel dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Carlos (StackGuard) Ferreira
 Group:		Themes
@@ -659,7 +659,7 @@ based on a beautiful wallpaper :)
 
 %package Fire_Breathing_Robot
 Summary:	Theme Fire_Breathing_Robot for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Fire_Breathing_Robot dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Fire_Breathing_Robot dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		John Cantrell
 Group:		Themes
@@ -678,7 +678,7 @@ Based off the Redhat's bluecurve.
 
 %package Flowers
 Summary:	Theme Flowers for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Flowers dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Flowers dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Gianluca Masci
 Group:		Themes
@@ -695,7 +695,7 @@ motywu: A Theme with Flowers.
 
 %package gcr-ddlm
 Summary:	Theme gcr-ddlm for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw gcr-ddlm dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw gcr-ddlm dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		ghost_crab
 Group:		Themes
@@ -714,7 +714,7 @@ to do to fix it. Rock!
 
 %package Gdm_Dropline
 Summary:	Theme Gdm_Dropline for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Gdm_Dropline dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Gdm_Dropline dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		elmaya
 Group:		Themes
@@ -731,7 +731,7 @@ GDM theme to go with the dropline splash screen.
 
 %package GDM_Waves
 Summary:	Theme GDM_Waves for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw GDM_Waves dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw GDM_Waves dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Marco
 Group:		Themes
@@ -748,7 +748,7 @@ first GDM theme.
 
 %package GDM-GlassFoot
 Summary:	Theme GDM-GlassFoot for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw GDM-GlassFoot dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw GDM-GlassFoot dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Burcin Donmez
 Group:		Themes
@@ -767,7 +767,7 @@ Waldgeist.
 
 %package GDM-Mosaic
 Summary:	Theme GDM-Mosaic for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw GDM-Mosaic dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw GDM-Mosaic dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		soho501
 Group:		Themes
@@ -784,7 +784,7 @@ That's the bull's shadow mosaic...
 
 %package Glassy
 Summary:	Theme Glassy for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Glassy dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Glassy dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Christopher A. Shamis
 Group:		Themes
@@ -801,7 +801,7 @@ motywu: Ray-traced glass cork-screw over a shiny checkered floor.
 
 %package Gnome_Chile
 Summary:	Theme GNOME_Chile for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw GNOME_Chile dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw GNOME_Chile dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Andrés "Death_Knight" Villagrán
 Group:		Themes
@@ -820,7 +820,7 @@ ES: Este tema es exelente, bonito y muy atrallente MADE IN CHILE.
 
 %package Gnome_Plain_Swoosh_GDM_Theme
 Summary:	Theme GNOME_Plain_Swoosh_GDM_Theme for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw GNOME_Plain_Swoosh_GDM_Theme dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw GNOME_Plain_Swoosh_GDM_Theme dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Michael Flaig
 Group:		Themes
@@ -843,7 +843,7 @@ Onebase GDM Theme by P.Yavitz.
 
 %package Gnome_Plain_Swoosh_GDM_Theme_TNG
 Summary:	Theme GNOME_Plain_Swoosh_GDM_Theme_TNG for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw GNOME_Plain_Swoosh_GDM_Theme_TNG dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw GNOME_Plain_Swoosh_GDM_Theme_TNG dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Michael Flaig
 Group:		Themes
@@ -866,7 +866,7 @@ Wallpaper "Gnome Plain Swoosh" by: Morgan Collins.
 
 %package Hantzley
 Summary:	Theme Hantzley for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Hantzley dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Hantzley dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Hantzley
 Group:		Themes
@@ -883,7 +883,7 @@ first GDM Greeter Theme. Hope you like it.
 
 %package Hunter
 Summary:	Theme Hunter for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Hunter dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Hunter dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Michael Thomas
 Group:		Themes
@@ -900,7 +900,7 @@ Circles theme that uses a image instead of a svg file.
 
 %package hybridFUSION
 Summary:	Theme hybridFUSION for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw hybridFUSION dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw hybridFUSION dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Vincent Mac
 Group:		Themes
@@ -919,7 +919,7 @@ artwork.
 
 %package In_This_World
 Summary:	Theme In_This_World for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw In_This_World dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw In_This_World dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Job Diogenes Ribeiro Borges
 Group:		Themes
@@ -938,7 +938,7 @@ World from Vlad Gerasimov <http://www.vladstudio.com/>.
 
 %package KDE_Crystal
 Summary:	Theme KDE_Crystal for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw KDE_Crystal dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw KDE_Crystal dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Yann Bouan
 Group:		Themes
@@ -955,7 +955,7 @@ motywu: A theme inspired by the KDE crystal icon theme.
 
 %package Kinkakuji
 Summary:	Theme Kinkakuji for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Kinkakuji dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Kinkakuji dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Cholwich Nattee
 Group:		Themes
@@ -972,7 +972,7 @@ motywu: Kinkakuji (The temple of the Golden Pavilion) in Kyoto Japan.
 
 %package Knoke
 Summary:	Theme Knoke for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Knoke dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Knoke dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Dietrich Heise
 Group:		Themes
@@ -989,7 +989,7 @@ A GDM Greeter Theme with my cat 'Knoke'.
 
 %package La_Bisbal_dEmpord_nevada
 Summary:	Theme La_Bisbal_dEmpord_nevada for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw La_Bisbal_dEmpord_nevada dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw La_Bisbal_dEmpord_nevada dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Radio Bisbal
 Group:		Themes
@@ -1008,7 +1008,7 @@ d'Emporda (Catalonian town).
 
 %package Leon
 Summary:	Theme Leon for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Leon dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Leon dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Álvaro del Castillo
 Group:		Themes
@@ -1025,7 +1025,7 @@ motywu: Leon Spanish city.
 
 %package Linux_Crystal
 Summary:	Theme Linux_Crystal for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Linux_Crystal dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Linux_Crystal dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Hayl (D K D)
 Group:		Themes
@@ -1042,7 +1042,7 @@ motywu: Crystal Icons-based GDM theme for GDM 2.4 and higher.
 
 %package LinuxTux
 Summary:	Theme LinuxTux for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw LinuxTux dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw LinuxTux dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Rebel
 Group:		Themes
@@ -1059,7 +1059,7 @@ gdmgreeter.
 
 %package Luna_GDM_Theme
 Summary:	Theme Luna_GDM_Theme for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Luna_GDM_Theme dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Luna_GDM_Theme dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Harshwardhan Nagaonkar
 Group:		Themes
@@ -1078,7 +1078,7 @@ illustrates the flexibility of the GDM theming engine.
 
 %package M-83
 Summary:	Theme M-83 for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw M-83 dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw M-83 dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Nexxuz
 Group:		Themes
@@ -1095,7 +1095,7 @@ known spiral galaxy, Messier 83, also known as NGC 5236.
 
 %package Machu_Picchu
 Summary:	Theme Machu_Picchu for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Machu_Picchu dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Machu_Picchu dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		David Thompson
 Group:		Themes
@@ -1112,7 +1112,7 @@ motywu: Pictures of the Inca remains at Machu Picchu in Peru.
 
 %package ManzanaTux
 Summary:	Theme ManzanaTux for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw ManzanaTux dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw ManzanaTux dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Rogelio Domínguez Hernández
 Group:		Themes
@@ -1133,7 +1133,7 @@ The background is by Bandar Raffa - http://www.sadeem.net/tux.html ).
 
 %package ManzanaTuxBlack
 Summary:	Theme ManzanaTuxBlack for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw ManzanaTuxBlack dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw ManzanaTuxBlack dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Rogelio Domínguez Hernández
 Group:		Themes
@@ -1154,7 +1154,7 @@ The background is by Bandar Raffa - http://www.sadeem.net/tux.html ).
 
 %package Milk
 Summary:	Theme Milk for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Milk dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Milk dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Will Reinhart
 Group:		Themes
@@ -1175,7 +1175,7 @@ GDM theme. Requires GDM 2.4.2.95 or newer.
 
 %package Mirrored
 Summary:	Theme Mirrored for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Mirrored dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Mirrored dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Roman Joost
 Group:		Themes
@@ -1194,7 +1194,7 @@ the text is mirrored (for usability reasons).
 
 %package Mono_Metal
 Summary:	Theme Mono_Metal for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Mono_Metal dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Mono_Metal dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		crahs
 Group:		Themes
@@ -1211,7 +1211,7 @@ is my first theme, for GDM based on mono with metal style.
 
 %package Morning_Light
 Summary:	Theme Morning_Light for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Morning_Light dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Morning_Light dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Moses Lei
 Group:		Themes
@@ -1228,7 +1228,7 @@ motywu: Background by Ryan Bliss, <http://www.digitalblasphemy.com/>.
 
 %package Mozi
 Summary:	Theme Mozi for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Mozi dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Mozi dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Soho501
 Group:		Themes
@@ -1245,7 +1245,7 @@ eating msn butterfly.
 
 %package Murcia
 Summary:	Theme Murcia for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Murcia dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Murcia dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Álvaro del Castillo
 Group:		Themes
@@ -1262,7 +1262,7 @@ motywu: Murcia Spanish city.
 
 %package Open_Source_Initiative
 Summary:	Theme Open_Source_Initiative for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Open_Source_Initiative dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Open_Source_Initiative dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Bryan W Clark
 Group:		Themes
@@ -1281,7 +1281,7 @@ http://opensource.org/ upgraded with a little GIMP action.
 
 %package Penguin_Computing
 Summary:	Theme Penguin_Computing for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Penguin_Computing dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Penguin_Computing dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Lars Strojny
 Group:		Themes
@@ -1298,7 +1298,7 @@ do motywu: Theme with funny Quake-porting-image.
 
 %package Peppe_for_Gonme
 Summary:	Theme Peppe_for_Gonme for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Peppe_for_Gonme dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Peppe_for_Gonme dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Peppe
 Group:		Themes
@@ -1315,7 +1315,7 @@ My first work.
 
 %package pixelGDM
 Summary:	Theme pixelGDM for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw pixelGDM dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw pixelGDM dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Roman Joost
 Group:		Themes
@@ -1332,7 +1332,7 @@ pixelGDM is a theme with pixel icons.
 
 %package Red_Leaves
 Summary:	Theme Red_Leaves for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Red_Leaves dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Red_Leaves dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Christopher "3-D" Fowler
 Group:		Themes
@@ -1351,7 +1351,7 @@ great greeter.
 
 %package RightVision
 Summary:	Theme RightVision for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw RightVision dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw RightVision dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Thibaut Dabonneville & Alexandre Notteau
 Group:		Themes
@@ -1370,7 +1370,7 @@ users @ RightVision.
 
 %package Sea
 Summary:	Theme Sea for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Sea dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Sea dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Gianluca Masci
 Group:		Themes
@@ -1387,7 +1387,7 @@ Motyw 'Sea' autorstwa 'Gianluca Masci'. Komentarz autora do motywu: A
 
 %package Segovia
 Summary:	Theme Segovia for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Segovia dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Segovia dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Alvaro del Castillo
 Group:		Themes
@@ -1404,7 +1404,7 @@ motywu: A Spanish historical city.
 
 %package Segovia_Night
 Summary:	Theme Segovia_Night for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Segovia_Night dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Segovia_Night dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Alvaro del Castillo
 Group:		Themes
@@ -1421,7 +1421,7 @@ autora do motywu: A Spanish historical city in the night.
 
 %package Shapy
 Summary:	Theme Shapy for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Shapy dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Shapy dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		T.Thiessens
 Group:		Themes
@@ -1438,7 +1438,7 @@ Shapy and colorful.
 
 %package Simple-Gnome-Logo
 Summary:	Theme Simple-GNOME-Logo for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Simple-GNOME-Logo dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Simple-GNOME-Logo dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Theme by DekuHaze - Background (c) 2003 Bryan W. C
 Group:		Themes
@@ -1461,7 +1461,7 @@ Clark.
 
 %package Space
 Summary:	Theme Space for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Space dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Space dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Guille (bisho)
 Group:		Themes
@@ -1478,7 +1478,7 @@ A space based greeter with icons borrowed from other themes.
 
 %package SpreadFirefox
 Summary:	Theme SpreadFirefox for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw SpreadFirefox dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw SpreadFirefox dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		DekuHaze
 Group:		Themes
@@ -1497,7 +1497,7 @@ the wallpaper designed by LouCypher. Enjoy.
 
 %package STGO
 Summary:	Theme STGO for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw STGO dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw STGO dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Phillip
 Group:		Themes
@@ -1514,7 +1514,7 @@ from Santiago.
 
 %package Stop_TCPA
 Summary:	Theme Stop_TCPA for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Stop_TCPA dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Stop_TCPA dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Lars Strojny
 Group:		Themes
@@ -1531,7 +1531,7 @@ motywu: A Theme against TCPA, Palladium and Censorship.
 
 %package SVG_Sakura
 Summary:	Theme SVG_Sakura for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw SVG_Sakura dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw SVG_Sakura dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Ben
 Group:		Themes
@@ -1548,7 +1548,7 @@ cherry blossom theme using exclusively SVG images.
 
 %package Synergy
 Summary:	Theme Synergy for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Synergy dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Synergy dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		jam
 Group:		Themes
@@ -1565,7 +1565,7 @@ cube showing 2 faces. KDE logo on left face, Gnome logo on the other.
 
 %package Taipei
 Summary:	Theme Taipei for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Taipei dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Taipei dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Julian Coccia
 Group:		Themes
@@ -1582,7 +1582,7 @@ Taipei, CKS Memorial Entrance (1600x1200).
 
 %package The_Dark_Crystal
 Summary:	Theme The_Dark_Crystal for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw The_Dark_Crystal dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw The_Dark_Crystal dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Bobby Corbell
 Group:		Themes
@@ -1599,7 +1599,7 @@ do motywu: A collage of images from the movie The Dark Crystal.
 
 %package Todmorden
 Summary:	Theme Todmorden for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Todmorden dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Todmorden dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Todd Jones
 Group:		Themes
@@ -1616,7 +1616,7 @@ A pic I took from a hill over Todmorden, England.
 
 %package Valladolid
 Summary:	Theme Valladolid for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw Valladolid dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw Valladolid dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Álvaro del Castillo
 Group:		Themes
@@ -1633,7 +1633,7 @@ do motywu: Valladolid Spanish city.
 
 %package XPTO
 Summary:	Theme XPTO for gdm (GNOME Display Manager)
-Summary(pl.UTF-8):   Motyw XPTO dla gdm (Zarządcy ekranów GNOME)
+Summary(pl.UTF-8):	Motyw XPTO dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
 Vendor:		Nelson Marques
 Group:		Themes
