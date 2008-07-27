@@ -12,7 +12,7 @@ Summary:	Themes for gdm (GNOME Display Manager)
 Summary(pl.UTF-8):	Motywy dla gdm (Zarządcy ekranów GNOME)
 Name:		gdm-theme
 Version:	2.6.0.6
-Release:	1
+Release:	2
 License:	GPL
 Group:		Themes
 Source0:	http://art.gnome.org/download/themes/gdm_greeter/178/GDM-300-lantueno.tar.gz
