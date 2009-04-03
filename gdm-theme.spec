@@ -12,7 +12,7 @@ Summary:	Themes for gdm (GNOME Display Manager)
 Summary(pl.UTF-8):	Motywy dla gdm (Zarządcy ekranów GNOME)
 Name:		gdm-theme
 Version:	2.6.0.6
-Release:	2
+Release:	3
 License:	GPL
 Group:		Themes
 Source0:	http://art.gnome.org/download/themes/gdm_greeter/178/GDM-300-lantueno.tar.gz
@@ -242,13 +242,13 @@ you can still find at: <http://largo.windowmaker.org/themes/>.
 Summary:	Theme Barcelona for gdm (GNOME Display Manager)
 Summary(pl.UTF-8):	Motyw Barcelona dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
-Vendor:		Álvaro del Castillo
+Vendor:		Alvaro del Castillo
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/241/
 Requires:	%{name}
 
 %description Barcelona
-Theme 'Barcelona' by 'Álvaro del Castillo'.
+Theme 'Barcelona' by 'Alvaro del Castillo'.
 
 %description Barcelona -l pl.UTF-8
 Motyw 'Barcelona' autorstwa 'Ălvaro del Castillo'.
@@ -1010,13 +1010,13 @@ d'Emporda (Catalonian town).
 Summary:	Theme Leon for gdm (GNOME Display Manager)
 Summary(pl.UTF-8):	Motyw Leon dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
-Vendor:		Álvaro del Castillo
+Vendor:		Alvaro del Castillo
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/244/
 Requires:	%{name}
 
 %description Leon
-Theme 'Leon' by 'Álvaro del Castillo'. Author's comment for the
+Theme 'Leon' by 'Alvaro del Castillo'. Author's comment for the
 theme: Leon Spanish city.
 
 %description Leon -l pl.UTF-8
@@ -1247,13 +1247,13 @@ eating msn butterfly.
 Summary:	Theme Murcia for gdm (GNOME Display Manager)
 Summary(pl.UTF-8):	Motyw Murcia dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
-Vendor:		Álvaro del Castillo
+Vendor:		Alvaro del Castillo
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/243/
 Requires:	%{name}
 
 %description Murcia
-Theme 'Murcia' by 'Álvaro del Castillo'. Author's comment for the
+Theme 'Murcia' by 'Alvaro del Castillo'. Author's comment for the
 theme: Murcia Spanish city.
 
 %description Murcia -l pl.UTF-8
@@ -1618,13 +1618,13 @@ A pic I took from a hill over Todmorden, England.
 Summary:	Theme Valladolid for gdm (GNOME Display Manager)
 Summary(pl.UTF-8):	Motyw Valladolid dla gdm (Zarządcy ekranów GNOME)
 License:	GPL
-Vendor:		Álvaro del Castillo
+Vendor:		Alvaro del Castillo
 Group:		Themes
 URL:		http://art.gnome.org/themes/gdm_greeter/242/
 Requires:	%{name}
 
 %description Valladolid
-Theme 'Valladolid' by 'Álvaro del Castillo'. Author's comment for
+Theme 'Valladolid' by 'Alvaro del Castillo'. Author's comment for
 the theme: Valladolid Spanish city.
 
 %description Valladolid -l pl.UTF-8
